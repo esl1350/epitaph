@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf3efcb125e3964e8a6dbde7b2fb730, type: 3}
   m_Name: Burn
   m_EditorClassIdentifier: 
-  name: Burn
-  tickSpeed: 5
-  lifeTime: 20
+  effectName: 
+  tickSpeed: 1
+  lifeTime: 10
   effectAmount: 5
   DOTAmount: 5
-  currentEffectTime: 0
+  currentEffectTime: 2.4344068
   lastTickTime: 0

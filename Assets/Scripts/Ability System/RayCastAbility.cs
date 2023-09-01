@@ -11,10 +11,10 @@ public class RayCastAbility : Ability
     private Vector3 mousePos;
     private bool firing;
 
-    private float rayWidth;
-    private float range;
-    private float damage;
-    private float tickRate;
+    public float rayWidth;
+    public float range;
+    public float damage;
+    public float tickRate;
 
     private bool canTick;
     private float timer;

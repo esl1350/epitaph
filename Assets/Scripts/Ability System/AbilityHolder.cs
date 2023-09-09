@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+
 public class AbilityHolder : MonoBehaviour
 {
     [Header("Ability 1")]
@@ -17,6 +18,10 @@ public class AbilityHolder : MonoBehaviour
     [Header("Ability 3")]
     private Ability ability3;
     private Image ability3Img;
+
+    [Header("Dash Ability")]
+    private Ability dashAbility;
+    private Image dashAbilityImage;
 
     GameObject parent;
 
@@ -71,22 +76,27 @@ public class AbilityHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {  
-        if (abilityManager.GetHotbarAbilities()[0].GetAbility() != null) {
-            ability1 = abilityManager.GetHotbarAbilities()[0].GetAbility();
-            ability1Img = abilityManager.GetHotbarSlots()[0].GetComponent<Image>();
-
+        if (dashAbility == null) {
+            dashAbility = abilityManager.GetHotbarAbilities()[0].GetAbility();
+            dashAbilityImage = abilityManager.GetHotbarSlots()[0].GetComponent<Image>();
         }
 
         if (abilityManager.GetHotbarAbilities()[1].GetAbility() != null) {
-            ability2 = abilityManager.GetHotbarAbilities()[1].GetAbility();
-            ability2Img = abilityManager.GetHotbarSlots()[1].GetComponent<Image>();
-
+            ability1 = abilityManager.GetHotbarAbilities()[1].GetAbility();
+            ability1Img = abilityManager.GetHotbarSlots()[1].GetComponent<Image>();
 
         }
 
         if (abilityManager.GetHotbarAbilities()[2].GetAbility() != null) {
-            ability3 = abilityManager.GetHotbarAbilities()[2].GetAbility();
-            ability3Img = abilityManager.GetHotbarSlots()[2].GetComponent<Image>();
+            ability2 = abilityManager.GetHotbarAbilities()[2].GetAbility();
+            ability2Img = abilityManager.GetHotbarSlots()[2].GetComponent<Image>();
+
+
+        }
+
+        if (abilityManager.GetHotbarAbilities()[3].GetAbility() != null) {
+            ability3 = abilityManager.GetHotbarAbilities()[3].GetAbility();
+            ability3Img = abilityManager.GetHotbarSlots()[3].GetComponent<Image>();
 
 
         }
@@ -108,6 +118,12 @@ public class AbilityHolder : MonoBehaviour
             ability3.AbilityCooldownHandler(parent);
             ability3.AbilityBehavior(parent);
             ability3Img.fillAmount = ability3.fillAmount;
+        }
+
+        if(dashAbility != null) {
+            dashAbility.AbilityCooldownHandler(parent);
+            dashAbility.AbilityBehavior(parent);
+            dashAbilityImage.fillAmount = dashAbility.fillAmount;
         }
     }
 
@@ -153,6 +169,16 @@ public class AbilityHolder : MonoBehaviour
             }
         }
 
+    }
+
+    public void OnDashAbility(InputAction.CallbackContext context) {
+        if (dashAbility != null) {
+            if (context.started) {
+                dashAbility.SetAbilityPressed(true);
+            } else if (context.canceled) {
+                dashAbility.SetAbilityPressed(false);
+            }
+        }
     }
 
     public void OnAbilityInventory(InputAction.CallbackContext context) {

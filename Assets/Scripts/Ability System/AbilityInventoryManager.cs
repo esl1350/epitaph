@@ -16,11 +16,13 @@ public class AbilityInventoryManager : MonoBehaviour
     //public List<Ability> abilities11 = new List<Ability>();
 
     [SerializeField] private SlotClass[] startingAbilities;
+    [SerializeField] private Ability dashAbility;
     private SlotClass[] abilities;
     private SlotClass[] hotbarAbilities;
 
     private GameObject[] slots;
     private GameObject[] hotbarSlots;
+    private static int NUMBER_OF_ABILITIES;
 
 
     private SlotClass movingSlot;
@@ -40,12 +42,17 @@ public class AbilityInventoryManager : MonoBehaviour
         for (int i = 0; i < hotbarSlots.Length; i++) {
             hotbarSlots[i] = hotbarSlotHolder.transform.GetChild(i).gameObject;
         }
+        // One less than hotbar slots length bc dash ability takes up a slot
+        NUMBER_OF_ABILITIES = hotbarSlots.Length - 1;
 
         for (int i = 0; i < abilities.Length; i++) {
             abilities[i] = new SlotClass();
         }
 
-        for (int i = 0; i < hotbarAbilities.Length; i++) {
+        // Add the dash ability to the hotbar slots
+        hotbarAbilities[0] = new SlotClass(dashAbility);
+
+        for (int i = 1; i < hotbarAbilities.Length; i++) {
             hotbarAbilities[i] = new SlotClass();
         }
 
@@ -56,6 +63,10 @@ public class AbilityInventoryManager : MonoBehaviour
         for (int i = 0; i < slotHolder.transform.childCount; i++) {
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
         }
+
+        // Add the dash ability image to the hotbar
+        hotbarSlots[0].transform.GetChild(0).GetComponent<Image>().sprite = dashAbility.aSprite;
+        hotbarSlots[0].transform.GetChild(0).GetComponent<Image>().enabled = true;
 
         RefreshUI();    
         Add(newAbility);
@@ -100,12 +111,18 @@ public class AbilityInventoryManager : MonoBehaviour
 
     public void RefreshHotBar() 
     {
-        for (int i = 0; i < hotbarSlots.Length; i++) {
+        // Refresh the dash ability on the hotbar
+        hotbarAbilities[0].GetAbility().Init();
+        hotbarAbilities[0].GetAbility().SetState(AbilityState.ready);
+        hotbarSlots[0].transform.GetChild(0).GetComponent<Image>().fillAmount = 0;
+
+        // Start at 1 to account for the dash ability taking up a slot
+        for (int i = 1; i < hotbarSlots.Length; i++) {
             try {
                 //slots[i].transform.GetChild(0).GetComponent<Image>().sprite = abilities[i].GetAbility().aSprite;
-                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = abilities[i + hotbarSlots.Length * 2].GetAbility().aSprite;
+                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = abilities[(i - 1) + NUMBER_OF_ABILITIES * 2].GetAbility().aSprite;
                 hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = true;
-                hotbarAbilities[i] = abilities[i + hotbarSlots.Length * 2];
+                hotbarAbilities[i] = abilities[(i - 1) + NUMBER_OF_ABILITIES * 2];
 
                 if (hotbarAbilities[i].GetAbility() != null) {
                     hotbarAbilities[i].GetAbility().Init();

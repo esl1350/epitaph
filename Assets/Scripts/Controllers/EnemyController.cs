@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class EnemyController : Controller
 {
     private bool isColliding;
-
+    private Enemy enemy;
+    
     public bool IsColliding {
         get {return isColliding;}
     }
@@ -15,6 +16,7 @@ public class EnemyController : Controller
     void Start()
     {
         isColliding = false;
+        enemy = GetComponent<Enemy>();
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class EnemyController : Controller
 
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
-            other.gameObject.GetComponent<Entity>().TakeDamage(10.0f);
+            enemy.DealDamage(other.gameObject.GetComponent<Player>(), enemy.Attack);
             isColliding = true;
         }
     }

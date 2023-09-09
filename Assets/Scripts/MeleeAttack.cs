@@ -11,10 +11,12 @@ public class MeleeAttack : MonoBehaviour
     private Vector2 offset;
     private BoxCollider2D meleeHitbox;
     private SpriteRenderer hitboxRenderer;
+    private Entity source;
     private bool rotated;
     // Start is called before the first frame update
     void Start()
     {
+        source = transform.parent.gameObject.GetComponent<Entity>();
         attackDir = AttackDirection.right;
         rotated = false;
         meleeHitbox = GetComponent<BoxCollider2D>();
@@ -53,8 +55,9 @@ public class MeleeAttack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Enemy") {
             Enemy enemy = other.GetComponent<Enemy>();
-            //CHANGE THIS LATER TO COME FROM PLAYER
-            enemy.TakeDamage(1.0f);
+            source.DealDamage(enemy , source.Attack);
+
+            //knockback here?
         }
      }
 

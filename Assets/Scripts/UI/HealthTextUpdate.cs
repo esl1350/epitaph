@@ -14,12 +14,12 @@ public class HealthTextUpdate : MonoBehaviour
     void Start()
     {
        tmp = this.GetComponent<TextMeshProUGUI>();
-       tmp.SetText("Health: " + entityToTrack.CurrentHealth);
+       tmp.SetText("Health: " + entityToTrack.HealthVal);
     }
 
     // Update is called once per frame
     void Update()
     {
-        tmp.SetText("Health: " + entityToTrack.CurrentHealth);
+        tmp.SetText("Health: " + entityToTrack.HealthVal);
     }
 }

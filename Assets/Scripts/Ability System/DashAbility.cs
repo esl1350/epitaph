@@ -6,18 +6,20 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu]
 public class DashAbility : Ability
 {
-    public float dashVelocity;
+    public float moveSpeedMultiplier;
 
     public override void Activate(GameObject parent)
     {
-        //Debug.Log("dash");
-        parent.GetComponent<Rigidbody2D>().velocity = parent.GetComponent<Rigidbody2D>().velocity * dashVelocity;
+        Debug.Log("dash start");
+        parent.GetComponent<PlayerController>().moveSpeed *= moveSpeedMultiplier;
+        parent.GetComponent<PlayerController>().canChangeDirection = false;
     }
 
     public override void Deactivate(GameObject parent)
     {
-        //Debug.Log("dash");
-        parent.GetComponent<Rigidbody2D>().velocity = parent.GetComponent<Rigidbody2D>().velocity / dashVelocity;
+        Debug.Log("dash end");
+        parent.GetComponent<PlayerController>().moveSpeed /= moveSpeedMultiplier;
+        parent.GetComponent<PlayerController>().canChangeDirection = true;
     }
 
     public override void AbilityCooldownHandler(GameObject parent) {

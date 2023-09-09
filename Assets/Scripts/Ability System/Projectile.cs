@@ -9,7 +9,10 @@ public class Projectile : MonoBehaviour
     protected Rigidbody2D rb;
     protected Vector3 direction;
     public float force;
-    [SerializeField] StatusEffect _data;
+    [SerializeField] List<StatusEffect> _statusEffects;
+    [SerializeField] private float projectileTimer;
+    public GameObject parent;
+
     // increase sprite size
     // Start is called before the first frame update
     void Start()
@@ -27,17 +30,18 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (projectileTimer > 0)
+        {
+            projectileTimer -= Time.deltaTime;
+            return;
+        }
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        var effectable = other.GetComponent<IEffectable>();
-
-        if (effectable != null) {
-            effectable.ApplyEffect(_data);
-            //effectable.GetComponent<Enemy>().
-        }
-
+        var statusEffectManager = other.GetComponent<StatusEffectManager>();
+            statusEffectManager?.ApplyEffects(_statusEffects);
+        
         //Debug.Log($"Hit {other.gameObject.name}");
 
         Destroy(this.gameObject);

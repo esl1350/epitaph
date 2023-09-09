@@ -2,72 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity : MonoBehaviour, IEffectable
+[RequireComponent(typeof(StatusEffectManager))]
+public class Entity : MonoBehaviour 
 {
-    [SerializeField] private float maxHealth;
+    [SerializeField] private EntityStats _entityStats;
+    public EntityStats EntityStats => _entityStats;
+    [SerializeField] private float intialHealth;
+    private Health _health;
+    public float HealthVal => _health.health;
+    public Health Health => _health;
+
+    private StatusEffectManager _statusEffectManager;
+    public StatusEffectManager StatusEffectManager => _statusEffectManager;
+
     [SerializeField] private float knockbackDelay;
     [SerializeField] private float knockbackForce;
-
 
     private float currentHealth;
     private float movementSpeed;
     private Rigidbody2D body;
 
-    private float attack;
-    private Controller ctrl;
-    private StatusEffect _data;
+    [SerializeField] private float attack;
 
-    //getters
-    public float CurrentHealth {
-        get {return currentHealth;}
+    private bool _isDead;
+
+
+    public float Attack {
+        get { return attack; }
+        set { attack = value; }
     }
 
-    // Start is called before the first frame update
+    private void Awake() {
+        _health = new(this, intialHealth);
+        _statusEffectManager = gameObject.GetComponent<StatusEffectManager>();
+        _statusEffectManager.entity = this;
+    }
+
     protected virtual void Start()
     {
         //override in child classes
         body = this.gameObject.GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
-        ctrl = this.gameObject.GetComponent<Controller>();
     }
 
-    // Update is called once per frame
-    protected virtual void Update()
-    {
-        if (_data != null) {
-            _data.HandleEffect(this);
-        }
-        //override in child classes
-    }
-
-    protected virtual void Die() {
+    public virtual void Die() {
+        if(_isDead) return;
         //override in child classes
         Debug.Log("dead");
     }
 
-    public virtual void TakeDamage(float dmgAmt) {
-        //override in child classes
-        if (currentHealth - dmgAmt <= 0) {
-            this.Die();
-        } else {
-            currentHealth -= dmgAmt;
-        }
-    }
-
-    // move this stuff also to status effect
-
-    public void ApplyEffect(StatusEffect _data)
+    public virtual void TakeDamage(float amount)
     {
-        this._data = _data;
-        //Debug.Log(_data.name);
-        _data.currentEffectTime = 0f;
-        _data.lastTickTime = 0f;
+        _health.TakeDamage(amount);
+    }
+    
+    public virtual void DealDamage(Entity target, float dmgAmt) {
+        target.TakeDamage(dmgAmt);
     }
 
-    public void RemoveEffect()
-    {
-        _data = null;
-    }
 
     public void Knockback(GameObject applier) {
         Debug.Log("KNOCK");
@@ -82,5 +73,4 @@ public class Entity : MonoBehaviour, IEffectable
         body.velocity = Vector3.zero;
     }
 
-    // move to status effect
 }

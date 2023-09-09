@@ -57,7 +57,7 @@ public class RayCastAbility : Ability
                 }
 
                 if (canTick) {
-                    hit.transform.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+                    parent.GetComponent<Entity>().DealDamage(hit.transform.gameObject.GetComponent<Entity>(), damage);
                     Debug.Log(hit);
                     canTick = false;
                 }

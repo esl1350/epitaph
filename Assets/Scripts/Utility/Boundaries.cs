@@ -22,7 +22,7 @@ public class Boundaries : MonoBehaviour
         float xRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z)).x;
         xBounds = new Vector2(xLeft, xRight);
 
-        float walkableHeight = walkable.GetComponent<SpriteRenderer>().bounds.size.y;
+        float walkableHeight = walkable.GetComponent<Collider2D>().bounds.size.y;
         Vector2 walkablePos = walkable.transform.position;
         yBounds = new Vector2(walkablePos.y - walkableHeight/2, walkablePos.y + walkableHeight/2);
 

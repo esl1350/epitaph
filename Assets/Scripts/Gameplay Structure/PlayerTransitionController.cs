@@ -19,8 +19,13 @@ public class PlayerTransitionController : MonoBehaviour
     void Update()
     {
         if (this.transform.position.y > playerBoundaries.yBounds.y - playerBoundaries.widthHeight.y/2) {
-            sceneTransitionManager.OnRunEnd();
-            Debug.Log("Run End");
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            if (enemies.Length == 0) {
+                // No enemies left
+                sceneTransitionManager.OnRunEnd();
+                Debug.Log("Run End");
+            }
+
         }
     }
 }

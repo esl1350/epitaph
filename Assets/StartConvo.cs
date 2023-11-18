@@ -39,6 +39,7 @@ public class StartConvo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         actionMap = inputActionAsset.FindActionMap("Player");
         actionKey = actionMap.FindAction("Interact");
         textbox = GameObject.FindGameObjectWithTag("DialogBox");

@@ -36,7 +36,6 @@ public class HealingTerrain : MonoBehaviour
         {
             //add the Entity to the list of entities currently in the pool
             entitiesBeingHealed.Add(collision.gameObject);
-            Debug.Log("Length of list: " + entitiesBeingHealed.Count);
             //heal the entity while its in the pool
             InvokeRepeating("Heal", 0f, timeInterval);
         }
@@ -48,7 +47,6 @@ public class HealingTerrain : MonoBehaviour
     {
         //remove the entity from the list of entities in the pool
         entitiesBeingHealed.Remove(collision.gameObject);
-        Debug.Log("Length of list: " + entitiesBeingHealed.Count);
         //if there are no entities
         if(entitiesBeingHealed.Count == 0) 
         {
@@ -65,7 +63,6 @@ public class HealingTerrain : MonoBehaviour
         {
             //call the Health.Heal method on that entity
             entity.gameObject.GetComponent<Entity>().Health.Heal(healAmount);
-            Debug.Log("Healed");
         }
 
     }

@@ -24,6 +24,7 @@ public class DashAbility : Ability
         float dashDist = this.activeTime * speed.GetStatValue();
         Vector2 dashDir = parent.GetComponent<PlayerController>().LastMovementInput;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.playerDash, parent.transform.position);
         Debug.Log(dashDir);
         if (!IsInsideTerrain(parent, dashDist, dashDir)) {
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Terrain"), LayerMask.NameToLayer("Player"), true);

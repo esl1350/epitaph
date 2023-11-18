@@ -1219,13 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 1506592131035481579}
-  abilityChoices:
-  - {fileID: 11400000, guid: 7cdb47186fde68a4ca7fdd31933c5a81, type: 2}
-  - {fileID: 11400000, guid: 8f95c090da30fc34cb3b55737e8254fc, type: 2}
-  - {fileID: 11400000, guid: 68ca8abe57bdf9046aa4ead7eb505518, type: 2}
-  - {fileID: 11400000, guid: 8abaeafadcb366d4582f63b2865c2f1d, type: 2}
-  - {fileID: 11400000, guid: f5a10d81cbd04824ca171078fe8c3c5a, type: 2}
-  - {fileID: 11400000, guid: 98e89ea2ca0aebf4ea3bca8cc495b5c2, type: 2}
+  startingAbilityChoices: []
 --- !u!1 &8829221962674947054
 GameObject:
   m_ObjectHideFlags: 0

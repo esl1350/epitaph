@@ -7,9 +7,9 @@ public class Coin : MonoBehaviour
     // Default coin value is SmallValue
     public int coinValue = (int) CoinValueEnum.SmallValue;
     // Colors of the different coin values
-    public static readonly Color SMALL_VALUE_COIN_COLOR = Color.white;
-    public static readonly Color MEDIUM_VALUE_COIN_COLOR = new Color(1f, 0.9f, 0f, 1f); // Yellow
-    public static readonly Color LARGE_VALUE_COIN_COLOR = new Color(0.8f, 0.25f, 0.25f, 1f); // Red
+    public Sprite SMALL_VALUE_COIN_SPRITE;
+    public Sprite MEDIUM_VALUE_COIN_SPRITE;
+    public Sprite LARGE_VALUE_COIN_SPRITE;
 
     public float pullSpd;
 
@@ -34,7 +34,7 @@ public class Coin : MonoBehaviour
 
 public enum CoinValueEnum
 {
-    SmallValue = 10,
+    SmallValue = 5,
     MediumValue = 20,
-    LargeValue = 30
+    LargeValue = 50
 }

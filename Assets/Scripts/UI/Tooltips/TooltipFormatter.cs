@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     protected TextMeshProUGUI tmp;
     private AbilityWrapper ability;
-
+    protected Image tooltipImg;
     public AbilityWrapper Ability {
         get {
             return ability;
@@ -19,8 +19,10 @@ public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExi
     }
     // Start is called before the first frame update
     void Start() {
-       tmp = this.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+       tmp = this.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
        tmp.enabled = false;
+       tooltipImg = this.transform.GetChild(1).GetComponent<Image>();
+       tooltipImg.enabled = false;
     }
 
     public virtual void UpdateText() {
@@ -30,11 +32,15 @@ public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public virtual void OnPointerEnter(PointerEventData eventData) {
         UpdateText();
         tmp.enabled = true;
+        tooltipImg.enabled = true;
+
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
     {
         tmp.enabled = false;
+        tooltipImg.enabled = false;
+
     }
 
     /**

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1727affc6dc2a614ab333aa7628f61af, type: 3}
+  m_Name: Briar Barrier Ability Wrapper
+  m_EditorClassIdentifier: 
+  wrapperName: 
+  activeAbility: {fileID: 11400000, guid: d5e0e98685ce35c47b701953bc09a7d7, type: 2}
+  passiveAbility: {fileID: 11400000, guid: e33643f426ef4bb4098040a3891a04eb, type: 2}
+  description: 

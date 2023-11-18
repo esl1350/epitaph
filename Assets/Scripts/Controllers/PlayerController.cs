@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMOD.Studio;
 
 public class PlayerController : Controller
 {
@@ -24,8 +25,13 @@ public class PlayerController : Controller
             return lastMovementInput;
         }
     }
+
+    // audio
+    private EventInstance playerFootsteps;
+
     void Start()
     {
+        playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
         base.Start();
         canMove = true;
         canChangeDirection = true;
@@ -62,11 +68,13 @@ public class PlayerController : Controller
         }
 
         if(!canMove) {
+            UpdateSound();
             rb.velocity = Vector3.zero;
             return;
         }
 
         if (isAttacking) {
+            UpdateSound();
             return;
         }
 
@@ -75,6 +83,7 @@ public class PlayerController : Controller
         } else {
             rb.velocity = lastMovementInput * stats.GetStatValue(StatEnum.WALKSPEED);
         }
+        UpdateSound();
     }
 
     public void OnMove(InputAction.CallbackContext ctx) {
@@ -112,6 +121,16 @@ public class PlayerController : Controller
         animator.SetTrigger("is melee " + atkTag);
         meleeAttack.SetActive();
         meleeAttack.Attack(mousePos);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.miniKnifeSwing, transform.position);
+        // Don't remove code below. 
+        // if (currentAttack < 2)
+        // {
+        //     AudioManager.instance.PlayOneShot(FMODEvents.instance.miniKnifeSwing, transform.position);
+        // }
+        // else
+        // {
+        //     AudioManager.instance.PlayOneShot(FMODEvents.instance.knifeSwing, transform.position);
+        // }
         yield return new WaitForSeconds(attackDelay);
         meleeAttack.SetInactive();
         rb.velocity = Vector2.zero;
@@ -129,5 +148,25 @@ public class PlayerController : Controller
         canChainAttack = true;
         yield return new WaitForSeconds(chainAttackTime);
         canChainAttack = false;
+    }
+
+    private void UpdateSound()
+    {
+        // start footsteps event if the player has an x or y velocity
+        // if ((rb.velocity.x != 0 || rb.velocity.y != 0) && !isAttacking && rb.velocity.x <= 10 && rb.velocity.y <= 10 && rb.velocity.x >= -10 && rb.velocity.y >= -10)
+        if ((rb.velocity.x != 0 || rb.velocity.y != 0) && !isAttacking && canMove)
+        {
+            // get the playback state
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+        } else 
+        // otherwise, stop the footsteps event else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }

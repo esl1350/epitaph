@@ -17,13 +17,13 @@ public class HealthTextUpdate : MonoBehaviour
     {
        if (trackPlayer)
         entityToTrack = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-       tmp = this.GetComponent<TextMeshProUGUI>();
-       tmp.SetText("Health: " + entityToTrack.HealthVal.ToString("F1"));
+        tmp = this.GetComponent<TextMeshProUGUI>();
+        tmp.SetText(entityToTrack.HealthVal.ToString("F1") + "/" + entityToTrack.Health.intialValue);
     }
 
     // Update is called once per frame
     void Update()
     {
-        tmp.SetText("Health: " + entityToTrack.HealthVal.ToString("F1"));
+        tmp.SetText(entityToTrack.HealthVal.ToString("F1") + "/" + entityToTrack.Health.intialValue);
     }
 }

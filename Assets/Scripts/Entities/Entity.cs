@@ -21,6 +21,8 @@ public class Entity : MonoBehaviour
     private Rigidbody2D body;
 
     private bool _isDead;
+    private Shader GUIWhite;
+    private Shader defaultSpriteShader;
 
     // need a reference to this to adjust damage dealt and taken
     [SerializeField]
@@ -34,8 +36,16 @@ public class Entity : MonoBehaviour
         _augmentManager.setCurrent(this);
     }
 
+    public IEnumerator DamageFlash() {
+        GetComponent<Renderer>().material.shader = GUIWhite;
+        yield return new WaitForSeconds(0.12f);
+        GetComponent<Renderer>().material.shader = defaultSpriteShader;
+    }
+
     protected virtual void Start()
     {
+		GUIWhite = Shader.Find("GUI/Text Shader");
+		defaultSpriteShader = Shader.Find("Sprites/Default"); // or whatever sprite shader is being used
         //override in child classes
         body = this.gameObject.GetComponent<Rigidbody2D>();
     }
@@ -44,12 +54,12 @@ public class Entity : MonoBehaviour
         if(_isDead) return;
         //override in child classes
     }
-
     // relaying data to augment manager
     public virtual void TakeDamage(float amount)
     {
         Health.TakeDamage(amount);
         _augmentManager.updateDamageTaken(amount);
+        StartCoroutine(DamageFlash());
     }
 
     // relaying data to augment manager

@@ -91,6 +91,7 @@ public class StatusEffectManager : MonoBehaviour
         } 
         else {
             _statusEffects.Add(effect);
+            _statusEffectTypes.Add(se.effectCode);
             effect.expirationTime = _currTime + se.duration;
             effect.nextTickTime = _currTime + se.tickTime;
             AddModifiers(se.entryStatusEffect);
@@ -98,7 +99,7 @@ public class StatusEffectManager : MonoBehaviour
         }
     }
 
-    private void AddModifiers(List<StatModifier> statModifiers)
+    public void AddModifiers(List<StatModifier> statModifiers)
     {
         foreach(StatModifier sm in statModifiers)
             AddModifier(sm);
@@ -125,12 +126,15 @@ public class StatusEffectManager : MonoBehaviour
         if(se.removableType == RemovableType.NonRemovable) return;
 
         RemoveModifiers(se.entryStatusEffect);
-        RemoveModifiers(se.exitStatusEffect);
+        RemoveModifiers(se.passiveStatusEffect);
         RemoveModifiers(se.tickStatusEffect);
         RemoveModifiers(se.exitStatusEffect);
+
+        _statusEffects.Remove(effect);
+        _statusEffectTypes.Remove(se.effectCode);
     }
 
-    private void RemoveModifiers(List<StatModifier> statModifiers)
+    public void RemoveModifiers(List<StatModifier> statModifiers)
     {
         foreach(StatModifier sm in statModifiers)
             RemoveModifier(sm);

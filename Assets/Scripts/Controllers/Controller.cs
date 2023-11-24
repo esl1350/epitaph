@@ -8,11 +8,16 @@ public class Controller : MonoBehaviour
     protected EntityStats stats;
     protected bool canMove;
     protected Animator animator;
+    protected bool isKnockedBack;
 
     protected bool canChangeDirection;
     public bool CanMove {
         get { return canMove; }
         set { canMove = value; }
+    }
+    public bool IsKnockedBack {
+        get { return isKnockedBack; }
+        set { isKnockedBack = value; }
     }
     public bool CanChangeDirection {
         get { return canChangeDirection; }

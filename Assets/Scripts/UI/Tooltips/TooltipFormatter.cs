@@ -9,6 +9,7 @@ public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExi
     protected TextMeshProUGUI tmp;
     private AbilityWrapper ability;
     protected Image tooltipImg;
+    protected RectTransform tooltipTransform;
     public AbilityWrapper Ability {
         get {
             return ability;
@@ -19,12 +20,18 @@ public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExi
     }
     // Start is called before the first frame update
     void Start() {
-       tmp = this.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
-       tmp.enabled = false;
        tooltipImg = this.transform.GetChild(1).GetComponent<Image>();
+       tooltipTransform = this.transform.GetChild(1).GetComponent<RectTransform>();
+       tmp = tooltipImg.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+       tmp.enabled = false;
        tooltipImg.enabled = false;
+        StartCoroutine(SetBoxSize());
     }
-
+    public IEnumerator SetBoxSize() {
+        yield return new WaitForSeconds(0.01f);
+        float boxHeight = tooltipTransform.sizeDelta.y;
+        tooltipTransform.anchoredPosition = new Vector3(tooltipTransform.anchoredPosition.x, boxHeight + 10, 0);
+    }
     public virtual void UpdateText() {
 
     }
@@ -33,6 +40,7 @@ public class TooltipFormatter : MonoBehaviour, IPointerEnterHandler, IPointerExi
         UpdateText();
         tmp.enabled = true;
         tooltipImg.enabled = true;
+        StartCoroutine(SetBoxSize());
 
     }
 

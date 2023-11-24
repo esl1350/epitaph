@@ -14,7 +14,7 @@ public class GoLAutomaton : MonoBehaviour
     private int bufferSize;
 
     public int[,] Simulate(int w, int h, int buffer) {
-        buffer = bufferSize;
+        bufferSize = buffer;
         width = w;
         height = h;
         if (terrain == null) {
@@ -28,9 +28,11 @@ public class GoLAutomaton : MonoBehaviour
 
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
-                if (j < bufferSize | j + bufferSize > height) {
+                if (j < bufferSize) {
                     terrain[i, j] = 0;
-                    Debug.Log("zeroed");
+                }
+                if (j + bufferSize > height) {
+                    terrain[i, j] = 0;
                 }
             }
         }

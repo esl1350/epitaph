@@ -66,6 +66,9 @@ public class PlayerController : Controller
         } else {
             animator.SetBool("is stopped", false);
         }
+        if (isKnockedBack) {
+            return;
+        }
 
         if(!canMove) {
             UpdateSound();

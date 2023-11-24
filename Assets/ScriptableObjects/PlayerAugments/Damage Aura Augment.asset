@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b255b10563f9643b79ea0182569462, type: 3}
+  m_Name: Damage Aura Augment
+  m_EditorClassIdentifier: 
+  aName: Damage Aura
+  aDescription: kaboom
+  aSprite: {fileID: 0}
+  aSound: {fileID: 0}
+  expires: 0
+  expirationTime: 0
+  AugmentType: 1
+  statModifiers: []
+  radius: 3
+  damage: 2
+  interval: 1
+  vfxSprite: {fileID: -7987652723942145253, guid: a214698f9d56ed8478bbed99fa17b461, type: 3}

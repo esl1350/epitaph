@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537c85cce35073f43ae081edbcef38ef, type: 3}
   m_Name: Blink Dagger Ability Wrapper
   m_EditorClassIdentifier: 
+  wrapperName: Blink Dagger
   activeAbility: {fileID: 11400000, guid: 1f9323a04fe5d6c4cae7914b97d5261c, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 1ec54eb4ade3c4c94bd817e06a8ec2a5, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Throw out a knife and teleport to it

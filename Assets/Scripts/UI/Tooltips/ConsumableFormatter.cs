@@ -11,6 +11,7 @@ public class ConsumableFormatter : MonoBehaviour, IPointerEnterHandler, IPointer
     private RosaryBeadsConsumable consumable;
     private Image tooltipImg;
     private Animator anim;
+    private RectTransform tooltipTransform;
     public RosaryBeadsConsumable Consumable {
         get {
             return consumable;
@@ -22,10 +23,18 @@ public class ConsumableFormatter : MonoBehaviour, IPointerEnterHandler, IPointer
     // Start is called before the first frame update
     void Start() {
        anim = GetComponent<Animator>();
-       tmp = this.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-       tmp.enabled = false;
        tooltipImg = this.transform.GetChild(0).GetComponent<Image>();
+       tooltipTransform = this.transform.GetChild(0).GetComponent<RectTransform>();
+       tmp = tooltipImg.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+       tmp.enabled = false;
        tooltipImg.enabled = false;
+       StartCoroutine(SetBoxSize());
+    }
+
+    IEnumerator SetBoxSize() {
+        yield return new WaitForSeconds(0.01f);
+        float boxHeight = tooltipTransform.sizeDelta.y;
+        tooltipTransform.anchoredPosition = new Vector3(tooltipTransform.anchoredPosition.x, boxHeight + 10, 0);
     }
 
     void Update() {
@@ -40,6 +49,7 @@ public class ConsumableFormatter : MonoBehaviour, IPointerEnterHandler, IPointer
             descriptions = System.String.Join(',', consumable.GetConsumableDescriptions());
         }
         tmp.SetText("<b>" + consumable.cName + "</b><br>" + "<b>Charges:</b><br>" + consumable.currentCharges + "<br>" + descriptions);
+       StartCoroutine(SetBoxSize());
     }
 
     public virtual void OnPointerEnter(PointerEventData eventData) {

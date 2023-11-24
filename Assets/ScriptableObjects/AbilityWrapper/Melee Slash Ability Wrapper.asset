@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9523065def48cb42aab57da9c258b88, type: 3}
   m_Name: Melee Slash Ability Wrapper
   m_EditorClassIdentifier: 
-  wrapperName: Melee Slash
+  wrapperName: Spectral Censer
   activeAbility: {fileID: 11400000, guid: 5039a75e5878d8d4fb32d806112e0723, type: 2}
-  passiveAbility: {fileID: 0}
-  description: 
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Exorcise the dead

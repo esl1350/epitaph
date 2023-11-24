@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f9db67909800f4c9d602578f46d978, type: 3}
   m_Name: Samsara
   m_EditorClassIdentifier: 
-  wrapperName: 
+  wrapperName: Samsara
   activeAbility: {fileID: 11400000, guid: 45db7429307609e46bfc86b49c45ed3f, type: 2}
-  passiveAbility: {fileID: 0}
-  description: 
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Send out whirling blades to end your foes

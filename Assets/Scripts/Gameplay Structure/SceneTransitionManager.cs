@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionManager : MonoBehaviour
 {
     // Update is called once per frame
+    private GameObject enemyManager;
     private Animator transition;
     private bool forceInventoryTransition = false;
 
@@ -55,6 +56,7 @@ public class SceneTransitionManager : MonoBehaviour
         transition.SetBool("InterludeRoom", !sceneHasCombat);
     }
     void Start() {
+        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager");
         abilityHolder = GameObject.FindGameObjectWithTag("Player").GetComponent<AbilityHolder>();
         if (!abilityHolder) {
            Debug.Log("[SceneTransitionManager] Couldn't fetch ability inventory. Is the player not loaded?");
@@ -90,6 +92,9 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void OnRunEnd() {
         if (disableRunEnd) return;
+        if (enemyManager.transform.childCount > 0) {
+            return;
+        }
         playerInput.DeactivateInput();
         transition.ResetTrigger("RunStart");
         transition.SetTrigger("RunEnd");

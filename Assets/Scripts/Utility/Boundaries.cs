@@ -23,8 +23,8 @@ public class Boundaries : MonoBehaviour
         xBounds = new Vector2(xLeft, xRight);
 
         float walkableHeight = walkable.GetComponent<Collider2D>().bounds.size.y;
-        Vector2 walkablePos = walkable.transform.position;
-        yBounds = new Vector2(walkablePos.y - walkableHeight/2, walkablePos.y + walkableHeight/2);
+        Vector3 colliderCenter = walkable.GetComponent<Collider2D>().bounds.center;
+        yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
 
         widthHeight = this.gameObject.GetComponent<BoxCollider2D>().size;
     }

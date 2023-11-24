@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1af4305abedd294294f103825f4d0c4, type: 3}
   m_Name: Ray Cast Ability Wrapper
   m_EditorClassIdentifier: 
+  wrapperName: Ethereal Ray
   activeAbility: {fileID: 11400000, guid: 8608b9fd89d27124b925db2bc02fb71e, type: 2}
-  passiveAbility: {fileID: 11400000, guid: e33643f426ef4bb4098040a3891a04eb, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Laser beam

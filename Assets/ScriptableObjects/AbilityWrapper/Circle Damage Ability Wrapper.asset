@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924aa24f679ea3941838b80bf60fe23c, type: 3}
   m_Name: Circle Damage Ability Wrapper
   m_EditorClassIdentifier: 
+  wrapperName: '?'
   activeAbility: {fileID: 11400000, guid: 9d2452916fad28a48b984665c67178b5, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 839cceae59c8a4e939ff8d88a676bff1, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 2a540799a473f014482b90369dac1569, type: 2}
+  description: '?'

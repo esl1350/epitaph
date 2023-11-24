@@ -15,10 +15,12 @@ public class SlowingTerrain : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("New Entity being slowed");
+        if (collision.gameObject.tag == "Player") {
         entitiesBeingSlowed.Add(collision.gameObject);
         var statusEffectManager = collision.GetComponent<StatusEffectManager>();
             statusEffectManager?.ApplyEffects(_statusEffects);
+        }
+
         
     }
 
@@ -28,7 +30,6 @@ public class SlowingTerrain : MonoBehaviour
         entitiesBeingSlowed.Remove(collision.gameObject);
         var statusEffectManager = collision.GetComponent<StatusEffectManager>();
             statusEffectManager?.ApplyEffects(_removeStatusEffects);
-        Debug.Log("Entity no longer being slowed");
     }
 
 /*     void Update()

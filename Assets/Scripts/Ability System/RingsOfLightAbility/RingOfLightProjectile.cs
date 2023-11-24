@@ -4,13 +4,13 @@ using UnityEngine;
 
 class RingOfLightProjectile : Projectile {
 
-    public OnHitAugment augmentToApply;
+    public Augment augmentToApply;
 
     public new Vector3 direction;
 
     private SpriteRenderer ringSprite;
 
-    private bool outwards = true;
+        private bool outwards = true;
     private bool markDestroy = false;
 
     [SerializeField]

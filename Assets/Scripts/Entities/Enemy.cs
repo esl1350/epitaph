@@ -21,17 +21,7 @@ public class Enemy : Entity
         hasDied = true;
         Destroy(gameObject);
     }
-    
-    public override void TakeDamage(float amount) {
-        base.TakeDamage(amount);
-        StartCoroutine(DamageFlash());
 
-    }
-    public IEnumerator DamageFlash() {
-        renderer.color = new Color(1.0f, 0.32f, 0.28f);
-        yield return new WaitForSeconds(0.12f);
-        renderer.color = Color.white;
-    }
 
     public void DropCoins() {
         int numberOfCoins = (int) ((Random.value * (maxNumberOfCoins - minNumberOfCoins + 1)) + minNumberOfCoins);

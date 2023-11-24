@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a529313ed801bbd4b97d89800c3e12fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 0.5
-  timeInterval: 3
+  healAmount: 3
+  timeInterval: 1
   lifespan: 3
 --- !u!60 &5299715400581207397
 PolygonCollider2D:
@@ -5055,7 +5055,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2030073569
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0

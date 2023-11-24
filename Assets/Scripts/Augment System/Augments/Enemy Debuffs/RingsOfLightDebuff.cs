@@ -1,24 +1,12 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class RingsOfLightDebuff : OnHitAugment
+public class RingsOfLightDebuff : Augment
 {
     [SerializeField]
-    private float damage;
+    private float damage = 5f;
 
-    public override void OnApply(Entity parent)
-    {
-    }
-    
-    public void ApplyProcVFX() {
-    }
-
-    public override void OnExpire(Entity parent)
-    {
-       if (!parent) return;
-    }
-
-    public override float applyAugmentDamageTaken(float damageDealt, Entity current, Entity target)
+    public override float _ApplyAugmentDamageTaken(float damageDealt, Entity current, Entity target)
     {
         Debug.Log("Samsara damage spent");
 

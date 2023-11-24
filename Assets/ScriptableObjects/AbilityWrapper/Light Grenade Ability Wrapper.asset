@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: Light Grenade
   activeAbility: {fileID: 11400000, guid: b2ea07a8a27b7a848851a9c3553fa716, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 1ec54eb4ade3c4c94bd817e06a8ec2a5, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
   description: Stuns enemies

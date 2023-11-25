@@ -18,6 +18,11 @@ public class Item : ScriptableObject
         return this.cost;
     }
 
+    public string getName()
+    {
+        return this.itemName;
+    }
+
     public void disable()
     {
         enabled = false;

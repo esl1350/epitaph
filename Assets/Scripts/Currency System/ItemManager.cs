@@ -44,4 +44,9 @@ public class ItemManager : MonoBehaviour
         }
     }
 
+    public bool doesItemExist(Item item)
+    {
+        return items.Contains(item);
+    }
+
 }

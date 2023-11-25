@@ -8,6 +8,10 @@ public class ShopUILogic : MonoBehaviour
 
     public GameObject shopMenu; 
 
+    public GameObject cannotPurchaseTag;
+
+    public GameObject purchaseSuccessTag;
+
     public InputActionAsset inputActionAsset;
 
     private InputActionMap actionMap;
@@ -25,6 +29,8 @@ public class ShopUILogic : MonoBehaviour
     void Update()
     {
         if (shopMenu.activeSelf){
+            cannotPurchaseTag.SetActive(false);
+            purchaseSuccessTag.SetActive(false);
             Time.timeScale = 0;
         }
     }

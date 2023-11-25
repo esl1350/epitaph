@@ -18,7 +18,8 @@ public class ItemManager : MonoBehaviour
         {
             int difference = itemToBuy.getCost() - player.CurrencyTotal;
             Debug.Log("Need " + difference + " more coins.");
-        } else
+        } 
+        else
         {
             player.SpendCoin(itemToBuy.getCost());
             itemToBuy.disable();

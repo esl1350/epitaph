@@ -22,13 +22,7 @@ public class RangedGoonController : EnemyController
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (dist < distanceAway && dist > fleeDist)
         {
-            agent.velocity = Vector2.zero;
-            timer += Time.deltaTime;
-            if (timer > unloadSpeed)
-            {
-                timer = 0f;
-                Shoot();
-            }
+            agent.velocity = Vector2.zero; 
         }
         animator.SetFloat("vel x", agent.velocity.x);
         animator.SetFloat("vel y", agent.velocity.y);

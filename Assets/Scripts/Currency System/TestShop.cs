@@ -4,7 +4,8 @@ using UnityEngine;
 using TMPro;
 public class TestShop : MonoBehaviour
 {
-    private ItemManager manager;
+    private float timer = 0f;
+    public ItemManager manager;
 
     public GameObject cannotPurchaseTag;
 
@@ -43,7 +44,7 @@ public class TestShop : MonoBehaviour
 
     void Awake()
     {
-        manager = gameObject.GetComponent<ItemManager>();
+        manager = GameObject.FindWithTag("Player").GetComponent<ItemManager>();
         price1.text = (item1.getCost()).ToString() + " coins";
         name1.text = item1.getName();
         price2.text = (item2.getCost()).ToString() + " coins";
@@ -60,22 +61,39 @@ public class TestShop : MonoBehaviour
 
     void Update()
     {
+        if (purchaseSuccessTag.activeSelf){
+            timer += Time.deltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivatePurchaseSuccessTag();
+            }
+        }
 
+        if (cannotPurchaseTag.activeSelf){
+            timer += Time.deltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivateCannotPurchaseTag();
+            }
+        }
     }
 
     public void BuyItem1(){
+        Debug.Log("buyingItem1");
         manager.PurchaseItem(item1);
         bool itemExist = manager.doesItemExist(item1);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item1UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            DeactivatePurchaseSuccessTag();
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            DeactivateCannotPurchaseTag();
         }
     }
 

@@ -23,14 +23,14 @@ public class ShopUILogic : MonoBehaviour
     {
         actionMap = inputActionAsset.FindActionMap("Player");
         actionKey = actionMap.FindAction("Interact");
+        cannotPurchaseTag.SetActive(false);
+        purchaseSuccessTag.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (shopMenu.activeSelf){
-            cannotPurchaseTag.SetActive(false);
-            purchaseSuccessTag.SetActive(false);
             Time.timeScale = 0;
         }
     }

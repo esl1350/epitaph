@@ -718,6 +718,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 712963403}
+    - targetCorrespondingSourceObject: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
       insertIndex: -1
       addedObject: {fileID: 712963391}
     - targetCorrespondingSourceObject: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
@@ -2190,6 +2193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf7c45d882d54370863976a1260910a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 712963403}
   cannotPurchaseTag: {fileID: 1128617444}
   purchaseSuccessTag: {fileID: 141939402}
   item1: {fileID: 11400000, guid: 4c08bb166648d4845b50cd139ce3e756, type: 2}
@@ -2564,6 +2568,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   augmentManager: {fileID: 712963393}
+--- !u!114 &712963403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712963380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d1ec52b7d7c44f2af2d3807ac63e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727995517
 GameObject:
   m_ObjectHideFlags: 0
@@ -25115,6 +25131,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2631674410661350216, guid: 64f4e51f3b4e7d841a1e5ed55cd28d72, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
     - target: {fileID: 2631674410661350216, guid: 64f4e51f3b4e7d841a1e5ed55cd28d72, type: 3}
       propertyPath: _health.intialValue
       value: 100

@@ -2196,30 +2196,30 @@ MonoBehaviour:
   manager: {fileID: 712963403}
   cannotPurchaseTag: {fileID: 1128617444}
   purchaseSuccessTag: {fileID: 141939402}
-  item1: {fileID: 11400000, guid: 4c08bb166648d4845b50cd139ce3e756, type: 2}
+  item1: {fileID: 11400000, guid: 39712934c5b9fc840ba0cc075fdca5b5, type: 2}
   item1UI: {fileID: 1078223402}
   price1: {fileID: 1918363553}
   name1: {fileID: 1669373170}
-  item2: {fileID: 0}
+  item2: {fileID: 11400000, guid: 4c08bb166648d4845b50cd139ce3e756, type: 2}
   item2UI: {fileID: 312903970}
-  price2: {fileID: 0}
-  name2: {fileID: 0}
-  item3: {fileID: 0}
+  price2: {fileID: 402859144}
+  name2: {fileID: 1721397016}
+  item3: {fileID: 11400000, guid: fa28ac63e6e166f4d8b4a59dcda88233, type: 2}
   item3UI: {fileID: 744114095}
-  price3: {fileID: 0}
-  name3: {fileID: 0}
+  price3: {fileID: 1661804294}
+  name3: {fileID: 1532825912}
   item4: {fileID: 0}
   item4UI: {fileID: 1434301097}
-  price4: {fileID: 0}
-  name4: {fileID: 0}
+  price4: {fileID: 1076266095}
+  name4: {fileID: 1631514959}
   item5: {fileID: 0}
   item5UI: {fileID: 1470022880}
-  price5: {fileID: 0}
-  name5: {fileID: 0}
+  price5: {fileID: 630016750}
+  name5: {fileID: 1609066086}
   item6: {fileID: 0}
   item6UI: {fileID: 1151850270}
-  price6: {fileID: 0}
-  name6: {fileID: 0}
+  price6: {fileID: 89608416}
+  name6: {fileID: 1204623571}
 --- !u!1 &538610245
 GameObject:
   m_ObjectHideFlags: 0

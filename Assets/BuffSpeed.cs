@@ -4,19 +4,19 @@ using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 [CreateAssetMenu]
-public class BuffDamage : Item
+public class BuffSpeed : Item
 {
     [SerializeField]
-    private float extraDamage = 10;
+    private float extraSpeed = 1;
 
     public override void firstActivation(Player player)
     {
-        Debug.Log("Increasing damage by: " + extraDamage);
-        player.Attack.currentBaseValue += extraDamage;
+        Debug.Log("Increasing speed by: " + extraSpeed);
+        player.Walkspeed.currentBaseValue += extraSpeed;
     }
 
     public override void disableStatic(Player player)
     {
-        player.Attack.currentBaseValue -= extraDamage;
+        player.Walkspeed.currentBaseValue -= extraSpeed;
     }
 }

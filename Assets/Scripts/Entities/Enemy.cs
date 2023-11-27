@@ -8,7 +8,7 @@ public class Enemy : Entity
     [SerializeField] CoinValueEnum enemyCoinValue;
     private const int minNumberOfCoins = 2;
     private const int maxNumberOfCoins = 4;
-    private SpriteRenderer renderer;
+    protected SpriteRenderer renderer;
     private bool hasDied = false;
     protected override void Start() {
         base.Start();

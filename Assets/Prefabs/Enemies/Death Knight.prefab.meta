@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Allison/New Boss Room.meta
+guid: c6c25d87b5de1c34ebafeee31a8d5d77
+folderAsset: yes
+DefaultImporter:
+========
 guid: 1f7fcf893895d93418353aaba93fbc82
 PrefabImporter:
+>>>>>>>> upstream/sprint-8:Assets/Prefabs/Enemies/Death Knight.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

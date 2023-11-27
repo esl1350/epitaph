@@ -9,14 +9,13 @@ public class BuffDamage : Item
     [SerializeField]
     private float extraDamage = 10;
 
+    private Damage modifier;
+
     public override void firstActivation(Player player)
     {
         Debug.Log("Increasing damage by: " + extraDamage);
-        player.Attack.currentBaseValue += extraDamage;
-    }
-
-    public override void disableStatic(Player player)
-    {
-        player.Attack.currentBaseValue -= extraDamage;
+        modifier = new Damage(extraDamage);
+        ModifiableStat damage = player.EntityStats.GetStat(StatEnum.ATTACK);
+        damage.AddModifier(modifier);
     }
 }

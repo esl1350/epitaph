@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class ShopUILogic : MonoBehaviour
 {
 
+    private float timer = 0f;
+
     public GameObject shopMenu; 
 
     public GameObject cannotPurchaseTag;
@@ -33,11 +35,38 @@ public class ShopUILogic : MonoBehaviour
         if (shopMenu.activeSelf){
             Time.timeScale = 0;
         }
+        if (purchaseSuccessTag.activeSelf){
+            timer += Time.deltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivatePurchaseSuccessTag();
+            }
+        }
+
+        if (cannotPurchaseTag.activeSelf){
+            timer += Time.deltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivateCannotPurchaseTag();
+            }
+        }
     }
 
     public void Exit(){
         shopMenu.SetActive(false);
         Time.timeScale = 1;
         actionMap.Enable();
+    }
+
+    private void DeactivateCannotPurchaseTag()
+    {
+        cannotPurchaseTag.SetActive(false);
+    }
+
+    private void DeactivatePurchaseSuccessTag()
+    {
+        purchaseSuccessTag.SetActive(false);
     }
 }

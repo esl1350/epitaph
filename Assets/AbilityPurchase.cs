@@ -7,26 +7,14 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class AbilityPurchase : Item
 {
     [SerializeField]
-    private int healthBuff = 15;
-
     public AbilityWrapper ability;
+
+    public Sprite abilitySprite;
 
     public override void firstActivation(Player player)
     {
-        Debug.Log("Increasing health by: " + healthBuff);
-        player.Health.maxValue += healthBuff;
-
-        if (healthBuff + player.HealthVal > player.Health.maxValue)
-        {
-            player.Health.Heal(player.HealthVal - healthBuff);
-        } else
-        {
-            player.Health.Heal(healthBuff);
-        }
+        AbilityInventoryManager abilityInventory = player.GetComponent<AbilityInventoryManager>();
+        Debug.Log("Adding ability");
+        bool didHappen = abilityInventory.Add(ability);
     }
-
-    //public override void disableStatic(Player player)
-    //{
-    //    player.Health.maxValue -= healthBuff;
-    //}
 }

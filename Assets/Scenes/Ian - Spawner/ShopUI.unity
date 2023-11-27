@@ -2204,19 +2204,19 @@ MonoBehaviour:
   item2UI: {fileID: 312903970}
   price2: {fileID: 402859144}
   name2: {fileID: 1721397016}
-  item3: {fileID: 11400000, guid: fa28ac63e6e166f4d8b4a59dcda88233, type: 2}
+  item3: {fileID: 11400000, guid: 86a475882982f97498b38935bbc5bf4c, type: 2}
   item3UI: {fileID: 744114095}
   price3: {fileID: 1661804294}
   name3: {fileID: 1532825912}
-  item4: {fileID: 0}
+  item4: {fileID: 11400000, guid: d1aa7506e452a3b46aaedce1ce451cbb, type: 2}
   item4UI: {fileID: 1434301097}
   price4: {fileID: 1076266095}
   name4: {fileID: 1631514959}
-  item5: {fileID: 0}
+  item5: {fileID: 11400000, guid: e3c82205c1502564690685dd32e6c821, type: 2}
   item5UI: {fileID: 1470022880}
   price5: {fileID: 630016750}
   name5: {fileID: 1609066086}
-  item6: {fileID: 0}
+  item6: {fileID: 11400000, guid: 6f0c8c0ad9f11524ba8090ad6c78963a, type: 2}
   item6UI: {fileID: 1151850270}
   price6: {fileID: 89608416}
   name6: {fileID: 1204623571}

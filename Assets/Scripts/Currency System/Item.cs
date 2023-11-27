@@ -23,6 +23,17 @@ public class Item : ScriptableObject
         return this.itemName;
     }
 
+    public bool isAbility()
+    {
+        //Abilities should cost over 120 coins, other items should be under this amount
+        if(this.cost > 120){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     public void disable()
     {
         enabled = false;

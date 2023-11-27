@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     private Player player;
-
+    public AbilityInventoryManager abilityInventory;
     private List<Item> items = new List<Item>();
 
     public void Awake()
@@ -21,10 +21,16 @@ public class ItemManager : MonoBehaviour
         } 
         else
         {
-            player.SpendCoin(itemToBuy.getCost());
-            itemToBuy.disable();
-            itemToBuy.activate(player);
-            addItem(itemToBuy);
+            int len = abilityInventory.getAbilitiesLength();
+            if (itemToBuy.isAbility() == false || len < 6){
+                player.SpendCoin(itemToBuy.getCost());
+                itemToBuy.disable();
+                itemToBuy.activate(player);
+                addItem(itemToBuy);
+            }
+            else{
+                Debug.Log("No space in ability inventory");
+            }
         }
     }
 

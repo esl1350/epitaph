@@ -227,4 +227,8 @@ public class AbilityInventoryManager : MonoBehaviour
     public void SetManagerActive(bool active) {
         managerActive = active;
     }
+
+    public int getAbilitiesLength(){
+        return (startingAbilities).Length;
+    }
 }

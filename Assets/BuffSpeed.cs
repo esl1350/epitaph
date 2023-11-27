@@ -7,16 +7,14 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class BuffSpeed : Item
 {
     [SerializeField]
-    private float extraSpeed = 1;
+    private float extraSpeed = 1.1f;
+    private SpeedIncrease modifier;
 
     public override void firstActivation(Player player)
     {
-        Debug.Log("Increasing speed by: " + extraSpeed);
-        player.Walkspeed.currentBaseValue += extraSpeed;
-    }
-
-    public override void disableStatic(Player player)
-    {
-        player.Walkspeed.currentBaseValue -= extraSpeed;
+        Debug.Log("Increasing speed by this times: " + extraSpeed);
+        modifier = new SpeedIncrease(extraSpeed);
+        ModifiableStat speed = player.EntityStats.GetStat(StatEnum.WALKSPEED);
+        speed.AddModifier(modifier);
     }
 }

@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crystal : Enemy
+public class Crystal : Entity
 {
-    public List<Sprite> damagedSprites;
     LichController lich;
     bool damaged = false;
     float lastDamaged;
     // Start is called before the first frame update
     protected override void Start()
     {
-        base.Start();
         lich = this.transform.parent.GetComponentInChildren<LichController>();
         lastDamaged = Time.time;
         LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
@@ -24,7 +22,7 @@ public class Crystal : Enemy
             new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
         );
         lineRenderer.colorGradient = gradient;
-        lineRenderer.sortingLayerName = "Entities";
+
     }
 
     // Update is called once per frame
@@ -42,15 +40,8 @@ public class Crystal : Enemy
     }
     public override void TakeDamage(float amount)
     {
+        Health.TakeDamage(amount);
         damaged = true;
-        base.TakeDamage(amount);
-
-        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-        if (HealthVal <= intialHealth * 1 / 3) {
-            renderer.sprite = damagedSprites[1];
-        } else if (HealthVal <= intialHealth * 2 / 3) {
-            renderer.sprite = damagedSprites[0];
-        }
     }
 
     public bool WasDamaged()

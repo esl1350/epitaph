@@ -8,10 +8,7 @@ public class UIAnimationEvents : MonoBehaviour
 
     public void OnUIFadeoutEnd() {
         levelGeneration = GameObject.Find("LevelGenerator").GetComponent<LevelGeneration>();
-        if (levelGeneration != null)
-        {
-            levelGeneration.PlaceEnemies();
-        }
+        levelGeneration.PlaceEnemies();
     }
 
     public void Update() {

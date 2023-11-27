@@ -57,11 +57,9 @@ public class Entity : MonoBehaviour
     // relaying data to augment manager
     public virtual void TakeDamage(float amount)
     {
-        if (this.enabled) {
-            Health.TakeDamage(amount);
-            _augmentManager.updateDamageTaken(amount);
-            StartCoroutine(DamageFlash());
-        }
+        Health.TakeDamage(amount);
+        _augmentManager.updateDamageTaken(amount);
+        StartCoroutine(DamageFlash());
     }
 
     // relaying data to augment manager

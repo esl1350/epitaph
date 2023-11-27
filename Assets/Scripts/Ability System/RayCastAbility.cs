@@ -99,7 +99,7 @@ public class RayCastAbility : Ability
                 }
 
                 if (canTick) {
-                    parent.GetComponent<Entity>().DealDamage(hit.transform.gameObject.GetComponent<Enemy>(), damage, tags);
+                    parent.GetComponent<Entity>().DealDamage(hit.transform.gameObject.GetComponent<Entity>(), damage, tags);
                     canTick = false;
                 }
 

@@ -6,16 +6,16 @@ using UnityEngine.Tilemaps;
 public class EnemyPlacement : MonoBehaviour
 {
     public List<EnemyPlacementType> registeredEnemyTypes = new List<EnemyPlacementType>();
-    protected int mapWidth;
-    protected int mapHeight;
-    protected int[,] map;
-    protected float rampingPercent;
-    [SerializeField] protected GameObject enemyManager;
-    [SerializeField] protected float rampFactor;
-    [SerializeField] protected Tilemap baseMap;
-    protected Vector3Int origin;
-    protected int bufferSize;
-    public virtual void PlaceEnemies(int[,] occupiedMap, int buffer) {
+    private int mapWidth;
+    private int mapHeight;
+    private int[,] map;
+    private float rampingPercent;
+    [SerializeField] private GameObject enemyManager;
+    [SerializeField] private float rampFactor;
+    [SerializeField] private Tilemap baseMap;
+    private Vector3Int origin;
+    private int bufferSize;
+    public void PlaceEnemies(int[,] occupiedMap, int buffer) {
         bufferSize = buffer;
         map = occupiedMap.Clone() as int[,];
         mapWidth = occupiedMap.GetLength(0);

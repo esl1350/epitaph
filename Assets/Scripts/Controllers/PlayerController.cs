@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using FMOD.Studio;
-using FMOD.Studio;
 
 public class PlayerController : Controller
 {
@@ -73,13 +72,11 @@ public class PlayerController : Controller
 
         if(!canMove) {
             UpdateSound();
-            UpdateSound();
             rb.velocity = Vector3.zero;
             return;
         }
 
         if (isAttacking) {
-            UpdateSound();
             UpdateSound();
             return;
         }
@@ -89,7 +86,6 @@ public class PlayerController : Controller
         } else {
             rb.velocity = lastMovementInput * stats.GetStatValue(StatEnum.WALKSPEED);
         }
-        UpdateSound();
         UpdateSound();
     }
 
@@ -128,16 +124,6 @@ public class PlayerController : Controller
         animator.SetTrigger("is melee " + atkTag);
         meleeAttack.SetActive();
         meleeAttack.Attack(mousePos);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.miniKnifeSwing, transform.position);
-        // Don't remove code below. 
-        // if (currentAttack < 2)
-        // {
-        //     AudioManager.instance.PlayOneShot(FMODEvents.instance.miniKnifeSwing, transform.position);
-        // }
-        // else
-        // {
-        //     AudioManager.instance.PlayOneShot(FMODEvents.instance.knifeSwing, transform.position);
-        // }
         AudioManager.instance.PlayOneShot(FMODEvents.instance.miniKnifeSwing, transform.position);
         // Don't remove code below. 
         // if (currentAttack < 2)

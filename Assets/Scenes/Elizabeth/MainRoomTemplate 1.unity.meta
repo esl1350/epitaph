@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Allison/MainRoomTemplate 1.meta
+guid: 688ba25308b97584886d95fa1c2031ba
+folderAsset: yes
+========
 guid: 3455e1ce3a8f58648a015dec65bffb2e
+>>>>>>>> upstream/sprint-8:Assets/Scenes/Elizabeth/MainRoomTemplate 1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

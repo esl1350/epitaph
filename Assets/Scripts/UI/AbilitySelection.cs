@@ -30,7 +30,7 @@ public class AbilitySelection : MonoBehaviour
 
         for (int i = 0; i < 3; i++) {
             if (abilityChoices.Count > 0) {
-                int randomIndex = Random.Range(0, abilityChoices.Count-1);
+                int randomIndex = Random.Range(0, abilityChoices.Count);
                 choiceSlots[i].Item = abilityChoices[randomIndex];
                 choiceSlots[i].formatter.Ability = abilityChoices[randomIndex];
                 abilityChoices.RemoveAt(randomIndex);

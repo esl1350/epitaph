@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8512210624129908140}
   - component: {fileID: 1162483817475055334}
   - component: {fileID: -5958714553493642004}
+  - component: {fileID: 4022587868259910675}
   m_Layer: 3
   m_Name: Splash Damage Projectile
   m_TagString: Untagged
@@ -76,10 +77,10 @@ SpriteRenderer:
   m_SortingLayerID: -807406213
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.6933962, b: 0.95092446, a: 1}
+  m_Sprite: {fileID: -1737208716001196092, guid: b1fd7c5b9135bca43b8c342910fb1c67, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -100,12 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 10
-  damage: 2
-  _statusEffects: []
+  damage: 15
+  _statusEffects:
+  - {fileID: 11400000, guid: aa477a29df9ccaa40be7e3603068e36c, type: 2}
   projectileTimer: 5
   parent: {fileID: 0}
-  radius: 5
-  splashDamage: 2
+  _animator: {fileID: 4022587868259910675}
+  radius: 3
+  splashDamage: 10
 --- !u!58 &1162483817475055334
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,3 +171,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &4022587868259910675
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579370719474460126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1db7b98f04c6d8459def8a6378dc2bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

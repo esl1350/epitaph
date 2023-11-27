@@ -7,7 +7,11 @@ public class EnemyController : Controller
 {
     protected bool isColliding;
     protected Enemy enemy;
-    
+
+    [SerializeField] protected float fleeDist;
+    public float FleeDist {
+        get {return fleeDist;}
+    }
     public bool IsColliding {
         get {return isColliding;}
     }
@@ -15,6 +19,7 @@ public class EnemyController : Controller
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        base.Start();
         isColliding = false;
         enemy = GetComponent<Enemy>();
         canMove = true;

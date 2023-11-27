@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4eb8493d9a708d41a12866bd55c4d63, type: 3}
+  m_Name: QuietusAugmentHaste
+  m_EditorClassIdentifier: 
+  effectCode: 0
+  tickTime: 1
+  duration: 1
+  removableType: 0
+  expirableType: 0
+  entryStatusEffect:
+  - applicationType: 4
+    stat: 1
+    amount: 4
+    beneficial: 1
+    changeBaseValue: 0
+  passiveStatusEffect: []
+  tickStatusEffect: []
+  exitStatusEffect:
+  - applicationType: 4
+    stat: 1
+    amount: 0.25
+    beneficial: 0
+    changeBaseValue: 0

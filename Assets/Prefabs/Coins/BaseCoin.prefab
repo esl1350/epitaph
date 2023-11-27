@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7509041470071400577}
   - component: {fileID: 2951822557027470164}
   - component: {fileID: -8631970439499270126}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BaseCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3681736836022034573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.395, y: -0.013, z: 0.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: -0.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,10 +73,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingLayerID: -807406213
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -9062567742198212532, guid: 35d152d985d549d40a2c245dd5572c7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -146,7 +146,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.12}
   serializedVersion: 2
   m_Radius: 0.12
 --- !u!114 &-8631970439499270126
@@ -161,4 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353db2362cb9fe240afaf704bc033cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 10
+  coinValue: 5
+  SMALL_VALUE_COIN_SPRITE: {fileID: -9062567742198212532, guid: 35d152d985d549d40a2c245dd5572c7e, type: 3}
+  MEDIUM_VALUE_COIN_SPRITE: {fileID: 2636784711808384363, guid: f75b3a6da6830a64b9cbb282761f7913, type: 3}
+  LARGE_VALUE_COIN_SPRITE: {fileID: 8971272232928593322, guid: 3b0fe11547040df40a41dc3af3537fab, type: 3}
+  pullSpd: 3

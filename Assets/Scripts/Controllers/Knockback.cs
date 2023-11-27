@@ -16,7 +16,9 @@ public class Knockback : MonoBehaviour
     }
 
     public void KnockbackCustomForce(GameObject applier, float force, float duration) {
+        controller.IsKnockedBack = true;
         StopAllCoroutines();
+        body.velocity = Vector3.zero;
         Vector2 direction = (transform.position - applier.transform.position).normalized;
         body.AddForce(direction * force * knockbackMultiplier, ForceMode2D.Impulse);
         StartCoroutine(ResetKnockBack(duration));
@@ -26,5 +28,7 @@ public class Knockback : MonoBehaviour
         yield return new WaitForSeconds(timer * knockbackDurationMultiplier);
         body.velocity = Vector3.zero;
         controller.CanMove = true;
+        controller.IsKnockedBack = false;
+
     }
 }

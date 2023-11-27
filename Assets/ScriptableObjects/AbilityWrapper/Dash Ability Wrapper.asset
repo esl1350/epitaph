@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce8c89705e75294fbcf03117eb7dd5c, type: 3}
   m_Name: Dash Ability Wrapper
   m_EditorClassIdentifier: 
+  wrapperName: Dash
   activeAbility: {fileID: 11400000, guid: 7ed3257df13a0594fa64d5a6895f3c62, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 839cceae59c8a4e939ff8d88a676bff1, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Dash

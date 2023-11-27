@@ -21,6 +21,7 @@ public class ItemManager : MonoBehaviour
         } else
         {
             player.SpendCoin(itemToBuy.getCost());
+            itemToBuy.disable();
             itemToBuy.activate(player);
             addItem(itemToBuy);
         }
@@ -34,6 +35,13 @@ public class ItemManager : MonoBehaviour
     public void removeItem(Item item)
     {
         items.Remove(item);
+    }
+
+    public void dealBuffedDamage(float damageDealt, Entity current, Entity target)
+    {
+        foreach (Item item in items) {
+            current.DealDamageAugmented(target, item.applyItemDamageDealt(damageDealt, current, target));
+        }
     }
 
 }

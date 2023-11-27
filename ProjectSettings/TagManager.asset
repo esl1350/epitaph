@@ -14,6 +14,10 @@ TagManager:
   - LevelController
   - CinemachineCollider
   - ChooseAbilityUI
+  - NPCPrompt
+  - NPC
+  - DialogBox
+  - EnemyManager
   layers:
   - Default
   - TransparentFX
@@ -27,7 +31,7 @@ TagManager:
   - Enemy Projectile
   - Player
   - Camera
-  - 
+  - Currency
   - 
   - 
   - 
@@ -56,6 +60,9 @@ TagManager:
     locked: 0
   - name: Entities
     uniqueID: 3487561083
+    locked: 0
+  - name: Flavor
+    uniqueID: 2313190979
     locked: 0
   - name: UI
     uniqueID: 2030073569

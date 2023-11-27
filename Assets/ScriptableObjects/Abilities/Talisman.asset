@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff703dd2f6421254881403dea329bbf0, type: 3}
+  m_Name: Talisman
+  m_EditorClassIdentifier: 
+  aName: Talisman
+  aDescription: talisman
+  aSprite: {fileID: 6974691124009232330, guid: 2a920886ad97906409bd89993f4ae51d, type: 3}
+  aSound: {fileID: 0}
+  cooldownTime: 5
+  activeTime: 1
+  fillAmount: 1
+  talismanTemplate: {fileID: 1237292440373650819, guid: 9774d7a9426021e419511c47e0638ca9, type: 3}
+  objectTime: 3

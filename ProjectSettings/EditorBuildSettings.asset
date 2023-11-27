@@ -25,22 +25,19 @@ EditorBuildSettings:
     guid: 8c58cc5255190b44189652d0651e44e8
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/MainRoomTemplate.unity
-    guid: 16977fe0957d2de47a9d3749e859f14d
+    guid: 5a956d0bdf9bfaa419ecc2c66c4cd618
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/Room2Template.unity
-    guid: 108e983b47aac6e4487503677a1ae249
+    guid: 73552291c1366934da33354bee69644c
   - enabled: 1
-    path: Assets/Scenes/Gabriel/GameplayLoop/Room3Template.unity
-    guid: 11ce9a95c82a0164b90c6f57d390dc81
+    path: Assets/Scenes/Gabriel/GameplayLoop/Room3Temp.unity
+    guid: 4d9f986fb8efad440b580ca744261897
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/BossRoom.unity
-    guid: a118fe419ec30754e8c2a01706e5f63c
+    guid: e4078c3cfbc5a334998e3bdabeaf7fcc
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/DeathScene.unity
     guid: f8daa6f5dca52a346ba9186ace35f66d
-  - enabled: 0
-    path: Assets/Scenes/Gabriel/GameplayLoop/AbilitySelectionScene.unity
-    guid: 6c2a4704f92165542b6c4715fb8bbab4
   - enabled: 1
     path: Assets/Scenes/Rodrigo/Ability Inventory Rework/MainRoomTemplate.unity
     guid: c4e2a268144970243b696f8224694487

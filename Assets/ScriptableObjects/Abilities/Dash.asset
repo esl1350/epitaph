@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Dash
   m_EditorClassIdentifier: 
   aName: Dash
-  aSprite: {fileID: 21300000, guid: 5f2d4cf21de555f49b8e446aac327694, type: 3}
+  aDescription: New Description
+  aSprite: {fileID: -1393752035958574249, guid: 73a695bcb2154ba40a320c900991df2c, type: 3}
   aSound: {fileID: 0}
   cooldownTime: 4
   activeTime: 0.15
-  fillAmount: 1
+  fillAmount: 0.6863823
   moveSpeedMultiplier: 3

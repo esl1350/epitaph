@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce17d9e1a2138242bb9173e0420e730, type: 3}
+  m_Name: Rings Of Light Ability
+  m_EditorClassIdentifier: 
+  aName: Samsara
+  aDescription: Sends several rings of light around the caster
+  aSprite: {fileID: 21300000, guid: 34f1844b3cb333f4ca465de98ecc062b, type: 3}
+  aSound: {fileID: 0}
+  cooldownTime: 2
+  activeTime: 2
+  fillAmount: 0.49225914
+  projectile: {fileID: 3706528638310280450, guid: a319088c6427ada4391b00943d4b8770, type: 3}
+  fireRate: 0
+  projectile: {fileID: 3706528638310280450, guid: a319088c6427ada4391b00943d4b8770, type: 3}
+  range: 0

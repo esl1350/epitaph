@@ -7,7 +7,7 @@ public class SpawnerGoon : Enemy
     private Animator sigilAnimator;
     protected override void Start() {
         base.Start();
-        sigilAnimator = transform.GetChild(2).gameObject.GetComponent<Animator>();
+        sigilAnimator = transform.GetChild(1).gameObject.GetComponent<Animator>();
     }
     public override void Die() {
         animator.SetFloat("health percent", 0f);

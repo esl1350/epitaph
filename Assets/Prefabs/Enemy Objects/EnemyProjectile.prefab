@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3108380054243470153}
   - component: {fileID: 3619814854486958252}
   - component: {fileID: 7509041470071400577}
-  - component: {fileID: 2951822557027470164}
   - component: {fileID: -6228182864214638976}
+  - component: {fileID: 2932782727148946248}
   m_Layer: 9
   m_Name: EnemyProjectile
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.395, y: -0.013, z: 0.5}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -807406213
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2115ecb0378e8d845812de168241d4f5, type: 3}
+  m_Sprite: {fileID: -4805647748780735995, guid: 01d10812a9c98cf46b42965eafaacd1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,7 +114,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &2951822557027470164
+--- !u!114 &-6228182864214638976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3681736836022034573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5c9a28ce0895a41a237081044545ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 7
+  damage: 3
+  _statusEffects: []
+  projectileTimer: 5
+  parent: {fileID: 2158871877376159656, guid: 3f2d7d28572ffbb47a99857eac6e3197, type: 3}
+  target: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
+--- !u!58 &2932782727148946248
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,24 +164,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.25}
   serializedVersion: 2
-  m_Radius: 0.02
---- !u!114 &-6228182864214638976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3681736836022034573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb5c9a28ce0895a41a237081044545ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 7
-  damage: 3
-  _statusEffects: []
-  projectileTimer: 5
-  parent: {fileID: 2158871877376159656, guid: 3f2d7d28572ffbb47a99857eac6e3197, type: 3}
-  target: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
+  m_Radius: 0.25

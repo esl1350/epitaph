@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/Elizabeth/melee attack tweak.meta
-guid: 3e7fc14bfb572204d9c6c9e72d718828
-========
-guid: fe0f3a5d3c51a2242be18d86c799ba11
->>>>>>>> sprint-5:Assets/FMOD Banks.meta
+guid: 47f684bc0d3d26042b3b9b8c8630f3bb
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

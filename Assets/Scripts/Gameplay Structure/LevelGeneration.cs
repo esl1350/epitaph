@@ -11,6 +11,7 @@ public class LevelGeneration : MonoBehaviour
     private int[,] terrain;
     [SerializeField] private Tilemap topMap;
     [SerializeField] private Tilemap baseMap;
+    [SerializeField] private Tilemap foliageMap;
     [SerializeField] private Tile obstacleTile;
     [SerializeField] private NavMeshSurface surface2D;
     [SerializeField] private int bufferSize;
@@ -37,8 +38,10 @@ public class LevelGeneration : MonoBehaviour
 
     void RenderMap() {
         topMap.ClearAllTiles();
+        foliageMap.ClearAllTiles();
         topMap.gameObject.GetComponent<RenderObstacleMap>().Render(terrain, baseMap.origin);
         baseMap.gameObject.GetComponent<RenderBaseMap>().Render(terrain, baseMap.origin);
+        foliageMap.gameObject.GetComponent<RenderFoliageMap>().Render(baseMap.size, baseMap.origin);
         topMap.GetComponent<Collider2D>().enabled = false;
         topMap.GetComponent<Collider2D>().enabled = true;
 

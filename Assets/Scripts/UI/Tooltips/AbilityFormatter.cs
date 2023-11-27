@@ -12,8 +12,10 @@ public class AbilityFormatter : TooltipFormatter
 
     public override void OnPointerEnter(PointerEventData eventData) {
         if (Ability != null) {
+            StartCoroutine(SetBoxSize());
             UpdateText();
             tmp.enabled = true;
+            tooltipImg.enabled = true;
         }
     }
 }

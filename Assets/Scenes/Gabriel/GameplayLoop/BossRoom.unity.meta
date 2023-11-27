@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/Ian/SlowTerrain.unity.meta
-guid: a118fe419ec30754e8c2a01706e5f63c
-========
-guid: b9d9a36cfe541fb4bbb0ae5cc6406329
->>>>>>>> sprint-5:Assets/Scenes/Gabriel/GameplayLoop/BossRoom.unity.meta
+guid: e4078c3cfbc5a334998e3bdabeaf7fcc
 DefaultImporter:
   externalObjects: {}
   userData: 

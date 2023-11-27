@@ -14,6 +14,9 @@ public class RenderBaseMap : MonoBehaviour
     public Tile bottomLeftCornerTile;
     public Tile bottomCenterTile;
     public Tile bottomRightCornerTile;
+    public Tile topLeftCornerOutTile; // tiles for when the given spot is surrounded by obstacle
+    public Tile topRightCornerOutTile; // tiles for when the given spot is surrounded by obstacle
+
     private int prevIdx;
     private int[,] terrainMap;
     private Tilemap tilemap;
@@ -52,6 +55,11 @@ public class RenderBaseMap : MonoBehaviour
             return topCenterTile;
         }
         if (slice[1, 2] == 1) {
+            if (slice[2, 1] == 1) {
+                return topLeftCornerOutTile;
+            } else if (slice[0, 1] == 1) {
+                return topRightCornerOutTile;
+            }
             return bottomCenterTile;
         }
         if (slice[0, 1] == 1) {

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8758510c72d90c47874e8a5fae182c6, type: 3}
   m_Name: Projectile Ability Wrapper
   m_EditorClassIdentifier: 
+  wrapperName: Shoot
   activeAbility: {fileID: 11400000, guid: 35d014d610ade4f4a91d66c2b61b2abc, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 22301cf7bbb450a44a6d5ddd6cb5c5bc, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Shoot

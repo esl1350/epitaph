@@ -248,8 +248,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.19824673, g: 0.9339623, b: 0.79456604, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3e00edf2d4114c146996ec3ade368598, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -366,7 +366,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.28, y: 1.92}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -437,7 +437,10 @@ MonoBehaviour:
         v: 0
         hasValue: 0
   intialHealth: 30
+  animator: {fileID: 0}
   _augmentManager: {fileID: 0}
+  coin: {fileID: 0}
+  enemyCoinValue: 0
 --- !u!1 &6133113321150052442
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +688,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 2324313265744234841, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2813956215447260679, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.93
@@ -747,6 +754,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 2324313265744234841, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2813956215447260679, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.9393206
@@ -814,6 +825,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 2324313265744234841, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2813956215447260679, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.37

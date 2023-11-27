@@ -1,5 +1,77 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3688658014434537619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631299381396049395}
+  - component: {fileID: 4619622516112085643}
+  m_Layer: 0
+  m_Name: FMOD Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1631299381396049395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688658014434537619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8250494590035751033}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4619622516112085643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688658014434537619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f461e722b9f2a43bb028b02b98e93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: -1635882245
+      Data2: 1226102085
+      Data3: 1825259190
+      Data4: 1828120276
+    Path: event:/Player Footsteps
+  <playerDash>k__BackingField:
+    Guid:
+      Data1: 1062088049
+      Data2: 1279074637
+      Data3: 51097268
+      Data4: -54912008
+    Path: event:/Player Dash
+  <miniKnifeSwing>k__BackingField:
+    Guid:
+      Data1: -1753582813
+      Data2: 1329783637
+      Data3: 436958349
+      Data4: 2137790267
+    Path: event:/Mini Knife Swing
+  <knifeSwing>k__BackingField:
+    Guid:
+      Data1: 598467083
+      Data2: 1275358773
+      Data3: -1499175279
+      Data4: -1232952819
+    Path: event:/Knife Swing
 --- !u!1 &6458670570538676222
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,9 +81,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8250494590035751033}
-  - component: {fileID: 8033454132983392976}
-  - component: {fileID: 5785794302336119899}
   - component: {fileID: 9204158127254016734}
+  - component: {fileID: 8587023479800855352}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -31,58 +102,10 @@ Transform:
   m_LocalPosition: {x: 0.54193723, y: 0.50921017, z: -0.024365926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1631299381396049395}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8033454132983392976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6458670570538676222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 2
-  Banks:
-  - Master
-  CollisionTag: 
-  PreloadSamples: 0
---- !u!114 &5785794302336119899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6458670570538676222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 213649075
-      Data2: 1305174944
-      Data3: 478046388
-      Data4: -1857946963
-    Path: event:/New Event
-  Event: 
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &9204158127254016734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,5 +116,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f35de2c2d040346efa03d5d7e3e68978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8587023479800855352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458670570538676222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a7e99ec1c5f0243afd0b9388f716c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

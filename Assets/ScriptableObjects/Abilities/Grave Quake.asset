@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ea569ea3c349d4385787fc8fc9ac3d, type: 3}
+  m_Name: Grave Quake
+  m_EditorClassIdentifier: 
+  aName: Grave Quake
+  aDescription: Shatter the very earth
+  aSprite: {fileID: -296296331782894785, guid: f00f97dcb7431e44b86aac89d7457b84, type: 3}
+  aSound: {fileID: 0}
+  cooldownTime: 7
+  activeTime: 0
+  fillAmount: 1
+  damage: 2
+  hitbox: {fileID: 3923773309497690821, guid: a04885a28790b2f44afc0e07c68230d4, type: 3}
+  maxChargeTime: 3
+  minChargeTime: 1

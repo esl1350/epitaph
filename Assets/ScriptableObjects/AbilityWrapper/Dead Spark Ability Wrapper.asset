@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8131bf07f89beea499e44bda0b809235, type: 3}
+  m_Name: Dead Spark Ability Wrapper
+  m_EditorClassIdentifier: 
+  wrapperName: Dead Spark
+  activeAbility: {fileID: 11400000, guid: becb338710268ab4294a43ac7cdbc67b, type: 2}
+  passiveAbility: {fileID: 11400000, guid: db6088bf87081084bba2fdbaed8008fc, type: 2}
+  description: Chain the dead with the power of lightning

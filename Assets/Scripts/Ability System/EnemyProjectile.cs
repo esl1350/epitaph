@@ -15,8 +15,8 @@ public class EnemyProjectile : Projectile
         Vector3 direction = target.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         Vector3 rotation = transform.position;
-        float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot+90);
+        float rot = Mathf.Atan2(-1.0f * direction.y, -1.0f * direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(rot - 90f, Vector3.forward);
         enemy = parent.GetComponent<Enemy>();
 
         stats = enemy.EntityStats;

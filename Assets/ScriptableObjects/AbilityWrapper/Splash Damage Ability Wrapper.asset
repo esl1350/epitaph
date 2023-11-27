@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3222b820eebdfaf468e0ad1e2a7bb021, type: 3}
   m_Name: Splash Damage Ability Wrapper
   m_EditorClassIdentifier: 
-  wrapperName: 
+  wrapperName: Fireball
   activeAbility: {fileID: 11400000, guid: c91185b03e4494457831d8ae62364bd0, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 1ec54eb4ade3c4c94bd817e06a8ec2a5, type: 2}
-  description: 
+  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  description: Fireball

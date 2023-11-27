@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7e9d643530d7f46ac532077daeeb69, type: 3}
   m_Name: Heal Over Time Effect
   m_EditorClassIdentifier: 
-  aName: New Consumable Modifier
-  aName: New Consumable Modifier
-  baseHealAmountPerTick: 2
+  cmName: New Consumable Modifier
+  tickRate: 0.5
+  cmDesc: New Description
+  basedOnTickRate: 0
+  effectActive: 0
+  baseHealAmountPerTick: 5

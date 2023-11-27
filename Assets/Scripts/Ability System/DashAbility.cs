@@ -16,13 +16,15 @@ public class DashAbility : Ability
 
     public override void Activate(GameObject parent)
     {
-        Debug.Log("dash start");
+        parent.GetComponent<Animator>().SetTrigger("dash startup");
+        parent.GetComponent<Animator>().SetBool("is dashing", true);
         ModifiableStat speed = parent.GetComponent<Player>().EntityStats.GetStat(StatEnum.WALKSPEED);
         speed.AddModifier(modifier);
         parent.GetComponent<PlayerController>().CanChangeDirection = false;
         float dashDist = this.activeTime * speed.GetStatValue();
         Vector2 dashDir = parent.GetComponent<PlayerController>().LastMovementInput;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.playerDash, parent.transform.position);
         Debug.Log(dashDir);
         if (!IsInsideTerrain(parent, dashDist, dashDir)) {
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Terrain"), LayerMask.NameToLayer("Player"), true);
@@ -31,11 +33,10 @@ public class DashAbility : Ability
 
     public override void Deactivate(GameObject parent)
     {
+        parent.GetComponent<Animator>().SetBool("is dashing", false);
+        parent.GetComponent<Animator>().ResetTrigger("dash startup");
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-
-        Debug.Log("dash end");
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Terrain"), LayerMask.NameToLayer("Player"), false);
-
         ModifiableStat speed = parent.GetComponent<Player>().EntityStats.GetStat(StatEnum.WALKSPEED);
         speed.RemoveModifier(modifier);
         parent.GetComponent<PlayerController>().CanChangeDirection = true;

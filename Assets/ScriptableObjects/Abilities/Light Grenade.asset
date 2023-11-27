@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a1b12a444f4e14baab6efa6c156f99, type: 3}
+  m_Name: Light Grenade
+  m_EditorClassIdentifier: 
+  aName: Light Grenade
+  aDescription: Stun enemies
+  aSprite: {fileID: -5919281222612673373, guid: ff562956f30183b4583d250d55020c13, type: 3}
+  aSound: {fileID: 0}
+  cooldownTime: 2
+  activeTime: 0.5
+  fillAmount: 0.34134138
+  projectile: {fileID: 3278999304241917831, guid: 9fbe80c1b56196f41bea9228ae741da0, type: 3}
+  fireRate: 1

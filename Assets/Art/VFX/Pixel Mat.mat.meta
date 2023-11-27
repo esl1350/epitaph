@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Art/VFX/Pixel Mat.mat.meta
+guid: dc948c7444586764eb7b73d8f3e46ff5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
+<<<<<<<< Updated upstream:Assets/Scenes/Elizabeth/Splash Projectile Testing 1/NavMesh-Navmesh.asset.meta
+guid: 56e619d6a45fc30438fc863fcebc410f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 23800000
+========
+guid: ca8a46f1375b2ed44bfb930a9f3edfa5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>>> Stashed changes:Assets/Scenes/Elizabeth/Splash Projectile Testing 1/Healing Particle.mat.meta
+>>>>>>> Stashed changes:Assets/Scenes/Elizabeth/Splash Projectile Testing 1/NavMesh-Navmesh.asset.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

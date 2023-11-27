@@ -27,7 +27,7 @@ public class SpawnerGoonController : EnemyController
 
     protected override void Start(){
         randomTime = Random.Range(shortestSpawnTime, longestSpawnTime + 1);
-        sigilAnimator = transform.GetChild(2).gameObject.GetComponent<Animator>();
+        sigilAnimator = transform.GetChild(1).gameObject.GetComponent<Animator>();
     }
     protected void Update(){
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -51,6 +51,6 @@ public class SpawnerGoonController : EnemyController
         //logic to spawn
         Vector2 randomPos = (Random.insideUnitCircle * spawnRadius);
         randomPos += (Vector2)spawnPos.position;
-        Instantiate(spawningEnemy, randomPos, Quaternion.identity);
+        Instantiate(spawningEnemy, randomPos, Quaternion.identity, this.transform.parent);
     }    
 }

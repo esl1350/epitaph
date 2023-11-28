@@ -328,7 +328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -807406213
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1899375857222909495, guid: 811ab311a8ada824084644c2e03dcb0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -436,6 +436,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   _augmentManager: {fileID: 0}
   coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
+  particles: {fileID: 0}
   enemyCoinValue: 0
   damagedSprites: []
 --- !u!114 &8299212924517851917

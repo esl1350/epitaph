@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6937784486795069689}
   - component: {fileID: 706869657342013049}
   - component: {fileID: 2468352111077856585}
+  - component: {fileID: 3510995990240503628}
   m_Layer: 0
   m_Name: FireCone
   m_TagString: Untagged
@@ -72,11 +73,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -807406213
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -4491415941388601881, guid: 5ea912be4f33de647aec2316a58a0385, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,8 +122,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.50000006, y: 0.3611111}
+    oldSize: {x: 1.75, y: 2.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -130,9 +131,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+    - - {x: 0.8696289, y: -0.013246536}
+      - {x: -0.039733887, y: 1.4443059}
+      - {x: -0.81811523, y: -0.5352296}
+      - {x: 0.8658447, y: -0.63067335}
   m_UseDelaunayMesh: 0
 --- !u!114 &2468352111077856585
 MonoBehaviour:
@@ -148,5 +150,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerTick: 2
   tick: 0.5
-  activeTime: 3
+  activeTime: 2
   parent: {fileID: 0}
+--- !u!95 &3510995990240503628
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9041108676636578898}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ebf5486ffceeb54bb8b6732192d0d72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

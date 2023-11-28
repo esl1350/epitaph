@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnAmount
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnRadius
@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawningEnemy
       value: 
-      objectReference: {fileID: 5678772690974721006, guid: 459b5ddf25cbaa54e9901fc43c961a6b, type: 3}
+      objectReference: {fileID: 7869210425373712410, guid: 1f7fcf893895d93418353aaba93fbc82, type: 3}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: longestSpawnTime
       value: 2
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574721898858376987, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: m_Name
-      value: RangedGoonSpawner
+      value: DeathKnighSpawner
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 90021263590254876, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}

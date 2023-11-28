@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df4ecac6d19c3c4db9e83ad6e7fe31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityToTrack: {fileID: 2440258421963178563}
+  entityToTrack: {fileID: 3531954819092212818}
   trackPlayer: 0
 --- !u!1 &6661452672522614534
 GameObject:
@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 2813956215447260679}
   - component: {fileID: 1825452796799296510}
   - component: {fileID: 6446944047238119916}
-  - component: {fileID: 2440258421963178563}
   - component: {fileID: 5098524728875619201}
   - component: {fileID: 3531954819092212818}
   - component: {fileID: 8299212924517851917}
@@ -354,45 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 0}
---- !u!114 &2440258421963178563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7115196569041467007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8039f5099d1aeee43bd0f715a413edba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _entityStats:
-    _stats:
-    - statName: 1
-      intialValue: 5
-      currentBaseValue: 5
-      beneficial: 1
-      maxValue:
-        v: 0
-        hasValue: 0
-      minValue:
-        v: 0
-        hasValue: 0
-    - statName: 2
-      intialValue: 10
-      currentBaseValue: 10
-      beneficial: 1
-      maxValue:
-        v: 0
-        hasValue: 0
-      minValue:
-        v: 0
-        hasValue: 0
-  intialHealth: 40
-  animator: {fileID: 0}
-  _augmentManager: {fileID: 0}
-  coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
-  enemyCoinValue: 0
 --- !u!61 &5098524728875619201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -475,6 +435,9 @@ MonoBehaviour:
   intialHealth: 40
   animator: {fileID: 0}
   _augmentManager: {fileID: 0}
+  coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
+  enemyCoinValue: 0
+  damagedSprites: []
 --- !u!114 &8299212924517851917
 MonoBehaviour:
   m_ObjectHideFlags: 0

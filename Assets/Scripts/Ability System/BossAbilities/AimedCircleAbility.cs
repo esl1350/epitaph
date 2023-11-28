@@ -37,7 +37,8 @@ public class AimedCircleAbility : BossAbility
             Vector3 aimedLocation = player.transform.position;
             Instantiate(indicator, aimedLocation, Quaternion.identity);
             Vector3 direction = (aimedLocation - parent.transform.position).normalized;
-            BossProjectile proj = Instantiate(projectile, parent.transform.position + (direction * 2), Quaternion.identity);
+            Quaternion rotation = Quaternion.LookRotation(Vector3.forward, -direction);
+            BossProjectile proj = Instantiate(projectile, parent.transform.position + (direction * 2), rotation);
 
             yield return new WaitForSeconds(delay);
             Rigidbody2D rb = proj.GetRB();

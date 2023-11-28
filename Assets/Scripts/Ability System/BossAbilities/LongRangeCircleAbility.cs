@@ -61,7 +61,9 @@ public class LongRangeCircleAbility : BossAbility
             Rigidbody2D rb = proj.GetRB();
             if (rb != null)
             {
-                rb.velocity = new Vector2(x, y).normalized * bulletSpeed;
+                Vector2 velocity = new Vector2(x, y).normalized * bulletSpeed;
+                rb.velocity = velocity;
+                proj.transform.rotation = Quaternion.Euler(0, 0, angle);
             }
         }
     }

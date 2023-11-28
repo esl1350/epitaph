@@ -49,7 +49,7 @@ MonoBehaviour:
   aSound: {fileID: 0}
   activeTime: 1
   indicator: {fileID: 1123149393347629057, guid: b07f719f2d588b9448cc787d29bb84a9, type: 3}
-  projectile: {fileID: 7056733492158791877, guid: 334d63370c9175a4fa0e95e9042a5978, type: 3}
+  projectile: {fileID: 999071284101459048, guid: 334d63370c9175a4fa0e95e9042a5978, type: 3}
   delay: 0.2
   delayBetweenRounds: 0.5
   damage: 10

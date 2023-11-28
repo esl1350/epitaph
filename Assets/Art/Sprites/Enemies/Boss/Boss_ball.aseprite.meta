@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638367074786352955
+  platformSettingsDirtyTick: 638367292763260015
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Boss_ball_Frame_0
     originalName: 
-    pivot: {x: 0.49999997, y: -0.4333333}
+    pivot: {x: 0.49999997, y: 0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 197}
   - name: Boss_ball_Frame_1
     originalName: 
-    pivot: {x: 0.50000006, y: -0.40625}
+    pivot: {x: 0.50000006, y: 0.3125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 4}
   - name: Boss_ball_Frame_2
     originalName: 
-    pivot: {x: 0.4705882, y: -0.44827586}
+    pivot: {x: 0.4705882, y: 0.3448276}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 160}
   - name: Boss_ball_Frame_3
     originalName: 
-    pivot: {x: 0.50000006, y: -0.4333333}
+    pivot: {x: 0.50000006, y: 0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 44}
   - name: Boss_ball_Frame_4
     originalName: 
-    pivot: {x: 0.49999997, y: -0.41935483}
+    pivot: {x: 0.49999997, y: 0.32258067}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 82}
   - name: Boss_ball_Frame_5
     originalName: 
-    pivot: {x: 0.49999997, y: -0.41935483}
+    pivot: {x: 0.49999997, y: 0.32258067}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 121}
   - name: Boss_ball_Frame_6
     originalName: 
-    pivot: {x: 0.49999997, y: -0.65}
+    pivot: {x: 0.49999997, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 232}
   - name: Boss_ball_Frame_8
     originalName: 
-    pivot: {x: 0.48, y: -0.32142857}
+    pivot: {x: 0.48, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 196}
   - name: Boss_ball_Frame_9
     originalName: 
-    pivot: {x: 0.44827586, y: -0.21874999}
+    pivot: {x: 0.44827586, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 156}
   - name: Boss_ball_Frame_11
     originalName: 
-    pivot: {x: 0.5116279, y: -0.04651163}
+    pivot: {x: 0.5116279, y: 0.48837212}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -321,7 +321,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 58}
   - name: Boss_ball_Frame_7
     originalName: 
-    pivot: {x: 0.47826087, y: -2.7142859}
+    pivot: {x: 0.47826087, y: 0.57142866}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -341,7 +341,7 @@ ScriptedImporter:
     uvTransform: {x: 84, y: 4}
   - name: Boss_ball_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: -0.12820514}
+    pivot: {x: 0.5, y: 0.46153846}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -361,7 +361,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 109}
   - name: Boss_ball_Frame_12
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

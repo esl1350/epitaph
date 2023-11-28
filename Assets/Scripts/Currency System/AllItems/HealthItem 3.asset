@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Buff Health 3
   enabled: 1
   healthBuff: 45
+  abilitySprite: {fileID: 245867105, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

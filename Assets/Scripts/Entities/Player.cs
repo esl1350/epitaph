@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : Entity
 {
     [SerializeField] private bool killable;
-    private int _currencyTotal;
+    private int _currencyTotal = 1000;
     public int CurrencyTotal => _currencyTotal;
     [SerializeField] private float pickupRadius;
     protected override void Start() {

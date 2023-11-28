@@ -11,6 +11,9 @@ public class Item : ScriptableObject
     protected string itemName; // name of the item
 
     [SerializeField]
+    protected Sprite abilitySprite; // sprite of the item
+
+    [SerializeField]
     protected bool enabled;
 
     public int getCost()
@@ -22,6 +25,12 @@ public class Item : ScriptableObject
     {
         return this.itemName;
     }
+
+    public Sprite getSprite()
+    {
+        return this.abilitySprite;
+    }
+
 
     public bool isAbility()
     {

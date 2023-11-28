@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Buff Speed 1
   enabled: 1
   extraSpeed: 1.1
+  abilitySprite: {fileID: -1482585954, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

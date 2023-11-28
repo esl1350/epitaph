@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 60
   itemName: Buff Damage 2
+  abilitySprite: {fileID: 1263211263, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}
   enabled: 1
-  extraDamage: 6
+  extraDamage: -6
+  abilitySprite: {fileID: 1263211263, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

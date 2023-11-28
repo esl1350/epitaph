@@ -18,6 +18,15 @@ TagManager:
   - NPC
   - DialogBox
   - EnemyManager
+  - ShopUI
+  - Item1UI
+  - Item2UI
+  - Item3UI
+  - Item4UI
+  - Item5UI
+  - Item6UI
+  - PurchaseSuccess
+  - PurchaseFail
   layers:
   - Default
   - TransparentFX

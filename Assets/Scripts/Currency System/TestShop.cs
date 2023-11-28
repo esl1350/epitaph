@@ -2,81 +2,112 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 public class TestShop : MonoBehaviour
 {
     private float timer = 0f;
     public ItemManager manager;
 
-    public GameObject cannotPurchaseTag;
+    private GameObject cannotPurchaseTag;
 
-    public GameObject purchaseSuccessTag;
+    private GameObject purchaseSuccessTag;
 
     [SerializeField]
     public Item item1;
-    public GameObject item1UI;
-    public TextMeshProUGUI price1;
-    public TextMeshProUGUI name1;
+    private GameObject item1UI;
+    private TextMeshProUGUI price1;
+    private TextMeshProUGUI name1;
+    private Image sprite1;
 
     public Item item2;
-    public GameObject item2UI;
-    public TextMeshProUGUI price2;
-    public TextMeshProUGUI name2;
+    private GameObject item2UI;
+    private TextMeshProUGUI price2;
+    private TextMeshProUGUI name2;
+    private Image sprite2;
 
     public Item item3;
-    public GameObject item3UI;
-    public TextMeshProUGUI price3;
-    public TextMeshProUGUI name3;
+    private GameObject item3UI;
+    private TextMeshProUGUI price3;
+    private TextMeshProUGUI name3;
+    private Image sprite3;
 
     public Item item4;
-    public GameObject item4UI;
-    public TextMeshProUGUI price4;
-    public TextMeshProUGUI name4;
+    private GameObject item4UI;
+    private TextMeshProUGUI price4;
+    private TextMeshProUGUI name4;
+
+    private Image sprite4;
 
     public Item item5;
-    public GameObject item5UI;
-    public TextMeshProUGUI price5;
-    public TextMeshProUGUI name5;
+    private GameObject item5UI;
+    private TextMeshProUGUI price5;
+    private TextMeshProUGUI name5;
+
+    private Image sprite5;
 
     public Item item6;
-    public GameObject item6UI;
-    public TextMeshProUGUI price6;
-    public TextMeshProUGUI name6;
+    private GameObject item6UI;
+    private TextMeshProUGUI price6;
+    private TextMeshProUGUI name6;
+
+    private Image sprite6;
 
     void Awake()
     {
-        manager = GameObject.FindWithTag("Player").GetComponent<ItemManager>();
+        cannotPurchaseTag = GameObject.FindWithTag("PurchaseFail");
+        purchaseSuccessTag = GameObject.FindWithTag("PurchaseSuccess");
+        item1UI = GameObject.FindWithTag("Item1UI");
+        item2UI = GameObject.FindWithTag("Item2UI");
+        item3UI = GameObject.FindWithTag("Item3UI");
+        item4UI = GameObject.FindWithTag("Item4UI");
+        item5UI = GameObject.FindWithTag("Item5UI");
+        item6UI = GameObject.FindWithTag("Item6UI");
+        sprite1 = item1UI.GetComponent<Image>();
+        sprite2 = item2UI.GetComponent<Image>();
+        sprite3 = item3UI.GetComponent<Image>();
+        sprite4 = item4UI.GetComponent<Image>();
+        sprite5 = item5UI.GetComponent<Image>();
+        sprite6 = item6UI.GetComponent<Image>();
+        price1 = item1UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        price2 = item2UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        price3 = item3UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        price4 = item4UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        price5 = item5UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        price6 = item6UI.transform.Find("ItemAmount").gameObject.GetComponent<TextMeshProUGUI>();
+        name1 = item1UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
+        name2 = item2UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
+        name3 = item3UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
+        name4 = item4UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
+        name5 = item5UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
+        name6 = item6UI.transform.Find("ItemName").gameObject.GetComponent<TextMeshProUGUI>();
         price1.text = (item1.getCost()).ToString() + " coins";
         name1.text = item1.getName();
+        sprite1.sprite = item1.getSprite();
         price2.text = (item2.getCost()).ToString() + " coins";
         name2.text = item2.getName();
+        sprite2.sprite = item2.getSprite();
         price3.text = (item3.getCost()).ToString() + " coins";
         name3.text = item3.getName();
+        sprite3.sprite = item3.getSprite();
         price4.text = (item4.getCost()).ToString() + " coins";
         name4.text = item4.getName();
+        sprite4.sprite = item4.getSprite();
         price5.text = (item5.getCost()).ToString() + " coins";
         name5.text = item5.getName();
+        sprite5.sprite = item5.getSprite();
         price6.text = (item6.getCost()).ToString() + " coins";
         name6.text = item6.getName();
+        sprite6.sprite = item6.getSprite();
     }
 
     void Update()
     {
         if (purchaseSuccessTag.activeSelf){
-            timer += Time.deltaTime;
-            if (timer > 2f)
-            {
-                timer = 0f;
-                DeactivatePurchaseSuccessTag();
-            }
+            waiterSuccess();
         }
 
         if (cannotPurchaseTag.activeSelf){
-            timer += Time.deltaTime;
-            if (timer > 2f)
-            {
-                timer = 0f;
-                DeactivateCannotPurchaseTag();
-            }
+            waiterFail();
         }
     }
 
@@ -88,12 +119,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item1UI.SetActive(false);
-            DeactivatePurchaseSuccessTag();
+            waiterSuccess();
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            DeactivateCannotPurchaseTag();
+            waiterFail();
         }
     }
 
@@ -185,5 +216,16 @@ public class TestShop : MonoBehaviour
     private void DeactivatePurchaseSuccessTag()
     {
         purchaseSuccessTag.SetActive(false);
+    }
+
+    IEnumerator waiterSuccess()
+    {
+        yield return new WaitForSeconds(3);
+        DeactivatePurchaseSuccessTag();
+    }
+    IEnumerator waiterFail()
+    {
+        yield return new WaitForSeconds(3);
+        DeactivateCannotPurchaseTag();
     }
 }

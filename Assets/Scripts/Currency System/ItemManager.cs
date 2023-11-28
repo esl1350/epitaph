@@ -8,9 +8,12 @@ public class ItemManager : MonoBehaviour
     public AbilityInventoryManager abilityInventory;
     private List<Item> items = new List<Item>();
 
+    public GameObject inventoryFullTag;
+
     public void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        inventoryFullTag.SetActive(false);
     }
     public void PurchaseItem(Item itemToBuy)
     {
@@ -30,6 +33,8 @@ public class ItemManager : MonoBehaviour
             }
             else{
                 Debug.Log("No space in ability inventory");
+                inventoryFullTag.SetActive(true);
+                inventoryFullTag.SetActive(false);
             }
         }
     }

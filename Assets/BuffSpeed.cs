@@ -10,6 +10,7 @@ public class BuffSpeed : Item
     private float extraSpeed = 1.1f;
     private SpeedIncrease modifier;
 
+    public Sprite abilitySprite;
     public override void firstActivation(Player player)
     {
         Debug.Log("Increasing speed by this times: " + extraSpeed);

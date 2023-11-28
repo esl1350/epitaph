@@ -11,6 +11,8 @@ public class BuffDamage : Item
 
     private Damage modifier;
 
+    public Sprite abilitySprite;
+
     public override void firstActivation(Player player)
     {
         Debug.Log("Increasing damage by: " + extraDamage);

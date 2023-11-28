@@ -439,11 +439,6 @@ MonoBehaviour:
   activeCrystals: 0
   teleportationPoints: {fileID: 9197601027340465706}
   start: 0
-  sprites:
-  - {fileID: -1206509174, guid: 7f4ed90dd1e08e842b225909395e5e33, type: 3}
-  - {fileID: 54636095, guid: 7f4ed90dd1e08e842b225909395e5e33, type: 3}
-  - {fileID: -56776782, guid: 7f4ed90dd1e08e842b225909395e5e33, type: 3}
-  - {fileID: -865477293, guid: 7f4ed90dd1e08e842b225909395e5e33, type: 3}
 --- !u!114 &6911229707087518466
 MonoBehaviour:
   m_ObjectHideFlags: 0

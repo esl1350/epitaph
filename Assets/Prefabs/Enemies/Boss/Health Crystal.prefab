@@ -432,7 +432,7 @@ MonoBehaviour:
       minValue:
         v: 0
         hasValue: 0
-  intialHealth: 40
+  intialHealth: 70
   animator: {fileID: 0}
   _augmentManager: {fileID: 0}
   coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}

@@ -8,6 +8,7 @@ public class Crystal : Enemy
     LichController lich;
     bool damaged = false;
     float lastDamaged;
+    bool died = false;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -60,7 +61,11 @@ public class Crystal : Enemy
 
     public override void Die()
     {
-        lich.RemoveCrystal();
-        Destroy(gameObject);
+        if (!died)
+        {
+            died = true;
+            lich.RemoveCrystal();
+            Destroy(gameObject);
+        }
     }
 }

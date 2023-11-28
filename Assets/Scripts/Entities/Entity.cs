@@ -37,9 +37,9 @@ public class Entity : MonoBehaviour
     }
 
     public IEnumerator DamageFlash() {
-        GetComponent<Renderer>().material.shader = GUIWhite;
+        GetComponentInChildren<Renderer>().material.shader = GUIWhite;
         yield return new WaitForSeconds(0.12f);
-        GetComponent<Renderer>().material.shader = defaultSpriteShader;
+        GetComponentInChildren<Renderer>().material.shader = defaultSpriteShader;
     }
 
     protected virtual void Start()

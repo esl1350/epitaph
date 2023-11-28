@@ -14,7 +14,7 @@ public class LichController : Controller
     public GameObject shield;
 
     public List<GameObject> crystals;
-    int activeCrystals;
+    public int activeCrystals;
     bool hasShield;
 
     public GameObject teleportationPoints;
@@ -54,25 +54,25 @@ public class LichController : Controller
             }
             int math = (int)((angle + 45) / 90) - 1;
             int spriteNo = ((math % 4) + 4) % 4;
-            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            SpriteRenderer renderer = GetComponentInChildren<SpriteRenderer>();
             renderer.sprite = sprites[spriteNo];
 
-        if (!first)
-        {
-            BossAbility choice = Instantiate(abilities[2]);
-            choice.AbilityBehavior(this.gameObject);
-            first = true;
-        } else if (Time.time - lastCastTime >= castDelay)
+            if (!first)
             {
-                float distance = vectordist.magnitude;
+                BossAbility choice = Instantiate(abilities[2]);
+                choice.AbilityBehavior(this.gameObject);
+                first = true;
+            } else if (Time.time - lastCastTime >= castDelay)
+              {
+                    float distance = vectordist.magnitude;
                 
-                if (distance < 5 && !hasShield) {
-                    ChooseDefensive();
-                } else {
-                    ChooseAttack();
+                    if (distance < 5 && !hasShield) {
+                        ChooseDefensive();
+                    } else {
+                        ChooseAttack();
+                    }
+                    lastCastTime= Time.time;
                 }
-                lastCastTime= Time.time;
-            }
         }
     }
 
@@ -95,7 +95,6 @@ public class LichController : Controller
 
     private void RemoveShield()
     {
-        print("no more shield");
         hasShield = false;
         Enemy enemyComp = GetComponent<Enemy>();
         enemyComp.enabled = true;
@@ -157,7 +156,7 @@ public class LichController : Controller
             i = 2;
         }
 
-        if (i < defensiveAbilities.Count)
+        if (i < defensiveAbilities.Count - 1)
         {
             BossAbility choice = Instantiate(defensiveAbilities[i]);
             choice.AbilityBehavior(this.gameObject);
@@ -165,13 +164,14 @@ public class LichController : Controller
         else
         {
             TeleportFromPlayer();
-        }
+       }
     }
 
     //honestly can be changed into an ability that tps to a random point later when theres time
     private void TeleportFromPlayer()
     {
         currentPoint = (currentPoint + 1) % tppoints.Count;
+        print(currentPoint);
         this.transform.position = tppoints[currentPoint];
     }
 }

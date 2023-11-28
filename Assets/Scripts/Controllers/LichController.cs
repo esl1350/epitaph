@@ -156,7 +156,7 @@ public class LichController : Controller
             i = 2;
         }
 
-        if (i < defensiveAbilities.Count - 1)
+        if (i < defensiveAbilities.Count)
         {
             BossAbility choice = Instantiate(defensiveAbilities[i]);
             choice.AbilityBehavior(this.gameObject);

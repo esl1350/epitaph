@@ -1,0 +1,1572 @@
+fileFormatVersion: 2
+guid: 79b39f82b7db88b4f999b48161f7e28e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638367074823480399
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: boss_spawn_Frame_0
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 892
+      width: 26
+      height: 42
+    spriteID: f4896bbfcb9e5204bb2866b3bc2c0e83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 892}
+  - name: boss_spawn_Frame_1
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 942
+      width: 26
+      height: 42
+    spriteID: c794721ff8e1f394fae6f35819044be8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 942}
+  - name: boss_spawn_Frame_7
+    originalName: 
+    pivot: {x: 0.48148137, y: -0.4651163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 835
+      width: 27
+      height: 43
+    spriteID: 70da32a86e81b9e43bd472a34048ee49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 835}
+  - name: boss_spawn_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.48780486}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 694
+      width: 28
+      height: 41
+    spriteID: 882bb3c9f17ec1e41a9c80a86d994c37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 694}
+  - name: boss_spawn_Frame_16
+    originalName: 
+    pivot: {x: 0.5172415, y: -0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 293
+      y: 377
+      width: 29
+      height: 44
+    spriteID: c2736cb6d4c31f543bf9766521d56647
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 293, y: 377}
+  - name: boss_spawn_Frame_17
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.4651163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 886
+      width: 27
+      height: 43
+    spriteID: 1f24ad87c9860fd45b8f466e4f038d7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 886}
+  - name: boss_spawn_Frame_23
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.4651163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 841
+      width: 26
+      height: 43
+    spriteID: 2cc25140be9a7a64d811de47e034b806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 841}
+  - name: boss_spawn_Frame_25
+    originalName: 
+    pivot: {x: 0.5000001, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 502
+      width: 30
+      height: 40
+    spriteID: 16a3ad07741d8ad4899e96c695b1ab0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 502}
+  - name: boss_spawn_Frame_29
+    originalName: 
+    pivot: {x: 0.47500002, y: -0.36363634}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 293
+      y: 314
+      width: 40
+      height: 55
+    spriteID: 2fa6127fe64b2114fa7adb7fe8606cf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 293, y: 314}
+  - name: boss_spawn_Frame_30
+    originalName: 
+    pivot: {x: 0.51785713, y: -0.16129032}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 314
+      width: 112
+      height: 124
+    spriteID: bd1d14b4f4b5f0744ad22f85a21168d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 314}
+  - name: boss_spawn_Frame_2
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 502
+      width: 26
+      height: 42
+    spriteID: 0e83bb8f62501e34ea79754bd62a55a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 502}
+  - name: boss_spawn_Frame_3
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 552
+      width: 26
+      height: 42
+    spriteID: b1b1ebf8335eb2c43a2e705f2c9e8aad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 552}
+  - name: boss_spawn_Frame_4
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 602
+      width: 26
+      height: 42
+    spriteID: 2a4daf9d0a6be5543b5a7e63934facc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 602}
+  - name: boss_spawn_Frame_5
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 652
+      width: 26
+      height: 42
+    spriteID: 6952a1697b7f5b6498f67321b4c245b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 652}
+  - name: boss_spawn_Frame_6
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 702
+      width: 26
+      height: 42
+    spriteID: c56ba5c7da433ae4089177a2e9d1357a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 702}
+  - name: boss_spawn_Frame_8
+    originalName: 
+    pivot: {x: 0.48148137, y: -0.4651163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 937
+      width: 27
+      height: 43
+    spriteID: f1d41dbe7599d3849b5d76a960bf04fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 937}
+  - name: boss_spawn_Frame_9
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 752
+      width: 26
+      height: 42
+    spriteID: 7c52486d6cfb3de41b86568fe27774cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 752}
+  - name: boss_spawn_Frame_10
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 802
+      width: 26
+      height: 42
+    spriteID: 36adb28ac0e8c9d419da463fdcbd23c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 802}
+  - name: boss_spawn_Frame_11
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 852
+      width: 26
+      height: 42
+    spriteID: f7b788e04501c5542b5966947cbf5764
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 852}
+  - name: boss_spawn_Frame_12
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 902
+      width: 26
+      height: 42
+    spriteID: c22fa8bd27360494996908eaae6835e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 902}
+  - name: boss_spawn_Frame_13
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 952
+      width: 26
+      height: 42
+    spriteID: d6405992c8cc4604f9743e3187b9a136
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 952}
+  - name: boss_spawn_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.48780486}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 743
+      width: 28
+      height: 41
+    spriteID: bca6ab9a9ecc28443b9c37bb57058044
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 743}
+  - name: boss_spawn_Frame_18
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 4
+      width: 26
+      height: 42
+    spriteID: ac1cf84e8f774da4b9b90717b130a69b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 4}
+  - name: boss_spawn_Frame_19
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 54
+      width: 26
+      height: 42
+    spriteID: d59395687f2fa9e4bb591dfe92d93a2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 54}
+  - name: boss_spawn_Frame_20
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 104
+      width: 26
+      height: 42
+    spriteID: 47221d90ec987464080c3ea812a345f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 104}
+  - name: boss_spawn_Frame_21
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 154
+      width: 26
+      height: 42
+    spriteID: 6e942bb271be86446b5f5de13badd896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 154}
+  - name: boss_spawn_Frame_22
+    originalName: 
+    pivot: {x: 0.4999999, y: -0.47619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 204
+      width: 26
+      height: 42
+    spriteID: e737b6acae0659f4dbdfe059d2c2cfd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 204}
+  - name: boss_spawn_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -0.48780486}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 792
+      width: 28
+      height: 41
+    spriteID: 6eb14a32430dea545a17cc16ddd03705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 792}
+  - name: boss_spawn_Frame_26
+    originalName: 
+    pivot: {x: 0.5000001, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 550
+      width: 30
+      height: 40
+    spriteID: 30ae7133079d90e448374c0a0ae7fdd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 550}
+  - name: boss_spawn_Frame_27
+    originalName: 
+    pivot: {x: 0.5000001, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 598
+      width: 30
+      height: 40
+    spriteID: aa8f520fafa58d04e8dc6e9bce414a38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 598}
+  - name: boss_spawn_Frame_28
+    originalName: 
+    pivot: {x: 0.5000001, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 646
+      width: 30
+      height: 40
+    spriteID: c2596ebf10ca17d44afa824ac3044aab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 646}
+  - name: boss_spawn_Frame_31
+    originalName: 
+    pivot: {x: 0.51937985, y: -0.14084506}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 164
+      width: 129
+      height: 142
+    spriteID: 709b404acf7a9df4cbaa7b51ac421a35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 164}
+  - name: boss_spawn_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: -0.111842096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 675
+      width: 146
+      height: 152
+    spriteID: 5e28434da29f2cc4a82a6a8f3b50582b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 675}
+  - name: boss_spawn_Frame_33
+    originalName: 
+    pivot: {x: 0.4967742, y: -0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 349
+      width: 155
+      height: 160
+    spriteID: 01241988cad1ae54bbfdb52f63efce8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 349}
+  - name: boss_spawn_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: -0.055214725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 178
+      width: 158
+      height: 163
+    spriteID: e63656dfdcaa80d43bab5c9f254d8162
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 178}
+  - name: boss_spawn_Frame_35
+    originalName: 
+    pivot: {x: 0.5031056, y: -0.04819277}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 161
+      height: 166
+    spriteID: f9cb307d6d0a82342af387eee08dbe84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: boss_spawn_Frame_36
+    originalName: 
+    pivot: {x: 0.50617284, y: -0.08552632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 4
+      width: 162
+      height: 152
+    spriteID: 6c2154b45ef483f4ca608aa765600e0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 4}
+  - name: boss_spawn_Frame_37
+    originalName: 
+    pivot: {x: 0.5094339, y: -0.09333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 517
+      width: 159
+      height: 150
+    spriteID: 39fb61798f2cb6a47a41f88bd010736d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 517}
+  - name: boss_spawn_Frame_38
+    originalName: 
+    pivot: {x: 0.53174603, y: -0.09333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 835
+      width: 126
+      height: 150
+    spriteID: bf1e0e70877681441ab4fcee6a63acab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 835}
+  - name: boss_spawn_Frame_39
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 446
+      width: 72
+      height: 48
+    spriteID: 1c3e081300028f344839ac99dd2582c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 446}
+  - name: boss_spawn_Frame_40
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 502
+      width: 72
+      height: 48
+    spriteID: 09b1e4cf3f31c484fba86c082fe82f80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 502}
+  - name: boss_spawn_Frame_41
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 558
+      width: 72
+      height: 48
+    spriteID: d5c41a3fe86825d4b9afe60d09fa240e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 558}
+  - name: boss_spawn_Frame_42
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 614
+      width: 72
+      height: 48
+    spriteID: 4f069ec4f7298164b93e0ec37bf03e3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 614}
+  - name: boss_spawn_Frame_43
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 670
+      width: 72
+      height: 48
+    spriteID: 29702ed5b27faeb49a62305a9b032b60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 670}
+  - name: boss_spawn_Frame_44
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 726
+      width: 72
+      height: 48
+    spriteID: dcc6e61c5d8361f4da6bacd449bfe4b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 726}
+  - name: boss_spawn_Frame_45
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 782
+      width: 72
+      height: 48
+    spriteID: 2d58739fafa678b4793b203ffb4ec9cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 782}
+  - name: boss_spawn_Frame_46
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 838
+      width: 72
+      height: 48
+    spriteID: 826c758b19b63914289864033930efa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 838}
+  - name: boss_spawn_Frame_47
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 894
+      width: 72
+      height: 48
+    spriteID: 06793e704d693c34e8e3e4dcf4415261
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 894}
+  - name: boss_spawn_Frame_48
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 950
+      width: 72
+      height: 48
+    spriteID: 44209b6ad1e48cc4191f228d5a5e5286
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 950}
+  - name: boss_spawn_Frame_49
+    originalName: 
+    pivot: {x: 0.18055552, y: -0.29166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 446
+      width: 72
+      height: 48
+    spriteID: 90c152b744693af448b3e8cbab6df646
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 446}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -280767615
+    name: boss_spawn
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: boss_spawn_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: f4896bbfcb9e5204bb2866b3bc2c0e83
+    - name: boss_spawn_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: c794721ff8e1f394fae6f35819044be8
+    - name: boss_spawn_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 99
+        y: 20
+        width: 27
+        height: 43
+      spriteId: 70da32a86e81b9e43bd472a34048ee49
+    - name: boss_spawn_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 98
+        y: 20
+        width: 28
+        height: 41
+      spriteId: 882bb3c9f17ec1e41a9c80a86d994c37
+    - name: boss_spawn_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 97
+        y: 20
+        width: 29
+        height: 44
+      spriteId: c2736cb6d4c31f543bf9766521d56647
+    - name: boss_spawn_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 98
+        y: 20
+        width: 27
+        height: 43
+      spriteId: 1f24ad87c9860fd45b8f466e4f038d7e
+    - name: boss_spawn_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 43
+      spriteId: 2cc25140be9a7a64d811de47e034b806
+    - name: boss_spawn_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 97
+        y: 20
+        width: 30
+        height: 40
+      spriteId: 16a3ad07741d8ad4899e96c695b1ab0b
+    - name: boss_spawn_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 93
+        y: 20
+        width: 40
+        height: 55
+      spriteId: 2fa6127fe64b2114fa7adb7fe8606cf0
+    - name: boss_spawn_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 54
+        y: 20
+        width: 112
+        height: 124
+      spriteId: bd1d14b4f4b5f0744ad22f85a21168d0
+    - name: boss_spawn_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 0e83bb8f62501e34ea79754bd62a55a4
+    - name: boss_spawn_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: b1b1ebf8335eb2c43a2e705f2c9e8aad
+    - name: boss_spawn_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 2a4daf9d0a6be5543b5a7e63934facc9
+    - name: boss_spawn_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 6952a1697b7f5b6498f67321b4c245b8
+    - name: boss_spawn_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: c56ba5c7da433ae4089177a2e9d1357a
+    - name: boss_spawn_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 99
+        y: 20
+        width: 27
+        height: 43
+      spriteId: f1d41dbe7599d3849b5d76a960bf04fe
+    - name: boss_spawn_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 7c52486d6cfb3de41b86568fe27774cb
+    - name: boss_spawn_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 36adb28ac0e8c9d419da463fdcbd23c3
+    - name: boss_spawn_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: f7b788e04501c5542b5966947cbf5764
+    - name: boss_spawn_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: c22fa8bd27360494996908eaae6835e2
+    - name: boss_spawn_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: d6405992c8cc4604f9743e3187b9a136
+    - name: boss_spawn_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 98
+        y: 20
+        width: 28
+        height: 41
+      spriteId: bca6ab9a9ecc28443b9c37bb57058044
+    - name: boss_spawn_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: ac1cf84e8f774da4b9b90717b130a69b
+    - name: boss_spawn_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: d59395687f2fa9e4bb591dfe92d93a2e
+    - name: boss_spawn_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 47221d90ec987464080c3ea812a345f5
+    - name: boss_spawn_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: 6e942bb271be86446b5f5de13badd896
+    - name: boss_spawn_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 99
+        y: 20
+        width: 26
+        height: 42
+      spriteId: e737b6acae0659f4dbdfe059d2c2cfd5
+    - name: boss_spawn_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 98
+        y: 20
+        width: 28
+        height: 41
+      spriteId: 6eb14a32430dea545a17cc16ddd03705
+    - name: boss_spawn_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 97
+        y: 20
+        width: 30
+        height: 40
+      spriteId: 30ae7133079d90e448374c0a0ae7fdd4
+    - name: boss_spawn_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 97
+        y: 20
+        width: 30
+        height: 40
+      spriteId: aa8f520fafa58d04e8dc6e9bce414a38
+    - name: boss_spawn_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 97
+        y: 20
+        width: 30
+        height: 40
+      spriteId: c2596ebf10ca17d44afa824ac3044aab
+    - name: boss_spawn_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 45
+        y: 20
+        width: 129
+        height: 142
+      spriteId: 709b404acf7a9df4cbaa7b51ac421a35
+    - name: boss_spawn_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 39
+        y: 17
+        width: 146
+        height: 152
+      spriteId: 5e28434da29f2cc4a82a6a8f3b50582b
+    - name: boss_spawn_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 35
+        y: 10
+        width: 155
+        height: 160
+      spriteId: 01241988cad1ae54bbfdb52f63efce8b
+    - name: boss_spawn_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 33
+        y: 9
+        width: 158
+        height: 163
+      spriteId: e63656dfdcaa80d43bab5c9f254d8162
+    - name: boss_spawn_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 31
+        y: 8
+        width: 161
+        height: 166
+      spriteId: f9cb307d6d0a82342af387eee08dbe84
+    - name: boss_spawn_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 30
+        y: 13
+        width: 162
+        height: 152
+      spriteId: 6c2154b45ef483f4ca608aa765600e0f
+    - name: boss_spawn_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 31
+        y: 14
+        width: 159
+        height: 150
+      spriteId: 39fb61798f2cb6a47a41f88bd010736d
+    - name: boss_spawn_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 45
+        y: 14
+        width: 126
+        height: 150
+      spriteId: bf1e0e70877681441ab4fcee6a63acab
+    - name: boss_spawn_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 1c3e081300028f344839ac99dd2582c2
+    - name: boss_spawn_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 09b1e4cf3f31c484fba86c082fe82f80
+    - name: boss_spawn_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: d5c41a3fe86825d4b9afe60d09fa240e
+    - name: boss_spawn_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 4f069ec4f7298164b93e0ec37bf03e3c
+    - name: boss_spawn_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 29702ed5b27faeb49a62305a9b032b60
+    - name: boss_spawn_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: dcc6e61c5d8361f4da6bacd449bfe4b1
+    - name: boss_spawn_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 2d58739fafa678b4793b203ffb4ec9cb
+    - name: boss_spawn_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 826c758b19b63914289864033930efa7
+    - name: boss_spawn_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 06793e704d693c34e8e3e4dcf4415261
+    - name: boss_spawn_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 44209b6ad1e48cc4191f228d5a5e5286
+    - name: boss_spawn_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 99
+        y: 14
+        width: 72
+        height: 48
+      spriteId: 90c152b744693af448b3e8cbab6df646
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 224, y: 192}

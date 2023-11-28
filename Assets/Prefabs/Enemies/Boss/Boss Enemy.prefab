@@ -490,6 +490,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   _augmentManager: {fileID: 0}
   coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
+  particles: {fileID: 0}
   enemyCoinValue: 50
 --- !u!114 &613777223219371099
 MonoBehaviour:
@@ -1090,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3531954819092212818, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 2503220578087496583}
     - target: {fileID: 5559464815667798969, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1174,6 +1179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3531954819092212818, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 2503220578087496583}
     - target: {fileID: 7115196569041467007, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_Name
       value: Health Crystal 2
@@ -1242,6 +1251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3531954819092212818, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 2503220578087496583}
     - target: {fileID: 7115196569041467007, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_Name
       value: Health Crystal 1

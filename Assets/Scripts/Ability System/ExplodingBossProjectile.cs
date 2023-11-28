@@ -24,7 +24,7 @@ public class ExplodingBossProjectile : BossProjectile
         rb.velocity = Vector3.zero;
         Animator animator = GetComponent<Animator>();
         animator.SetBool("explode", true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.8f);
         Destroy(this.gameObject);
     }
 }

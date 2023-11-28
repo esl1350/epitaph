@@ -6,6 +6,7 @@ public class Crystal : Enemy
 {
     public List<Sprite> damagedSprites;
     LichController lich;
+    public GameObject track;
     bool damaged = false;
     float lastDamaged;
     bool died = false;
@@ -26,6 +27,11 @@ public class Crystal : Enemy
         );
         lineRenderer.colorGradient = gradient;
         lineRenderer.sortingLayerName = "Entities";
+
+        if (track == null)
+        {
+            track = lich.gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -33,7 +39,7 @@ public class Crystal : Enemy
     {
         //update the lines in case the lich moves :)
         LineRenderer lineRenderer = GetComponent<LineRenderer>();
-        Vector3[] positions = { this.transform.position, lich.transform.position };
+        Vector3[] positions = { this.transform.position, track.transform.position };
         lineRenderer.SetPositions(positions);
 
         if (Time.time - lastDamaged > 2)

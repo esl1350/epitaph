@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AbilityInventoryManager : MonoBehaviour
 {
@@ -54,7 +55,39 @@ public class AbilityInventoryManager : MonoBehaviour
         managerActive = false;
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            if (slotsRootObject == null) {
+                slotsRootObject = GameObject.Find("Inventory").transform.GetChild(1).gameObject;
+                slots = new SlotHolder<AbilityWrapper>(slotsRootObject);
+            }
+
+            if (activesRootObject == null) {
+                activesRootObject = GameObject.Find("Inventory").transform.GetChild(3).gameObject;
+                actives = new SlotHolder<AbilityWrapper>(activesRootObject);
+            }
+
+            if (passivesRootObject == null) {
+                passivesRootObject = GameObject.Find("Inventory").transform.GetChild(5).gameObject;
+                passives = new SlotHolder<AbilityWrapper>(passivesRootObject);
+            }
+
+            if (hotbar == null) {
+                hotbar = new HotBar(GameObject.FindWithTag("HotBar"), dashAbility);
+            }
+
+            if (cursor == null) {
+                cursor = GameObject.FindWithTag("Cursor").GetComponent<AbilityCursor>();
+            }
+        }
+    }
     private void Start()
     {
         // Add Starting Abilities

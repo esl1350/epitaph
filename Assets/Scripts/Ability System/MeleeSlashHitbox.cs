@@ -19,6 +19,7 @@ public class MeleeSlashHitbox : MonoBehaviour
         if (other.tag == "Enemy") {
             Enemy enemy = other.GetComponent<Enemy>();
             parent.GetComponent<Entity>().DealDamage(enemy, damage);
+            GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 0.3f);
 
             var kb = other.GetComponent<Knockback>();
             kb?.KnockbackCustomForce(parent.GetComponent<Entity>().gameObject, knockbackForce, knockbackDuration);

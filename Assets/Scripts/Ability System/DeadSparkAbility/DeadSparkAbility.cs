@@ -27,6 +27,7 @@ public class DeadSparkAbility : Ability
     {
         Debug.Log("Dead Spark Activated");
         firing = true;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.deadSpark, parent.transform.position);
         SetOnCooldown();
 
         vfx_parent = parent.transform.GetComponentInChildren<DeadSparkVFX>();

@@ -26,7 +26,7 @@ public class Boundaries : MonoBehaviour
         Vector3 colliderCenter = walkable.GetComponent<Collider2D>().bounds.center;
         yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
 
-        widthHeight = this.gameObject.GetComponent<BoxCollider2D>().size;
+        widthHeight = this.gameObject.GetComponent<CapsuleCollider2D>().size;
     }
 
     // Update is called once per frame

@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class AbilityHolder : MonoBehaviour
@@ -35,7 +36,11 @@ public class AbilityHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {  
-
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            if (abilitySelection == null) {
+                abilitySelection = GameObject.Find("AbilitySelection").transform.gameObject;
+            }
+        }
         if (dashAbility.IsClear() == false) {
             dashAbility.Item.ActiveAbility.AbilityCooldownHandler(gameObject);
             dashAbility.Item.ActiveAbility.AbilityBehavior(gameObject);

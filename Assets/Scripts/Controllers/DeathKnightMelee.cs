@@ -37,9 +37,9 @@ public class DeathKnightMelee : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
+            GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 0.2f);
             Player player = other.GetComponent<Player>();
             source.DealDamage(player, source.EntityStats.GetStatValue(StatEnum.ATTACK));
-
             var kb = other.GetComponent<Knockback>();
             kb?.KnockbackCustomForce(source.gameObject, knockbackForce, knockbackDuration);
         }

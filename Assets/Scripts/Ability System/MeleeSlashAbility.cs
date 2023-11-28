@@ -36,6 +36,7 @@ public class MeleeSlashAbility : Ability
         hitboxInstance.knockbackDuration = knockbackDuration;
         // Debug.Log("Melee Slash");
         //_animator.Play();
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.yoyo, parent.transform.position);
     }
 
     public override void Deactivate(GameObject parent) {

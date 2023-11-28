@@ -109,6 +109,13 @@ MonoBehaviour:
   _animator: {fileID: 4022587868259910675}
   radius: 3
   splashDamage: 10
+  audioEffect:
+    Guid:
+      Data1: 220972900
+      Data2: 1191790645
+      Data3: 108530578
+      Data4: -2015953805
+    Path: event:/Fire Ball
 --- !u!58 &1162483817475055334
 CircleCollider2D:
   m_ObjectHideFlags: 0

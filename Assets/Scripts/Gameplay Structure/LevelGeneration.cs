@@ -9,6 +9,7 @@ public class LevelGeneration : MonoBehaviour
     private GoLAutomaton automaton;
     private EnemyPlacement enemyPlacement;
     private int[,] terrain;
+    [SerializeField] private bool setSpawn;
     [SerializeField] private Tilemap topMap;
     [SerializeField] private Tilemap baseMap;
     [SerializeField] private Tilemap foliageMap;

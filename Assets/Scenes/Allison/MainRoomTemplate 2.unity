@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6332539973567506672, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: orthographic size
-      value: 8.270833
+      value: 7.65625
       objectReference: {fileID: 0}
     - target: {fileID: 8230270512330466987, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: m_GridSnapping

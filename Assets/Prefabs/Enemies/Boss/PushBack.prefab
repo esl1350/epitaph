@@ -98,9 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a359f22bdc25204a99e6792cc0e573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTime: 3
-  damage: 50
-  meleeKnockback: 18
+  activeTime: 1.5
+  damage: 20
+  meleeKnockback: 30
   meleeKnockbackDuration: 0.1
   parent: {fileID: 0}
 --- !u!58 &7899079767341914672

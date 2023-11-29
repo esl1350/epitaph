@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class SpawnEnemiesAbility : BossAbility
 {
     public GameObject indicator;
@@ -28,7 +27,8 @@ public class SpawnEnemiesAbility : BossAbility
             int random = Random.Range(0, enemyPrefabs.Count);
             if ( random ==  enemyPrefabs.Count - 1)
             {
-                random = Random.Range(2, enemyPrefabs.Count);
+                random = Random.Range(0, enemyPrefabs.Count);
+                random = System.Math.Max(random, 2);
             }
             GameObject spawner = Instantiate(enemyPrefabs[random], crystal.transform.position, Quaternion.identity);
             enemySpawners.Add(spawner);

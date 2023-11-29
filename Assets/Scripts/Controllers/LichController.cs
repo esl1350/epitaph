@@ -25,6 +25,7 @@ public class LichController : Controller
     bool first = false;
     public bool start = false;
     float lastTP = 0;
+    float lastSpawned = 0;
 
     void Start()
     {
@@ -63,6 +64,7 @@ public class LichController : Controller
             if (!first)
             {
                 BossAbility choice = Instantiate(abilities[2]);
+                lastSpawned = Time.time;
                 choice.AbilityBehavior(this.gameObject);
                 first = true;
             }
@@ -142,17 +144,18 @@ public class LichController : Controller
         {
             // Phase 1 stuff
             int i = Random.Range(0, 100);
-            if (i <= 10)
-            {
+            if (Time.time - lastSpawned > 12 + activeCrystals) {
                 i = 2;
-            }
-            else if (i <= 65)
-            {
-                i = 0;
-            }
-            else
-            {
-                i = 1;
+                lastSpawned = Time.time;
+            } else {
+                if (i <= 60)
+                {
+                    i = 0;
+                }
+                else
+                {
+                    i = 1;
+                }
             }
             BossAbility choice = Instantiate(abilities[i]);
             choice.AbilityBehavior(this.gameObject);
@@ -179,7 +182,7 @@ public class LichController : Controller
         int i = Random.Range(0, 100);
         if (i <= 35)
         {
-                i = 0;
+            i = 0;
         }
         else
         {

@@ -28,8 +28,13 @@ public class MainMenu : MonoBehaviour
         //ReinstateAbilityChoices();
         Destroy(GameObject.Find("UI"));
         Destroy(GameObject.Find("Player"));
+        Destroy(GameObject.Find("AudioManager"));
 
         SceneManager.LoadScene(13);
+    }
+
+    public void Restart2() {
+        SceneManager.LoadScene(1);
     }
 
     public void Menu() {

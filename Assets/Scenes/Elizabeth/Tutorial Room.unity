@@ -2188,7 +2188,7 @@ PrefabInstance:
       objectReference: {fileID: 115705339}
     - target: {fileID: 5621356054984973961, guid: fb4a1445a720992428efd992b667f0d8, type: 3}
       propertyPath: m_DeadZoneHeight
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5621356054984973961, guid: fb4a1445a720992428efd992b667f0d8, type: 3}
       propertyPath: m_SoftZoneHeight
@@ -2475,7 +2475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6332539973567506672, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: orthographic size
-      value: 7.5
+      value: 8.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8230270512330466987, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: m_GridSnapping

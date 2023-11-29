@@ -71,6 +71,8 @@ public class Boundaries : MonoBehaviour
     void LateUpdate() {
         float x = Mathf.Clamp(this.transform.position.x, xBounds.x + widthHeight.x/2, xBounds.y - widthHeight.x/2);
         float y = Mathf.Clamp(this.transform.position.y, yBounds.x + widthHeight.y/2, yBounds.y - widthHeight.y/2);
+        // float x = Mathf.Clamp(this.transform.position.x, xBounds.x - 1f, xBounds.y + 1f);
+        // float y = Mathf.Clamp(this.transform.position.y, yBounds.x, yBounds.y);
         this.transform.position = new Vector2(x, y);
     }
 }

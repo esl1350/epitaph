@@ -22,6 +22,9 @@ public class Enemy : Entity
             DropCoins();
         }
         hasDied = true;
+        if (gameObject.name == "Lich") {
+            Destroy(gameObject.transform.parent.gameObject);
+        }
         Destroy(gameObject);
     }
 

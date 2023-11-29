@@ -16,8 +16,8 @@ MonoBehaviour:
   aDescription: Stun enemies
   aSprite: {fileID: -5919281222612673373, guid: ff562956f30183b4583d250d55020c13, type: 3}
   aSound: {fileID: 0}
-  cooldownTime: 2
+  cooldownTime: 1
   activeTime: 0.5
-  fillAmount: 0.34134138
+  fillAmount: 1
   projectile: {fileID: 3278999304241917831, guid: 9fbe80c1b56196f41bea9228ae741da0, type: 3}
   fireRate: 1

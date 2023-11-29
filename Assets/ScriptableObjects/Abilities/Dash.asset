@@ -16,7 +16,7 @@ MonoBehaviour:
   aDescription: New Description
   aSprite: {fileID: -1393752035958574249, guid: 73a695bcb2154ba40a320c900991df2c, type: 3}
   aSound: {fileID: 0}
-  cooldownTime: 4
+  cooldownTime: 3
   activeTime: 0.15
-  fillAmount: 0.6863823
+  fillAmount: 1
   moveSpeedMultiplier: 3

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -807406213
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5d7c1195bbe3cf8419fe7f19eab4c998, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
@@ -238,7 +238,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -56776782, guid: 7f4ed90dd1e08e842b225909395e5e33, type: 3}
@@ -1114,6 +1114,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -952131405
+      objectReference: {fileID: 0}
     - target: {fileID: 2324313265744234841, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1202,6 +1210,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -952131405
+      objectReference: {fileID: 0}
     - target: {fileID: 2324313265744234841, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1278,6 +1294,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2632842234635541511}
     m_Modifications:
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825452796799296510, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -952131405
+      objectReference: {fileID: 0}
     - target: {fileID: 2813956215447260679, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.12

@@ -16,7 +16,7 @@ MonoBehaviour:
   aDescription: talisman
   aSprite: {fileID: 6974691124009232330, guid: 2a920886ad97906409bd89993f4ae51d, type: 3}
   aSound: {fileID: 0}
-  cooldownTime: 5
+  cooldownTime: 4
   activeTime: 1
   fillAmount: 1
   talismanTemplate: {fileID: 1237292440373650819, guid: 9774d7a9426021e419511c47e0638ca9, type: 3}

@@ -20,5 +20,5 @@ MonoBehaviour:
   activeTime: 1
   fillAmount: 0.47351012
   radius: 3
-  damageAmount: 20
+  damageAmount: 14
   hitbox: {fileID: 3923773309497690821, guid: 94645ba45c1c70f4ea8bd181e9719918, type: 3}

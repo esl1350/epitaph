@@ -19,7 +19,7 @@ MonoBehaviour:
   cooldownTime: 7
   activeTime: 0
   fillAmount: 1
-  damage: 2
+  damage: 10
   hitbox: {fileID: 3923773309497690821, guid: a04885a28790b2f44afc0e07c68230d4, type: 3}
   maxChargeTime: 3
   minChargeTime: 1

@@ -57,7 +57,7 @@ public class GraveQuakeAbility : Ability
             case AbilityState.charge:
                 if (currentChargeTime > 0) {
                     currentChargeTime -= Time.deltaTime;
-                    chargedDamage += .02f;
+                    chargedDamage += .03f;
                     hitboxInstance.damage = chargedDamage;
                     // fillAmount -= 1/cooldownTime * Time.deltaTime;
                 } else {

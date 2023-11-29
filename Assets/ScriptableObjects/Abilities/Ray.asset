@@ -21,5 +21,5 @@ MonoBehaviour:
   fillAmount: 1
   rayWidth: 0.75
   range: 100
-  damage: 5
+  damage: 4
   tickRate: 0.2

@@ -19,7 +19,7 @@ MonoBehaviour:
   cooldownTime: 4
   activeTime: 0.6
   fillAmount: 0.74434525
-  damage: 5
+  damage: 9
   knockbackForce: 1
   knockbackDuration: 1
   hitbox: {fileID: 3923773309497690821, guid: e4124149b74b03f4f8103aa43d4ed8a7, type: 3}

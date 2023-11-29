@@ -20,5 +20,5 @@ MonoBehaviour:
   activeTime: 1
   fillAmount: 1
   aoeRadius: 5
-  damage: 5
-  targetsHit: 5
+  damage: 8
+  targetsHit: 6

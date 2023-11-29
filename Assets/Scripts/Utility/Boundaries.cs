@@ -53,9 +53,20 @@ public class Boundaries : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-    }
+    // void Update()
+    // {
+    //     GameObject walkable = GameObject.FindWithTag("Walkable");
+
+    //     float xLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z)).x;
+    //     float xRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z)).x;
+    //     xBounds = new Vector2(xLeft, xRight);
+
+    //     float walkableHeight = walkable.GetComponent<BoxCollider2D>().bounds.size.y;
+    //     Vector3 colliderCenter = walkable.GetComponent<BoxCollider2D>().bounds.center;
+    //     yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
+
+    //     widthHeight = this.gameObject.GetComponent<CapsuleCollider2D>().size;
+    // }
 
     void LateUpdate() {
         float x = Mathf.Clamp(this.transform.position.x, xBounds.x + widthHeight.x/2, xBounds.y - widthHeight.x/2);

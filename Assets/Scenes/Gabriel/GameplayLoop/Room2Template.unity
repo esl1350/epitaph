@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneHasCombat: 1
-  nextLevel: 3
+  nextLevel: 9
   levelGenerator: {fileID: 328195782}
   disableRunEnd: 0
 --- !u!4 &276756998

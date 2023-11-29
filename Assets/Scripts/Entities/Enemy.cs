@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : Entity
 {   
@@ -22,6 +23,9 @@ public class Enemy : Entity
         }
         hasDied = true;
         Destroy(gameObject);
+        if (gameObject.name == "Lich") {
+            SceneManager.LoadScene(11);
+        }
     }
 
     public override void TakeDamage(float amount) {

@@ -146,7 +146,7 @@ public class LichController : Controller
         {
             // Phase 1 stuff
             int i = Random.Range(0, 100);
-            if (i <= 15)
+            if (i <= 10)
             {
                 i = 2;
             }
@@ -198,7 +198,7 @@ public class LichController : Controller
     private IEnumerator TeleportFromPlayer()
     {
         animator.SetBool("tp", true);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.9f);
         currentPoint = (currentPoint + 1) % tppoints.Count;
         this.transform.position = tppoints[currentPoint];
         animator.SetBool("tp", false);

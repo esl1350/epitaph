@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnAmount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnRadius
@@ -76,7 +76,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoonSpawner
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 90021263590254876, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

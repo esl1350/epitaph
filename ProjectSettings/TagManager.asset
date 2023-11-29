@@ -3,21 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - LevelController
+  - CMCam
+  - EnemyManager
+  - Walkable
+  - CinemachineCollider
+  - RotatePoint
+  - UI
+  - HotBar
+  - Slots
+  - Cursor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player Projectile
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Aim Indicator
+  - Enemy
+  - Terrain
+  - Enemy Projectile
+  - Player
+  - Camera
+  - Currency
   - 
   - 
   - 

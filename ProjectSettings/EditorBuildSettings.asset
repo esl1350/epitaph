@@ -33,8 +33,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Gabriel/GameplayLoop/Room3Temp.unity
     guid: 4d9f986fb8efad440b580ca744261897
   - enabled: 1
-    path: Assets/Scenes/Gabriel/GameplayLoop/Boss Testing Room.unity
-    guid: 39ca6287d80634b4db81e4235433df0d
+    path: Assets/Scenes/Gabriel/GameplayLoop/Boss Room Liz.unity
+    guid: c865e1cb7f1eb1e448e1ca346fed540a
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/DeathScene.unity
     guid: f8daa6f5dca52a346ba9186ace35f66d
@@ -59,7 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gabriel/GameplayLoop/WinScene.unity
     guid: 73ff6102d981e444eac3b4ab1c8b8449
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/Gabriel/GameplayLoop/Boss Testing Room.unity
+    guid: 39ca6287d80634b4db81e4235433df0d
+  - enabled: 0
     path: Assets/Scenes/Gabriel/GameplayLoop/BossRoom.unity
     guid: e4078c3cfbc5a334998e3bdabeaf7fcc
   m_configObjects: {}

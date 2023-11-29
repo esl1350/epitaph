@@ -6,10 +6,15 @@ public class BossSpawnerController : MonoBehaviour
 {
     public GameObject lich;
     private Animator animator;
+    public GameObject enemyManager;
     // Start is called before the first frame update
     private bool spawning = false;
     void Start()
     {
+        if (enemyManager == null) {
+            enemyManager = GameObject.Find("EnemyManager");
+        }
+        this.transform.SetParent(enemyManager.transform);
         animator = GetComponent<Animator>();
     }
 
@@ -21,12 +26,20 @@ public class BossSpawnerController : MonoBehaviour
     }
 
     IEnumerator playAnimationThenSpawn() {
+        if (enemyManager == null) {
+            enemyManager = GameObject.Find("EnemyManager");
+        }
+        this.transform.SetParent(enemyManager.transform);
         animator.SetBool("spawn", true);
         GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 4f);
         yield return new WaitForSeconds(4);
         //please don't question the math, i didn't have time to figure out why it wouldn't spawn on top T u T
         //+ new Vector3(2f, 4.787f, 0f)
         GameObject boss = Instantiate(lich, this.transform.position + new Vector3(0f, 3f, 0f), Quaternion.identity);
+
+
+        boss.transform.SetParent(enemyManager.transform);
+
         GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(3f, 0.2f);
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();

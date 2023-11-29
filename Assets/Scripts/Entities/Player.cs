@@ -18,6 +18,7 @@ public class Player : Entity
     public override void Die() {
         if (killable) {
             GetComponent<PlayerController>().UpdateSound(true);
+            AudioManager.instance.SetMusic(MusicArea.MAIN_MENU);
             Destroy(gameObject);
             Destroy(GameObject.Find("UI"));
             SceneManager.LoadScene("DeathScene");

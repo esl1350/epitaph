@@ -70,17 +70,13 @@ public class LichController : Controller
             {
                 float distance = vectordist.magnitude;
 
-                if (distance < 5 && !hasShield)
-                {
-                    if (Time.time - lastTP > 12)
-                    {
-                        StartCoroutine(TeleportFromPlayer());
+                if (Time.time - lastTP > 12 && !hasShield) {
+                     StartCoroutine(TeleportFromPlayer());
                         lastTP = Time.time;
-                    }
-                    else
-                    {
-                        StartCoroutine(CastingAnimation(false));
-                    }
+                }
+                else if (distance < 5 && !hasShield)
+                {
+                    StartCoroutine(CastingAnimation(false));
                 }
                 else
                 {
@@ -198,8 +194,11 @@ public class LichController : Controller
     private IEnumerator TeleportFromPlayer()
     {
         animator.SetBool("tp", true);
+
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.teleport, this.transform.position);
         yield return new WaitForSeconds(0.9f);
         currentPoint = (currentPoint + 1) % tppoints.Count;
+
         this.transform.position = tppoints[currentPoint];
         animator.SetBool("tp", false);
     }

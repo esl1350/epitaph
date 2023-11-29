@@ -22,6 +22,7 @@ public class FireAbility : BossAbility
         displacement.y = displacement.y + 0.75f;
 
         FireCone fire = Instantiate(damageCone, parent.transform.position - displacement, rotation).GetComponent<FireCone>();
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.fireCone, parent.transform.position);
         fire.parent = parent;
         Destroy(this.gameObject);
     }

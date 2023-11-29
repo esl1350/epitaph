@@ -47,6 +47,18 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Samsara")]
     [field: SerializeField] public EventReference samsara { get; private set; }
 
+    [field: Header("Teleport")]
+    [field: SerializeField] public EventReference teleport { get; private set; }
+
+    [field: Header("Boss Circles")]
+    [field: SerializeField] public EventReference bossCircles { get; private set; }
+
+    [field: Header("Boss Aim")]
+    [field: SerializeField] public EventReference bossAim { get; private set; }
+
+    [field: Header("Fire Cone")]
+    [field: SerializeField] public EventReference fireCone { get; private set; }
+
     public static FMODEvents instance {get; private set; }
 
     private void Awake()

@@ -24,6 +24,8 @@ public class PushBackAbiliity : BossAbility
 
         yield return new WaitForSeconds(delay);
 
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.quakeFinish, parent.transform.position);
+
         PushBackIndicator pb = Instantiate(pushBack, displacement, Quaternion.identity).GetComponent<PushBackIndicator>();
         pb.parent = parent;
         Destroy(this.gameObject);

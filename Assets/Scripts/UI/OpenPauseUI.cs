@@ -12,15 +12,18 @@ public class OpenPauseUI : MonoBehaviour
     [SerializeField] public GameObject keybindMenu; 
     //[SerializeField] private InputAction pausing;
     //[SerializeField] public InputActionAsset playerPausing;
+    private GameObject player;
     void Start(){
         //var gameplayActionMap = playerPausing.GetActionMap("Player");
         //pausing = gameplayActionMap.GetAction("Pause");   
         //pausing.per
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape)){
             pauseMenu.SetActive(true);
+            player.GetComponent<PlayerController>().UpdateSound(true);
             Time.timeScale = 0;
         }
     }

@@ -55,6 +55,9 @@ public class OpenShop : MonoBehaviour
                         }
                     }
             }
+            else{
+                textComponent.text = string.Empty;
+            }
         }
     }
 

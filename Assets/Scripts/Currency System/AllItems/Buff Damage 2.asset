@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db4cf8b0f9e84d60932c29d3ef2251f, type: 3}
   m_Name: Buff Damage 2
   m_EditorClassIdentifier: 
-  cost: 60
+  cost: 800
   itemName: Buff Damage 2
   abilitySprite: {fileID: 1263211263, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}
+  ability: {fileID: 0}
   enabled: 1
   extraDamage: -6
   abilitySprite: {fileID: 1263211263, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

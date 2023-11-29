@@ -19,7 +19,6 @@ public class ItemManager : MonoBehaviour
     {
         inventoryFullTag = GameObject.FindWithTag("InventoryFull");
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
-        inventoryFullTag.SetActive(false);
     }
 
 void Update()

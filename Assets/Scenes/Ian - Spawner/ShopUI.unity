@@ -1578,6 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f87e10d9626a6940869c403149bd7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setSpawn: 0
   topMap: {fileID: 1136228353}
   baseMap: {fileID: 1303979486}
   foliageMap: {fileID: 0}
@@ -2179,8 +2180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopMenu: {fileID: 514079753}
-  cannotPurchaseTag: {fileID: 1128617444}
-  purchaseSuccessTag: {fileID: 141939402}
   inputActionAsset: {fileID: -944628639613478452, guid: 21b609349249f4a4983c9fffa631599c, type: 3}
 --- !u!114 &514079758
 MonoBehaviour:
@@ -2195,12 +2194,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 712963403}
-  item1: {fileID: 11400000, guid: ab819bfa1ef52ed4386ae491d8349146, type: 2}
-  item2: {fileID: 11400000, guid: 8f24a1addad2578438c119fdc32be18b, type: 2}
-  item3: {fileID: 11400000, guid: e2f6cb68f83715e4a8d9557af7d4a4bf, type: 2}
-  item4: {fileID: 11400000, guid: 897216bcd5d6b4744b39cc701940a4bf, type: 2}
+  item1: {fileID: 11400000, guid: 86a475882982f97498b38935bbc5bf4c, type: 2}
+  item2: {fileID: 11400000, guid: 6f0c8c0ad9f11524ba8090ad6c78963a, type: 2}
+  item3: {fileID: 11400000, guid: e3c82205c1502564690685dd32e6c821, type: 2}
+  item4: {fileID: 11400000, guid: 4c08bb166648d4845b50cd139ce3e756, type: 2}
   item5: {fileID: 11400000, guid: f500ce9027ce508468c58e803d5b56ad, type: 2}
-  item6: {fileID: 11400000, guid: aa4a1d59fc4c0644b9dd282efa95ebfd, type: 2}
+  item6: {fileID: 11400000, guid: fa28ac63e6e166f4d8b4a59dcda88233, type: 2}
 --- !u!1 &538610245
 GameObject:
   m_ObjectHideFlags: 0
@@ -24315,6 +24314,8 @@ MonoBehaviour:
   bottomLeftCornerTile: {fileID: 11400000, guid: 76bb841ca89db474c92b6d8297f2a7ab, type: 2}
   bottomCenterTile: {fileID: 11400000, guid: 57007e1cede674e4084016435a69cc0a, type: 2}
   bottomRightCornerTile: {fileID: 11400000, guid: 7a3ad28f847b023419be7979b2740354, type: 2}
+  topLeftCornerOutTile: {fileID: 0}
+  topRightCornerOutTile: {fileID: 0}
 --- !u!1 &1316890334
 GameObject:
   m_ObjectHideFlags: 0

@@ -861,6 +861,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 1611650633}
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: distanceAway
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: DialogLogicScript
+      value: 
+      objectReference: {fileID: 1611650632}
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: useHitboxToInteract
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5794583486991221603, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: m_Size.x
       value: 1.875
@@ -2467,6 +2483,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
+--- !u!114 &1611650632 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3435992955626676400, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
+  m_PrefabInstance: {fileID: 1611650631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611650633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bc2d4a08d46764093a1b5da20b13d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1611650633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3361782325988185558, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
+  m_PrefabInstance: {fileID: 1611650631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760204466 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1058739470432949023, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
@@ -2536,7 +2568,7 @@ PrefabInstance:
       objectReference: {fileID: 311537826}
     - target: {fileID: 2688309266120615437, guid: df134af892b4a7d4d90d3edf1c9bc840, type: 3}
       propertyPath: distanceAway
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2688309266120615437, guid: df134af892b4a7d4d90d3edf1c9bc840, type: 3}
       propertyPath: useHitboxToInteract

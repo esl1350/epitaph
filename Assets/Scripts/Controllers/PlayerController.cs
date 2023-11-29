@@ -78,6 +78,7 @@ public class PlayerController : Controller
 
         if (isAttacking) {
             UpdateSound();
+            rb.velocity = movementInput * stats.GetStatValue(StatEnum.WALKSPEED) * attackShiftMultiplier;
             return;
         }
 
@@ -118,7 +119,7 @@ public class PlayerController : Controller
         isAttacking = true;
         Vector3 mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         Vector2 mousePosNorm = (new Vector2(mousePos.x, mousePos.y)).normalized;
-        rb.velocity = mousePosNorm * attackShiftMultiplier;
+        // rb.velocity = mousePosNorm * attackShiftMultiplier;
         MeleeAttack meleeAttack = meleeHitboxes[currentAttack].GetComponent<MeleeAttack>();
         int atkTag = currentAttack + 1;
         animator.SetTrigger("is melee " + atkTag);

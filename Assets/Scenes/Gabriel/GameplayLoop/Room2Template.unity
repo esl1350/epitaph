@@ -322,27 +322,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   registeredEnemyTypes:
   - enemy: {fileID: 5678772690974721006, guid: 459b5ddf25cbaa54e9901fc43c961a6b, type: 3}
-    spawnRate: 0.2
+    spawnRate: 0
     width: 2
     height: 2
   - enemy: {fileID: 7869210425373712410, guid: e13f1331564d0ba4fb721a92bf9e874e, type: 3}
-    spawnRate: 0.5
+    spawnRate: 0
     width: 1
     height: 1
   - enemy: {fileID: 5678772690974721006, guid: 7f373d6a099e9a44887dcf98c99447d5, type: 3}
-    spawnRate: 0.2
+    spawnRate: 0
     width: 1
     height: 1
   - enemy: {fileID: 7869210425373712410, guid: aef73c50bd7e8ec4da7e5aad712f3f0a, type: 3}
-    spawnRate: 0.1
+    spawnRate: 0
     width: 1
     height: 1
   - enemy: {fileID: 5678772690974721006, guid: 63b29d38e477a8e4f86eaf0cf5cf3bc8, type: 3}
-    spawnRate: 0.1
+    spawnRate: 0
     width: 1
     height: 1
   - enemy: {fileID: 7869210425373712410, guid: 1f7fcf893895d93418353aaba93fbc82, type: 3}
-    spawnRate: 0.05
+    spawnRate: 0
     width: 2
     height: 2
   enemyManager: {fileID: 788307478}

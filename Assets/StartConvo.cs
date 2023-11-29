@@ -48,15 +48,22 @@ public class StartConvo : MonoBehaviour
         actionKey.Enable();
     }
 
-    //Update is called once per frame
-    void Update()
-    {
+    void Awake() {
         if (textbox == null) {
+            Debug.Log("Dialog null");
             textbox = GameObject.Find("DialogBox").transform.gameObject;
         }
         if (DialogLogicScript == null) {
+            Debug.Log("Dialog logic null");
+
             DialogLogicScript = GameObject.Find("DialogBox").transform.gameObject.GetComponent<DialogLogic>();
         }
+    }
+
+    //Update is called once per frame
+    void Update()
+    {
+
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (useHitboxToInteract != true){
             if (dist < distanceAway)

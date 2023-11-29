@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class OpenShop : MonoBehaviour
 {
@@ -36,13 +37,31 @@ public class OpenShop : MonoBehaviour
         actionKey.started += OnActionKeyStarted;
         actionKey.Enable();
     }
+    
+    void Awake() {
+        if (SceneManager.GetActiveScene().buildIndex == 8) {
+            actionMap = inputActionAsset.FindActionMap("Player");
+            actionKey = actionMap.FindAction("Interact");
+            target = GameObject.FindWithTag("Player");
+            rb = target.GetComponent<Rigidbody2D>();
+            actionKey.started += OnActionKeyStarted;
+            actionKey.Enable();
+            if (ShopUI == null) {
+                Debug.Log("Shop null");
+                ShopUI = GameObject.Find("ShopUI").transform.gameObject;
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (ShopUI == null) {
-            ShopUI = GameObject.Find("ShopUI").transform.gameObject;
-        }
+        // if (SceneManager.GetActiveScene().buildIndex == 8) {
+        //     if (ShopUI == null) {
+        //         Debug.Log("Shop null");
+        //         ShopUI = GameObject.Find("ShopUI").transform.gameObject;
+        //     }
+        // }
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (useHitboxToInteract != true){
             if (dist < distanceAway)

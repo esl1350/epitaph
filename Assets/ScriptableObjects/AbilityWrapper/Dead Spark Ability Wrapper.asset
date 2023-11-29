@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: Dead Spark
   activeAbility: {fileID: 11400000, guid: becb338710268ab4294a43ac7cdbc67b, type: 2}
-  passiveAbility: {fileID: 11400000, guid: db6088bf87081084bba2fdbaed8008fc, type: 2}
+  passiveAbility: {fileID: 11400000, guid: 8205dea165312ec4c8db195f7e62143e, type: 2}
   description: Chain the dead with the power of lightning

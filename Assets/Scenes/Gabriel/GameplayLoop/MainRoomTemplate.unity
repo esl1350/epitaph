@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4784591851518141097, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
       propertyPath: startingAbilityChoices.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4784591851518141097, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
       propertyPath: startingAbilityChoices.Array.data[6]
@@ -2253,6 +2253,10 @@ PrefabInstance:
       propertyPath: startingAbilityChoices.Array.data[10]
       value: 
       objectReference: {fileID: 11400000, guid: 7cdb47186fde68a4ca7fdd31933c5a81, type: 2}
+    - target: {fileID: 4784591851518141097, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
+      propertyPath: startingAbilityChoices.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 68ca8abe57bdf9046aa4ead7eb505518, type: 2}
     - target: {fileID: 4792488096190076336, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0

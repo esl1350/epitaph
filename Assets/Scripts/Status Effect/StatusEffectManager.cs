@@ -12,7 +12,7 @@ public class StatusEffectManager : MonoBehaviour
     public Entity entity;
     private EntityStats _stats;
     private Health _health;
-
+    private SpriteRenderer _renderer;
     private float _currTime;
 
     private void Start() {
@@ -22,6 +22,7 @@ public class StatusEffectManager : MonoBehaviour
         }
         _health = entity.Health;
         _stats = entity.EntityStats;
+        _renderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update() {
@@ -52,6 +53,11 @@ public class StatusEffectManager : MonoBehaviour
         {
             if(se.HasExpired()) 
             {
+                if (se.statusEffect.effectCode == StatusEffectCode.BURN) {
+                    var particles = transform.Find("FireParticleManager").gameObject;
+                    _renderer.color = Color.white;
+                    particles?.SetActive(false);
+                }
                 AddModifiers(se.statusEffect.exitStatusEffect);
                 itemsToRemove.Add(se);
             }
@@ -72,6 +78,11 @@ public class StatusEffectManager : MonoBehaviour
             {
                 statusEffect = se
             };
+            if (se.effectCode == StatusEffectCode.BURN) {
+                var particles = transform.Find("FireParticleManager").gameObject;
+                _renderer.color = new Color(0.72f/255.0f, 0.72f/255.0f, 0.72f/255.0f, 1.0f);
+                particles?.SetActive(true);
+            }
             AddEffect(effect);
         }
     }

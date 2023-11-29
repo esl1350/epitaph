@@ -50,7 +50,7 @@ public class ProjectileAbility : Ability
 
         if (firing && canFire) {
             canFire = false;
-            Projectile projectileCopy = Instantiate(projectile, parent.transform.GetChild(0).GetChild(0).transform.position, Quaternion.identity);
+            Projectile projectileCopy = Instantiate(projectile, parent.transform.GetChild(0).transform.position, Quaternion.identity);
             projectileCopy.parent = parent;
         }
     }

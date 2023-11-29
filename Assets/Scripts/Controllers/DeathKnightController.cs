@@ -22,6 +22,13 @@ public class DeathKnightController : EnemyController
 
     protected override void Update() {
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        animator.SetFloat("vel y", agent.velocity.y);
+        if (agent.velocity.magnitude < 0.05) {
+            animator.SetBool("is stopped", true);
+        } else {
+            animator.SetBool("is stopped", false);
+        }
+
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (timer < unloadSpeed) {
             timer += Time.deltaTime;
@@ -36,22 +43,16 @@ public class DeathKnightController : EnemyController
                 timer = 0f;
             }
         }
-        // animator.SetFloat("vel x", agent.velocity.x);
-        // animator.SetFloat("vel y", agent.velocity.y);
-        // if (agent.velocity.magnitude < 0.05) {
-        //     animator.SetBool("is stopped", false);
-        // } else {
-        //     animator.SetBool("is stopped", false);
-        // }
+
     }
 
     public IEnumerator AttackSequence(Vector3 dir) {
         GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.32f, 0.28f);
         yield return new WaitForSeconds(0.12f);
         GetComponent<SpriteRenderer>().color = Color.white;
+        animator.SetBool("is melee front", dir.y < 0);
+        animator.SetTrigger("is melee");
         StartCoroutine(AttackDelay(dir));
-
-
     }
 
     public IEnumerator AttackDelay(Vector3 dir) {

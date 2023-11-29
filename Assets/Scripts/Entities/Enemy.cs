@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : Entity
 {   
     public Coin coin;
+    [SerializeField] GameObject particles;
+
     [SerializeField] CoinValueEnum enemyCoinValue;
     private const int minNumberOfCoins = 2;
     private const int maxNumberOfCoins = 4;
@@ -22,6 +24,14 @@ public class Enemy : Entity
         Destroy(gameObject);
     }
 
+    public override void TakeDamage(float amount) {
+        base.TakeDamage(amount);
+        if (particles != null){
+            GameObject obj = Instantiate(particles, transform.position, Quaternion.identity);
+            Destroy(obj, 0.4f);
+        }
+
+    }
 
     public void DropCoins() {
         int numberOfCoins = (int) ((Random.value * (maxNumberOfCoins - minNumberOfCoins + 1)) + minNumberOfCoins);

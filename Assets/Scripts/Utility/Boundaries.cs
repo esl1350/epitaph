@@ -7,7 +7,7 @@ public class Boundaries : MonoBehaviour
     
     //basic boundaries for entities
     
-    private Vector2 xBounds;
+    public Vector2 xBounds { get; private set; }
     public Vector2 yBounds { get; private set; }
 
     //width and height of entity
@@ -26,7 +26,7 @@ public class Boundaries : MonoBehaviour
         Vector3 colliderCenter = walkable.GetComponent<Collider2D>().bounds.center;
         yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
 
-        widthHeight = this.gameObject.GetComponent<BoxCollider2D>().size;
+        widthHeight = this.gameObject.GetComponent<CapsuleCollider2D>().size;
     }
 
     // Update is called once per frame

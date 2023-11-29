@@ -27,6 +27,7 @@ TagManager:
   - Item6UI
   - PurchaseSuccess
   - PurchaseFail
+  - CMCam
   layers:
   - Default
   - TransparentFX

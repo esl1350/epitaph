@@ -72,6 +72,55 @@ MonoBehaviour:
       Data3: -1499175279
       Data4: -1232952819
     Path: event:/Knife Swing
+  <knifeFlurry>k__BackingField:
+    Guid:
+      Data1: -293679629
+      Data2: 1186719281
+      Data3: -412173920
+      Data4: -2083742151
+    Path: event:/Knife Flurry
+  <quakeFirst>k__BackingField:
+    Guid:
+      Data1: -1511110446
+      Data2: 1096707298
+      Data3: -1139796577
+      Data4: 1599122789
+    Path: event:/Quake First
+  <quakeFinish>k__BackingField:
+    Guid:
+      Data1: 2011887041
+      Data2: 1267994436
+      Data3: -1964506949
+      Data4: -789319393
+    Path: event:/Quake Finish
+  <laser>k__BackingField:
+    Guid:
+      Data1: -9569533
+      Data2: 1313590468
+      Data3: -1500867953
+      Data4: -1099909295
+    Path: event:/Magic Beam
+  <yoyo>k__BackingField:
+    Guid:
+      Data1: -1479636151
+      Data2: 1088822800
+      Data3: -1280187516
+      Data4: -1651611092
+    Path: event:/Yoyo
+  <lightGrenade>k__BackingField:
+    Guid:
+      Data1: -1972155063
+      Data2: 1080596122
+      Data3: -974670191
+      Data4: -2100942646
+    Path: event:/Light Boom
+  <barrier>k__BackingField:
+    Guid:
+      Data1: -1392938722
+      Data2: 1262358346
+      Data3: -1408268901
+      Data4: -2009095128
+    Path: event:/Barrier
 --- !u!1 &6458670570538676222
 GameObject:
   m_ObjectHideFlags: 0

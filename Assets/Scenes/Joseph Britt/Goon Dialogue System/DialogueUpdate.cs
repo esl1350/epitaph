@@ -12,7 +12,7 @@ public class DialogueUpdate : MonoBehaviour
     [SerializeField] private float minimumWait = 30f;
     [SerializeField] private float averageWait = 60f;
     [SerializeField] private List<string> dialogueList;
-    private TextMeshProUGUI tmp;
+    [SerializeField] private TextMeshProUGUI tmp;
     private float timeDisplayed;
     private float timeBetweenDialogue;
     private int lastIndex;
@@ -33,6 +33,9 @@ public class DialogueUpdate : MonoBehaviour
         // guard for empty list
         if (dialogueList.Count == 0) {
             return;
+        }
+        if (tmp == null) {
+            tmp = GameObject.Find("Dialogue").transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
         }
 
         if (tmp.text.Equals("")) {

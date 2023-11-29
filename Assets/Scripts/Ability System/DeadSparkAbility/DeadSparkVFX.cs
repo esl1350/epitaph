@@ -18,6 +18,8 @@ class DeadSparkVFX : MonoBehaviour {
         GameObject spark = InitSpark();
 
         VisualEffect spark_vfx = spark.GetComponent<VisualEffect>();
+
+        Debug.Log(spark_vfx);
         
         const int UPDATES = 30; // 60 updates per second
 

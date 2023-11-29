@@ -33,6 +33,7 @@ public class QuietusAbility : Ability
         hitboxInstance.damage = damage;
         hitboxInstance.knockbackForce = knockbackForce;
         hitboxInstance.knockbackDuration = knockbackDuration;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.fireSword, parent.transform.position);
         // Debug.Log("Melee Slash");
         //_animator.Play();
     }

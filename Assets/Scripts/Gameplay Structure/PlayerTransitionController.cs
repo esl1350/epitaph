@@ -18,7 +18,7 @@ public class PlayerTransitionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (sceneTransitionManager == null) {
+        if(sceneTransitionManager == null) {
             sceneTransitionManager = GameObject.FindGameObjectWithTag("LevelController").GetComponent<SceneTransitionManager>();
         }
         if (this.transform.position.y > playerBoundaries.yBounds.y - playerBoundaries.widthHeight.y/2) {

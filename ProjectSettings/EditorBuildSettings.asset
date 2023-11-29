@@ -44,7 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rodrigo/Ability Inventory Rework/NextRoomTemplate.unity
     guid: fafe3ada9bc49aa468dc8145bb665dd0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gabriel/GameplayLoop/ShopRoom.unity
     guid: b516ebe52dd386349b3267bdb7b52eeb
   m_configObjects: {}

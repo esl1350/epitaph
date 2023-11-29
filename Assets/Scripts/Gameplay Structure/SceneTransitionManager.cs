@@ -44,6 +44,7 @@ public class SceneTransitionManager : MonoBehaviour
         else playerInput.DeactivateInput();
         transition.ResetTrigger("RunEnd");
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneToLoad);
+        AudioManager.instance.SetMusic(MusicArea.MAIN_MENU);
 
         while (!asyncLoad.isDone)
         {

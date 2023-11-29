@@ -2562,7 +2562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityInventory: {fileID: 657781649}
-  inventoryFullTag: {fileID: 1650759640}
+  ability: {fileID: 11400000, guid: 753debe5260df4a4b94a1391ba494f9a, type: 2}
 --- !u!1 &727995517
 GameObject:
   m_ObjectHideFlags: 0
@@ -26336,7 +26336,7 @@ GameObject:
   - component: {fileID: 1650759642}
   m_Layer: 5
   m_Name: InvetoryFull
-  m_TagString: Untagged
+  m_TagString: InventoryFull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

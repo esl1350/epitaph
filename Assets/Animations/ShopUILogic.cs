@@ -10,9 +10,9 @@ public class ShopUILogic : MonoBehaviour
 
     public GameObject shopMenu; 
 
-    public GameObject cannotPurchaseTag;
+    private GameObject cannotPurchaseTag;
 
-    public GameObject purchaseSuccessTag;
+    private GameObject purchaseSuccessTag;
 
     public InputActionAsset inputActionAsset;
 
@@ -20,13 +20,19 @@ public class ShopUILogic : MonoBehaviour
 
     private InputAction actionKey;
 
+    private GameObject inventoryFullTag;
+
     // Start is called before the first frame update
     void Start()
     {
+        cannotPurchaseTag = GameObject.FindWithTag("PurchaseFail");
+        purchaseSuccessTag = GameObject.FindWithTag("PurchaseSuccess");
+        inventoryFullTag = GameObject.FindWithTag("InventoryFull");
         actionMap = inputActionAsset.FindActionMap("Player");
         actionKey = actionMap.FindAction("Interact");
         cannotPurchaseTag.SetActive(false);
         purchaseSuccessTag.SetActive(false);
+        inventoryFullTag.SetActive(false);
     }
 
     // Update is called once per frame

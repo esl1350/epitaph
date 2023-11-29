@@ -12,6 +12,8 @@ public class TestShop : MonoBehaviour
 
     private GameObject purchaseSuccessTag;
 
+    private GameObject inventoryFullTag;
+
     [SerializeField]
     public Item item1;
     private GameObject item1UI;
@@ -56,6 +58,7 @@ public class TestShop : MonoBehaviour
     {
         cannotPurchaseTag = GameObject.FindWithTag("PurchaseFail");
         purchaseSuccessTag = GameObject.FindWithTag("PurchaseSuccess");
+        inventoryFullTag = GameObject.FindWithTag("InventoryFull");
         item1UI = GameObject.FindWithTag("Item1UI");
         item2UI = GameObject.FindWithTag("Item2UI");
         item3UI = GameObject.FindWithTag("Item3UI");
@@ -103,11 +106,29 @@ public class TestShop : MonoBehaviour
     void Update()
     {
         if (purchaseSuccessTag.activeSelf){
-            waiterSuccess();
+            timer += Time.unscaledDeltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivatePurchaseSuccessTag();
+            }
         }
 
         if (cannotPurchaseTag.activeSelf){
-            waiterFail();
+            timer += Time.unscaledDeltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                DeactivateCannotPurchaseTag();
+            }
+        }
+        if (inventoryFullTag.activeSelf){
+            timer += Time.unscaledDeltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                inventoryFullTag.SetActive(false);
+            }
         }
     }
 
@@ -119,12 +140,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item1UI.SetActive(false);
-            waiterSuccess();
+            Invoke("DeactivatePurchaseSuccessTag", 3);
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            waiterFail();
+            Invoke("DeactivateCannotPurchaseTag", 3);
         }
     }
 
@@ -135,12 +156,14 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item2UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            Invoke("DeactivatePurchaseSuccessTag", 3);
+            //DeactivatePurchaseSuccessTag();
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            Invoke("DeactivateCannotPurchaseTag", 3);
+            //DeactivateCannotPurchaseTag();
         }
     }
 
@@ -151,12 +174,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item3UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            Invoke("DeactivatePurchaseSuccessTag", 3);
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            Invoke("DeactivateCannotPurchaseTag", 3);
         }
     }
 
@@ -167,12 +190,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item4UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            Invoke("DeactivatePurchaseSuccessTag", 3);
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            Invoke("DeactivateCannotPurchaseTag", 3);
         }
     }
 
@@ -183,12 +206,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item5UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            Invoke("DeactivatePurchaseSuccessTag", 3);
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            Invoke("DeactivateCannotPurchaseTag", 3);
         }
     }
 
@@ -199,12 +222,12 @@ public class TestShop : MonoBehaviour
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
             item6UI.SetActive(false);
-            Invoke("DeactivatePurchaseSuccessTag", 3f);
+            Invoke("DeactivatePurchaseSuccessTag", 3);
         }
         else{
             Debug.Log("cannot purchase");
             cannotPurchaseTag.SetActive(true);
-            Invoke("DeactivateCannotPurchaseTag", 3f);
+            Invoke("DeactivateCannotPurchaseTag", 3);
         }
     }
 
@@ -218,14 +241,8 @@ public class TestShop : MonoBehaviour
         purchaseSuccessTag.SetActive(false);
     }
 
-    IEnumerator waiterSuccess()
+    void waiter()
     {
-        yield return new WaitForSeconds(3);
-        DeactivatePurchaseSuccessTag();
-    }
-    IEnumerator waiterFail()
-    {
-        yield return new WaitForSeconds(3);
-        DeactivateCannotPurchaseTag();
+        Debug.Log("waiting to disable UI");
     }
 }

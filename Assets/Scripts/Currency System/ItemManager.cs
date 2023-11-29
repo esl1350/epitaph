@@ -1,20 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
+    private float timer = 0f;
     private Player player;
     public AbilityInventoryManager abilityInventory;
     private List<Item> items = new List<Item>();
 
-    public GameObject inventoryFullTag;
+    public AbilityWrapper ability;
+
+    private GameObject inventoryFullTag;
 
     public void Awake()
     {
+        inventoryFullTag = GameObject.FindWithTag("InventoryFull");
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         inventoryFullTag.SetActive(false);
     }
+
+void Update()
+    {
+        if (inventoryFullTag.activeSelf){
+            timer += Time.unscaledDeltaTime;
+            if (timer > 2f)
+            {
+                timer = 0f;
+                inventoryFullTag.SetActive(false);
+            }
+        }
+    }
+
     public void PurchaseItem(Item itemToBuy)
     {
         if (player.CurrencyTotal < itemToBuy.getCost())
@@ -24,8 +43,9 @@ public class ItemManager : MonoBehaviour
         } 
         else
         {
-            int len = abilityInventory.getAbilitiesLength();
-            if (itemToBuy.isAbility() == false || len < 6){
+            bool isItFull = abilityInventory.Add(ability);
+            bool remove = abilityInventory.Remove(ability);
+            if (itemToBuy.isAbility() == false || isItFull == true){
                 player.SpendCoin(itemToBuy.getCost());
                 itemToBuy.disable();
                 itemToBuy.activate(player);
@@ -33,8 +53,8 @@ public class ItemManager : MonoBehaviour
             }
             else{
                 Debug.Log("No space in ability inventory");
+
                 inventoryFullTag.SetActive(true);
-                inventoryFullTag.SetActive(false);
             }
         }
     }

@@ -14,6 +14,9 @@ public class Item : ScriptableObject
     protected Sprite abilitySprite; // sprite of the item
 
     [SerializeField]
+    protected AbilityWrapper ability = null; // sprite of the item
+
+    [SerializeField]
     protected bool enabled;
 
     public int getCost()
@@ -35,7 +38,7 @@ public class Item : ScriptableObject
     public bool isAbility()
     {
         //Abilities should cost over 120 coins, other items should be under this amount
-        if(this.cost > 120){
+        if(this.ability != null){
             return true;
         }
         else{

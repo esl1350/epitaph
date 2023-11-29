@@ -15,6 +15,17 @@ TagManager:
   - HotBar
   - Slots
   - Cursor
+  - DialogBox
+  - ShopUI
+  - Item1UI
+  - Item2UI
+  - Item3UI
+  - Item4UI
+  - Item5UI
+  - Item6UI
+  - PurchaseFail
+  - InventoryFull
+  - PurchaseSuccess
   layers:
   - Default
   - TransparentFX
@@ -51,4 +62,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 4157273069
+    locked: 0
+  - name: Entities
+    uniqueID: 3342835891
+    locked: 0
+  - name: Flavor
+    uniqueID: 1589771975
+    locked: 0
+  - name: UI
+    uniqueID: 3706307131
     locked: 0

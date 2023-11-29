@@ -14,12 +14,12 @@ GameObject:
   - component: {fileID: 8769290010812509541}
   - component: {fileID: 4614883044539392897}
   - component: {fileID: 8201140986216838603}
-  - component: {fileID: 7458921348859501869}
   - component: {fileID: 614890760918059336}
   - component: {fileID: 3172618287407877323}
   - component: {fileID: 2016994901881276115}
   - component: {fileID: 8885915277314336577}
   - component: {fileID: 7991413023566448250}
+  - component: {fileID: 2965998708041198990}
   m_Layer: 7
   m_Name: Healing Goon
   m_TagString: Enemy
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2619096380030928128, guid: 35f38cf2c55b7d64598b988f9d16d3f1, type: 3}
@@ -201,20 +201,6 @@ MonoBehaviour:
   coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
   particles: {fileID: 3521183095686795207, guid: 18ba38a2721c3264fa84262fb81a5e80, type: 3}
   enemyCoinValue: 20
---- !u!114 &7458921348859501869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5678772690974721006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13016b50a09b748d09ff70cf8453503b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DEBUG: 0
-  current: {fileID: 0}
 --- !u!58 &614890760918059336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -313,6 +299,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2965998708041198990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5678772690974721006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097a59c54874e65438a5ffa30d28a907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  current: {fileID: 0}
 --- !u!1 &6465270139469949213
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Intensity: 0.4
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a9ea66537bf5dfcf437ee089e1760079
+  m_ApplyToSortingLayers: 00000000edf3caf7b3a03fc7c7fec15e3bc2e9dc
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -496,7 +496,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -2630620213016123127, guid: f0fd58f93e43a61419fb9610b965d35b, type: 3}

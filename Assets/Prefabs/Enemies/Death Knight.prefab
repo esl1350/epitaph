@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -2630620213016123127, guid: f0fd58f93e43a61419fb9610b965d35b, type: 3}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Intensity: 0.4
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a9ea66537bf5dfcf437ee089e1760079
+  m_ApplyToSortingLayers: 00000000edf3caf7b3a03fc7c7fec15e3bc2e9dc
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -181,11 +181,11 @@ GameObject:
   - component: {fileID: 1518116029080005498}
   - component: {fileID: 1866140760894025706}
   - component: {fileID: 7846273954015342038}
-  - component: {fileID: 85941256721382627}
   - component: {fileID: 8615839123305296803}
   - component: {fileID: 7629068280012163330}
   - component: {fileID: 9169870846210957622}
   - component: {fileID: 3141720527784367642}
+  - component: {fileID: 1365508412714162407}
   m_Layer: 7
   m_Name: Death Knight
   m_TagString: Enemy
@@ -250,7 +250,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -7326991924235796872, guid: a84e139232095f24f94e84633c841368, type: 3}
@@ -378,20 +378,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 0}
---- !u!114 &85941256721382627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7869210425373712410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13016b50a09b748d09ff70cf8453503b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DEBUG: 0
-  current: {fileID: 0}
 --- !u!114 &8615839123305296803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +473,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1365508412714162407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869210425373712410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097a59c54874e65438a5ffa30d28a907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  current: {fileID: 0}
 --- !u!1 &9183112147624594370
 GameObject:
   m_ObjectHideFlags: 0

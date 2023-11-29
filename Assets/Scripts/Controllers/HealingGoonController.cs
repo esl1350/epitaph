@@ -44,7 +44,7 @@ public class HealingGoonController : EnemyController
         Collider2D[] hit = Physics2D.OverlapCircleAll(gameObject.transform.position, distanceAway, LayerMask.GetMask("Enemy"));
         foreach (Collider2D collider in hit) {
             Enemy enemy = collider.GetComponent<Enemy>();
-            float healthPercent = enemy.Health.GetStatValue() / enemy.Health.intialValue;
+            float healthPercent = enemy.HealthVal / enemy.Health.intialValue;
             if (healthPercent < lowestHealth) {
                 lowestHealth = healthPercent;
                 lowestEnemy = enemy;

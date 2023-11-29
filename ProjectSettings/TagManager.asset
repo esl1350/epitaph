@@ -18,6 +18,7 @@ TagManager:
   - NPC
   - DialogBox
   - EnemyManager
+  - CMCam
   layers:
   - Default
   - TransparentFX

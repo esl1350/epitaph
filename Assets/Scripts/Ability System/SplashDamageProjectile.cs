@@ -11,7 +11,6 @@ public class SplashDamageProjectile : PlayerProjectile
     [SerializeField] private EventReference audioEffect;
     protected override void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"Hit Splash {other.gameObject.name}");
         _animator.SetTrigger("Collide");  
         rb.velocity = new Vector2(direction.x, direction.y).normalized * 0;
         if (other.gameObject.tag == "Enemy") {
@@ -25,6 +24,7 @@ public class SplashDamageProjectile : PlayerProjectile
             var entity = other.GetComponent<Entity>();
             parent.GetComponent<Entity>().DealDamage(enemy, splashDamage);
         }
+        GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 0.3f);
         StartCoroutine(CheckAnimationAndDestroy());
         //Destroy(this.gameObject);
     }

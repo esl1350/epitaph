@@ -50,6 +50,8 @@ MonoBehaviour:
   activeTime: 2
   indicator: {fileID: 0}
   enemyPrefabs:
-  - {fileID: 6813440868303940308, guid: 137a9c3c3df069d42a273d0dcae61594, type: 3}
   - {fileID: 7176128113321190046, guid: cd953ccc01a94084589de07757adb752, type: 3}
+  - {fileID: 7176128113321190046, guid: fc3acd016065e4a4684ddca63c21de7f, type: 3}
+  - {fileID: 6813440868303940308, guid: 137a9c3c3df069d42a273d0dcae61594, type: 3}
+  - {fileID: 7176128113321190046, guid: 4b7792a55e65eda4ba8fe3f5bb8f25d9, type: 3}
   spawningTime: 3

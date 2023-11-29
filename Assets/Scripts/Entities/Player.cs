@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : Entity
 {
     [SerializeField] private bool killable;
+    [SerializeField] private GameObject particles;
     private int _currencyTotal;
     public int CurrencyTotal => _currencyTotal;
     [SerializeField] private float pickupRadius;
@@ -23,6 +24,13 @@ public class Player : Entity
         }
     }
 
+    public override void TakeDamage(float amount) {
+        base.TakeDamage(amount);
+        GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 0.2f);
+        GameObject obj = Instantiate(particles, transform.position, Quaternion.identity);
+        Destroy(obj, 0.4f);
+    }
+    
     void Update() {
         LayerMask mask = LayerMask.GetMask("Currency");
         Collider2D[] hits = Physics2D.OverlapCircleAll(gameObject.transform.position, pickupRadius, mask);

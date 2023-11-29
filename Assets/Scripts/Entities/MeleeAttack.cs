@@ -68,6 +68,9 @@ public class MeleeAttack : MonoBehaviour
             var kb = other.GetComponent<Knockback>();
             kb?.KnockbackCustomForce(source.gameObject, meleeKnockback, meleeKnockbackDuration);
         }
+        if (other.gameObject.layer == LayerMask.NameToLayer("Enemy Projectile")) {
+            Destroy(other.gameObject);
+        }
      }
 
     public void SetActive() {

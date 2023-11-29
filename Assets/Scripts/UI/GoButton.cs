@@ -9,5 +9,7 @@ public class GoButton : MonoBehaviour
     {
         GameObject levelController = GameObject.FindWithTag("LevelController");
         levelController.GetComponent<SceneTransitionManager>().OnRunStart();
+        GameObject spawnLocation = GameObject.Find("PlayerSpawnLocation").gameObject;
+        GameObject.Find("Player").gameObject.transform.position = spawnLocation.transform.position;
     }
 }

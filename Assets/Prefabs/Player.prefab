@@ -961,6 +961,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   _augmentManager: {fileID: 0}
   killable: 0
+  particles: {fileID: 3521183095686795207, guid: 5bf59772e7a8c3846b9ad1ff066256f0, type: 3}
   pickupRadius: 2
 --- !u!114 &4451322402477620099
 MonoBehaviour:
@@ -1157,10 +1158,10 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.7
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a9ea66537bf5dfcfe1760079
+  m_ApplyToSortingLayers: 00000000a9ea66537bf5dfcf437ee089e1760079
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

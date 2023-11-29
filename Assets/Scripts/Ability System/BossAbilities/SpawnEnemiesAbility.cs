@@ -26,6 +26,10 @@ public class SpawnEnemiesAbility : BossAbility
         foreach (Crystal crystal in crystals)
         {
             int random = Random.Range(0, enemyPrefabs.Count);
+            if ( random ==  enemyPrefabs.Count - 1)
+            {
+                random = Random.Range(2, enemyPrefabs.Count);
+            }
             GameObject spawner = Instantiate(enemyPrefabs[random], crystal.transform.position, Quaternion.identity);
             enemySpawners.Add(spawner);
         }

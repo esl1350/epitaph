@@ -20,5 +20,5 @@ MonoBehaviour:
   expirationTime: 0
   AugmentType: 1
   statModifiers: []
-  vfxSprite: {fileID: 21300000, guid: 46cb7610e6f806d4690763a74a926bfe, type: 3}
+  vfxSprite: {fileID: 1827201649442658704, guid: 4865f69cecb97824791cc910dbbb291d, type: 3}
   colliderPrefab: {fileID: 3129296882639677349, guid: ea26badff48917f47b89970b1c829f71, type: 3}

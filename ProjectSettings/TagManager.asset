@@ -26,6 +26,9 @@ TagManager:
   - PurchaseFail
   - InventoryFull
   - PurchaseSuccess
+  - NPC
+  - NPCPrompt
+  - ConsumableSlot
   layers:
   - Default
   - TransparentFX

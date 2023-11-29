@@ -18069,6 +18069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goon
       objectReference: {fileID: 0}
+    - target: {fileID: 7869210425373712410, guid: e13f1331564d0ba4fb721a92bf9e874e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8897970697676032108, guid: e13f1331564d0ba4fb721a92bf9e874e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.08

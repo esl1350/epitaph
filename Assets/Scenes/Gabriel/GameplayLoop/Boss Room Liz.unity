@@ -723,6 +723,11 @@ PrefabInstance:
       addedObject: {fileID: 158728973}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d7ed70653798843a6c480b29187562, type: 3}
+--- !u!4 &1330688843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4937061292564146915, guid: a7d7ed70653798843a6c480b29187562, type: 3}
+  m_PrefabInstance: {fileID: 1330688842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1472388293
 PrefabInstance:
   m_ObjectHideFlags: 0

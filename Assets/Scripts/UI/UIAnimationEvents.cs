@@ -26,8 +26,10 @@ public class UIAnimationEvents : MonoBehaviour
     }
 
     IEnumerator DestroyFirstChild() {
+        enemyManager.transform.GetChild(0).gameObject.SetActive(false);
         yield return new WaitForSeconds(0.2f);
         Destroy(enemyManager.transform.GetChild(0).gameObject);
+        Debug.Log("destropy");
     }
 
 }

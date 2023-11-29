@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: New Rings Of Light Debuff
   m_EditorClassIdentifier: 
   aName: 
-  aDescription: 
+  aDescription: Makes enemies more vulnerable to damage.
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
-  activeTime: 1
-  augmentEnabled: 1
+  expires: 0
+  expirationTime: 0
+  AugmentType: 0
+  statModifiers: []
   damage: 1
-  VFXrenderer: {fileID: 5598112964113807140, guid: 9e4d51d0a67a8b847bc821b510e9e514, type: 3}

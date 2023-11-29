@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TestShop : MonoBehaviour
 {
     private float timer = 0f;
-    public ItemManager manager;
+    public ItemManager managerFromPlayer;
 
     private GameObject cannotPurchaseTag;
 
@@ -101,6 +101,8 @@ public class TestShop : MonoBehaviour
         price6.text = (item6.getCost()).ToString() + " coins";
         name6.text = item6.getName();
         sprite6.sprite = item6.getSprite();
+        GameObject target = GameObject.FindWithTag("Player");
+        managerFromPlayer = target.GetComponent<ItemManager>();
     }
 
     void Update()
@@ -134,8 +136,8 @@ public class TestShop : MonoBehaviour
 
     public void BuyItem1(){
         Debug.Log("buyingItem1");
-        manager.PurchaseItem(item1);
-        bool itemExist = manager.doesItemExist(item1);
+        managerFromPlayer.PurchaseItem(item1);
+        bool itemExist = managerFromPlayer.doesItemExist(item1);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
@@ -150,8 +152,8 @@ public class TestShop : MonoBehaviour
     }
 
     public void BuyItem2(){
-        manager.PurchaseItem(item2);
-        bool itemExist = manager.doesItemExist(item2);
+        managerFromPlayer.PurchaseItem(item2);
+        bool itemExist = managerFromPlayer.doesItemExist(item2);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
@@ -168,8 +170,8 @@ public class TestShop : MonoBehaviour
     }
 
     public void BuyItem3(){
-        manager.PurchaseItem(item3);
-        bool itemExist = manager.doesItemExist(item3);
+        managerFromPlayer.PurchaseItem(item3);
+        bool itemExist = managerFromPlayer.doesItemExist(item3);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
@@ -184,8 +186,8 @@ public class TestShop : MonoBehaviour
     }
 
     public void BuyItem4(){
-        manager.PurchaseItem(item4);
-        bool itemExist = manager.doesItemExist(item4);
+        managerFromPlayer.PurchaseItem(item4);
+        bool itemExist = managerFromPlayer.doesItemExist(item4);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
@@ -200,8 +202,8 @@ public class TestShop : MonoBehaviour
     }
 
     public void BuyItem5(){
-        manager.PurchaseItem(item5);
-        bool itemExist = manager.doesItemExist(item5);
+        managerFromPlayer.PurchaseItem(item5);
+        bool itemExist = managerFromPlayer.doesItemExist(item5);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);
@@ -216,8 +218,8 @@ public class TestShop : MonoBehaviour
     }
 
     public void BuyItem6(){
-        manager.PurchaseItem(item6);
-        bool itemExist = manager.doesItemExist(item6);
+        managerFromPlayer.PurchaseItem(item6);
+        bool itemExist = managerFromPlayer.doesItemExist(item6);
         if (itemExist == true){
             Debug.Log("purchase success");
             purchaseSuccessTag.SetActive(true);

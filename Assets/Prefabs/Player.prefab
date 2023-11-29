@@ -545,8 +545,8 @@ MonoBehaviour:
   - {fileID: 433368079217481562}
   - {fileID: 6925524437547162389}
   - {fileID: 2020586579564352269}
-  attackDelay: 0.1
-  attackShiftMultiplier: 0
+  attackDelay: 0.15
+  attackShiftMultiplier: 0.3
 --- !u!114 &6421672317329216225
 MonoBehaviour:
   m_ObjectHideFlags: 0

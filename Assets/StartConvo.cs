@@ -14,19 +14,17 @@ public class StartConvo : MonoBehaviour
 
     public TextMeshProUGUI textComponent;
 
-    private GameObject textbox;
+    public GameObject textbox;
 
     public string[] convoLines;
     public string[] convoLinesNames;
 
     public List<Sprite> allSprites;
 
-    DialogLogic DialogLogicScript;
+    public DialogLogic DialogLogicScript;
     private bool isKeyEnabled = true;
 
     public bool useHitboxToInteract = true;
-
-    private GameObject DialogBox;
 
     private Rigidbody2D rb;
 
@@ -39,15 +37,13 @@ public class StartConvo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         actionMap = inputActionAsset.FindActionMap("Player");
         actionKey = actionMap.FindAction("Interact");
-        textbox = GameObject.FindGameObjectWithTag("DialogBox");
         //textComponent = this.GetComponent<TextMeshProUGUI>();
         target = GameObject.FindWithTag("Player");
         rb = target.GetComponent<Rigidbody2D>();
         textComponent.text = string.Empty;
-        DialogBox = GameObject.FindGameObjectWithTag("DialogBox");
-        DialogLogicScript = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogLogic>();
         actionKey.started += OnActionKeyStarted;
         actionKey.Enable();
     }
@@ -70,7 +66,6 @@ public class StartConvo : MonoBehaviour
                             DisableKey();
                             actionMap.Disable();
                             textbox.SetActive(true);
-
                             //change the list dialog within the DialogLogic Script to match this dialog stated in this script
                             DialogLogicScript.lines = convoLines;
                             DialogLogicScript.namesPerLine = convoLinesNames;

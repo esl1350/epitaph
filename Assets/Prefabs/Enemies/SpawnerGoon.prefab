@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -807406213
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2672623182931280112, guid: 1436a013480f82d428893f38cf2ffc00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -207,9 +207,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -952131405
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2630620213016123127, guid: f0fd58f93e43a61419fb9610b965d35b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Intensity: 0.8
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000a9ea66537bf5dfcf437ee089e1760079
+  m_ApplyToSortingLayers: 00000000edf3caf7b3a03fc7c7fec15e3bc2e9dc
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -319,9 +319,9 @@ GameObject:
   - component: {fileID: 3419974051499496107}
   - component: {fileID: 419889670727287571}
   - component: {fileID: 7357457874771326544}
-  - component: {fileID: 90021263590254876}
   - component: {fileID: 8899804498749992875}
   - component: {fileID: 3700553975127145091}
+  - component: {fileID: 165554300400584417}
   m_Layer: 7
   m_Name: SpawnerGoon
   m_TagString: Enemy
@@ -387,7 +387,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7055166722312489198, guid: 034cf0419333ae246b2281104a3e3edc, type: 3}
@@ -529,20 +529,6 @@ MonoBehaviour:
   longestSpawnTime: 18
   spawnRadius: 4
   spawnAmount: 2
---- !u!114 &90021263590254876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8574721898858376987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13016b50a09b748d09ff70cf8453503b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DEBUG: 0
-  current: {fileID: 0}
 --- !u!95 &8899804498749992875
 Animator:
   serializedVersion: 5
@@ -604,6 +590,20 @@ MonoBehaviour:
   coin: {fileID: -8631970439499270126, guid: b713356956b7f5d4a96ebdbae100f727, type: 3}
   particles: {fileID: 3521183095686795207, guid: 18ba38a2721c3264fa84262fb81a5e80, type: 3}
   enemyCoinValue: 20
+--- !u!114 &165554300400584417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574721898858376987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097a59c54874e65438a5ffa30d28a907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  current: {fileID: 0}
 --- !u!1001 &5148194787526549214
 PrefabInstance:
   m_ObjectHideFlags: 0

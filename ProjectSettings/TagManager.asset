@@ -4,21 +4,28 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - RotatePoint
   - Enemy
-  - Walkable
-  - Cursor
-  - Slots
-  - HotBar
-  - UI
   - LevelController
-  - CinemachineCollider
-  - ChooseAbilityUI
-  - NPCPrompt
-  - NPC
-  - DialogBox
-  - EnemyManager
   - CMCam
+  - EnemyManager
+  - Walkable
+  - CinemachineCollider
+  - RotatePoint
+  - UI
+  - HotBar
+  - Slots
+  - Cursor
+  - DialogBox
+  - ShopUI
+  - Item1UI
+  - Item2UI
+  - Item3UI
+  - Item4UI
+  - Item5UI
+  - Item6UI
+  - PurchaseFail
+  - InventoryFull
+  - PurchaseSuccess
   layers:
   - Default
   - TransparentFX
@@ -57,14 +64,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Terrain
-    uniqueID: 1399253673
+    uniqueID: 4157273069
     locked: 0
   - name: Entities
-    uniqueID: 3487561083
+    uniqueID: 3342835891
     locked: 0
   - name: Flavor
-    uniqueID: 2313190979
+    uniqueID: 1589771975
     locked: 0
   - name: UI
-    uniqueID: 2030073569
+    uniqueID: 3706307131
     locked: 0

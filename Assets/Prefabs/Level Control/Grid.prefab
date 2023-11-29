@@ -164,7 +164,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807406213
+  m_SortingLayerID: -952131405
   m_SortingLayer: 2
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -23546,7 +23546,7 @@ GameObject:
   - component: {fileID: 6901397031259227294}
   - component: {fileID: 1906332450435219870}
   - component: {fileID: 1218847612419491430}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Tilemap_Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24481,11 +24481,11 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 2.34429e-40, g: 2.34429e-40, b: 2.34429e-40, a: 2.34429e-40}
+    m_Data: {r: 0.9767043, g: 0.6335788, b: 0.6816207, a: 1}
   - m_RefCount: 6
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 81
-    m_Data: {r: 0.73814136, g: 0.49230155, b: 0.5307099, a: 1}
+    m_Data: {r: 0.85169536, g: 0.4178088, b: 0.55113596, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24548,7 +24548,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1399253673
+  m_SortingLayerID: -137694227
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}

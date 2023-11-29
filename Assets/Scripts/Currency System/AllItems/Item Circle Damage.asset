@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a43311bc09feda498c036ea0809c686, type: 3}
+  m_Name: Item Circle Damage
+  m_EditorClassIdentifier: 
+  cost: 130
+  itemName: Circle Damage
+  enabled: 1
+  ability: {fileID: 11400000, guid: 98e89ea2ca0aebf4ea3bca8cc495b5c2, type: 2}
+  abilitySprite: {fileID: -2413806693520163455, guid: 5242d999ffbe6c946945b1bf50a65fdd, type: 3}

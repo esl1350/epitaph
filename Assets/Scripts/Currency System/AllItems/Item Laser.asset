@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a43311bc09feda498c036ea0809c686, type: 3}
   m_Name: Item Laser
   m_EditorClassIdentifier: 
-  cost: 1500
+  cost: 2000
   itemName: Laser
   abilitySprite: {fileID: -4993255097878009846, guid: 0211bd275aefcd343ba3f7922fc95ff3, type: 3}
   ability: {fileID: 11400000, guid: 68ca8abe57bdf9046aa4ead7eb505518, type: 2}

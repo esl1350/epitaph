@@ -55,7 +55,9 @@ public class StatusEffectManager : MonoBehaviour
             {
                 if (se.statusEffect.effectCode == StatusEffectCode.BURN) {
                     var particles = transform.Find("FireParticleManager").gameObject;
-                    _renderer.color = Color.white;
+                    if (_renderer != null) {
+                        _renderer.color = Color.white;
+                    }
                     particles?.SetActive(false);
                 }
                 AddModifiers(se.statusEffect.exitStatusEffect);
@@ -80,7 +82,9 @@ public class StatusEffectManager : MonoBehaviour
             };
             if (se.effectCode == StatusEffectCode.BURN) {
                 var particles = transform.Find("FireParticleManager").gameObject;
-                _renderer.color = new Color(0.72f/255.0f, 0.72f/255.0f, 0.72f/255.0f, 1.0f);
+                if (_renderer != null) {
+                    _renderer.color = new Color(0.72f/255.0f, 0.72f/255.0f, 0.72f/255.0f, 1.0f);
+                }
                 particles?.SetActive(true);
             }
             AddEffect(effect);

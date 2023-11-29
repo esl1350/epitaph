@@ -21,7 +21,9 @@ public class DialogueUpdate : MonoBehaviour
     void Start()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
-        tmp.SetText("");
+        if (tmp != null) {
+            tmp.SetText("");
+        }
         timeDisplayed = 0f;
         timeBetweenDialogue = 0f;
         lastIndex = -1;

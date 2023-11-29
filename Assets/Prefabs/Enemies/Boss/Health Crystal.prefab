@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2146650320406088518
 RectTransform:
   m_ObjectHideFlags: 0
@@ -491,6 +491,10 @@ PrefabInstance:
       propertyPath: ShapeModule.m_Sprite
       value: 
       objectReference: {fileID: -1899375857222909495, guid: 811ab311a8ada824084644c2e03dcb0a, type: 3}
+    - target: {fileID: 2600972218856858204, guid: b045dd54d1eb41947b4f05b27d99364a, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3585522329108576915, guid: b045dd54d1eb41947b4f05b27d99364a, type: 3}
       propertyPath: ShapeModule.type
       value: 19

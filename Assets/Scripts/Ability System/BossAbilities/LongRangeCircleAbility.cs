@@ -30,6 +30,7 @@ public class LongRangeCircleAbility : BossAbility
         for (int i = 0; i < maxRounds; i++)
         {
             CreateCircle(center, i);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.bossCircles, parent.transform.position);
             yield return new WaitForSeconds(delay);
             ThrowCircle(i);
         }

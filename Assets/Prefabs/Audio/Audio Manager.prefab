@@ -44,6 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f461e722b9f2a43bb028b02b98e93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <music>k__BackingField:
+    Guid:
+      Data1: 1577414428
+      Data2: 1253498608
+      Data3: 1259307690
+      Data4: -1438160105
+    Path: event:/Music/Music
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -1635882245
@@ -78,14 +85,14 @@ MonoBehaviour:
       Data2: 1186719281
       Data3: -412173920
       Data4: -2083742151
-    Path: event:/Knife Flurry
+    Path: event:/SFX/Knife Flurry
   <quakeFirst>k__BackingField:
     Guid:
       Data1: -1511110446
       Data2: 1096707298
       Data3: -1139796577
       Data4: 1599122789
-    Path: event:/Quake First
+    Path: event:/SFX/Quake First
   <quakeFinish>k__BackingField:
     Guid:
       Data1: 2011887041
@@ -106,21 +113,70 @@ MonoBehaviour:
       Data2: 1088822800
       Data3: -1280187516
       Data4: -1651611092
-    Path: event:/Yoyo
+    Path: event:/SFX/Yoyo
   <lightGrenade>k__BackingField:
     Guid:
       Data1: -1972155063
       Data2: 1080596122
       Data3: -974670191
       Data4: -2100942646
-    Path: event:/Light Boom
+    Path: event:/SFX/Light Boom
   <barrier>k__BackingField:
     Guid:
       Data1: -1392938722
       Data2: 1262358346
       Data3: -1408268901
       Data4: -2009095128
-    Path: event:/Barrier
+    Path: event:/SFX/Barrier
+  <deadSpark>k__BackingField:
+    Guid:
+      Data1: 1859628259
+      Data2: 1117683105
+      Data3: -172248185
+      Data4: -356085998
+    Path: event:/SFX/Dead Spark
+  <fireSword>k__BackingField:
+    Guid:
+      Data1: -1852855778
+      Data2: 1211452820
+      Data3: 2088089773
+      Data4: 1990428080
+    Path: event:/SFX/Fire Sword
+  <samsara>k__BackingField:
+    Guid:
+      Data1: -564245283
+      Data2: 1177006704
+      Data3: -460070272
+      Data4: 359815963
+    Path: event:/SFX/Samsara
+  <teleport>k__BackingField:
+    Guid:
+      Data1: 1520618960
+      Data2: 1308636904
+      Data3: 1808260501
+      Data4: -1141603420
+    Path: event:/SFX/Teleport
+  <bossCircles>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <bossAim>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <fireCone>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &6458670570538676222
 GameObject:
   m_ObjectHideFlags: 0

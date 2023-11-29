@@ -27,6 +27,7 @@ public class UmbralWaltz : Ability
         hitboxInstance = Instantiate(hitbox, parent.transform);// + (offset * 1.5f), rotationToTarget, parent.transform);
         hitboxInstance.parent = parent;
         hitboxInstance.damage = Waltz(parent);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.knifeFlurry, parent.transform.position);
         // hitboxInstance.knockbackForce = knockbackForce;
         // hitboxInstance.knockbackDuration = knockbackDuration;
         // Debug.Log("Melee Slash");

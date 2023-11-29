@@ -23,5 +23,6 @@ public class TeleportAbility : BossAbility
         print("teleporting boss");
         currentPoint = (currentPoint + 1) % tppoints.Count;
         caster.transform.position = tppoints[currentPoint];
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.teleport, caster.transform.position);
     }
 }

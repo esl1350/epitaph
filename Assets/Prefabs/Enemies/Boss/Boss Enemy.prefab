@@ -1322,6 +1322,14 @@ PrefabInstance:
       propertyPath: track
       value: 
       objectReference: {fileID: 2503220578087496583}
+    - target: {fileID: 6521567620970013087, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6661452672522614534, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7115196569041467007, guid: ab383fbd5cb034d4dbaa7a02a0880ecc, type: 3}
       propertyPath: m_Name
       value: Health Crystal 1

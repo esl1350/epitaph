@@ -5,6 +5,9 @@ using FMODUnity;
 
 public class FMODEvents : MonoBehaviour
 {
+    [field: Header("Music")]
+    [field: SerializeField] public EventReference music { get; private set; }
+
     [field: Header("Player Footsteps")]
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
@@ -47,6 +50,18 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Samsara")]
     [field: SerializeField] public EventReference samsara { get; private set; }
 
+    [field: Header("Teleport")]
+    [field: SerializeField] public EventReference teleport { get; private set; }
+
+    [field: Header("Boss Circles")]
+    [field: SerializeField] public EventReference bossCircles { get; private set; }
+
+    [field: Header("Boss Aim")]
+    [field: SerializeField] public EventReference bossAim { get; private set; }
+
+    [field: Header("Fire Cone")]
+    [field: SerializeField] public EventReference fireCone { get; private set; }
+
     public static FMODEvents instance {get; private set; }
 
     private void Awake()
@@ -55,7 +70,9 @@ public class FMODEvents : MonoBehaviour
         {
             Debug.LogError("Found more than one FMOD Events instance in the scene.");
         }
-
-        instance = this;
+        else 
+        {
+            instance = this;
+        }
     }
 }

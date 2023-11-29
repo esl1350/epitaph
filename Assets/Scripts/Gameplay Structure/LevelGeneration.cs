@@ -28,7 +28,10 @@ public class LevelGeneration : MonoBehaviour
         origin = baseMap.origin;
         width = baseMap.size.x;
         height = baseMap.size.y;
-        terrain = automaton.Simulate(width, height, bufferSize);
+        terrain = new int[1,1];
+        if (!setSpawn) {
+            terrain = automaton.Simulate(width, height, bufferSize);
+        }
         RenderMap();
         surface2D.BuildNavMeshAsync();
     }
@@ -40,9 +43,15 @@ public class LevelGeneration : MonoBehaviour
     void RenderMap() {
         topMap.ClearAllTiles();
         foliageMap.ClearAllTiles();
-        topMap.gameObject.GetComponent<RenderObstacleMap>().Render(terrain, baseMap.origin);
-        baseMap.gameObject.GetComponent<RenderBaseMap>().Render(terrain, baseMap.origin);
-        foliageMap.gameObject.GetComponent<RenderFoliageMap>().Render(baseMap.size, baseMap.origin);
+        if (setSpawn) {
+            baseMap.gameObject.GetComponent<RenderBaseMap>().RenderScreenOnly(baseMap.origin);
+            foliageMap.gameObject.GetComponent<RenderFoliageMap>().RenderScreenOnly(baseMap.size, baseMap.origin);
+        } else {
+            topMap.gameObject.GetComponent<RenderObstacleMap>().Render(terrain, baseMap.origin);
+            baseMap.gameObject.GetComponent<RenderBaseMap>().Render(terrain, baseMap.origin);
+            foliageMap.gameObject.GetComponent<RenderFoliageMap>().Render(baseMap.size, baseMap.origin);
+        }
+
         topMap.GetComponent<Collider2D>().enabled = false;
         topMap.GetComponent<Collider2D>().enabled = true;
 

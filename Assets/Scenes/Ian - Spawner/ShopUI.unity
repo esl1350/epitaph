@@ -944,8 +944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d1ec52b7d7c44f2af2d3807ac63e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityInventory: {fileID: 0}
-  ability: {fileID: 0}
+  abilityInventory: {fileID: 657781649}
+  ability: {fileID: 11400000, guid: 143c9360a97adb242bd265eb9d3dcb3a, type: 2}
 --- !u!1 &833017036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5569007119541929552, guid: 9addc653d913cbd4e975b7c4e4c03c5e, type: 3}

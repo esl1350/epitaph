@@ -13,6 +13,9 @@ public class RenderFoliageMap : MonoBehaviour
     private Tilemap tilemap;
     private Vector3Int origin;
     private Vector3Int dims;
+    public void RenderScreenOnly(Vector3Int d, Vector3Int o) {
+        Render(new Vector3Int(d.x, 17, d.z), o);
+    }
     public void Render(Vector3Int d, Vector3Int o)
     {
         tilemap = gameObject.GetComponent<Tilemap>();

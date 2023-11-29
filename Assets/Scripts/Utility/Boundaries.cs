@@ -7,7 +7,7 @@ public class Boundaries : MonoBehaviour
     
     //basic boundaries for entities
     
-    private Vector2 xBounds;
+    public Vector2 xBounds { get; private set; }
     public Vector2 yBounds { get; private set; }
 
     //width and height of entity

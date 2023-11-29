@@ -21,6 +21,16 @@ public class RenderBaseMap : MonoBehaviour
     private int[,] terrainMap;
     private Tilemap tilemap;
     private Vector3Int origin;
+    public void RenderScreenOnly(Vector3Int o) {
+        tilemap = gameObject.GetComponent<Tilemap>();
+        origin = o;
+        
+        for (int i = 0; i <tilemap.size.x; i++) {
+            for (int j = 0; j < 17; j ++) {
+                PlaceBaseTile(i, j);
+            }
+        }
+    }
     public void Render(int[,] map, Vector3Int o) {
         terrainMap = map;
 

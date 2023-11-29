@@ -15,4 +15,4 @@ MonoBehaviour:
   wrapperName: Ethereal Ray
   activeAbility: {fileID: 11400000, guid: 8608b9fd89d27124b925db2bc02fb71e, type: 2}
   passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
-  description: Laser beam
+  description: 'A beam of concentrated energy that obliterates all in its path. '

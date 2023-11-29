@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e7710773e8b39449a96e8e6854b51a, type: 3}
   m_Name: Talisman Wrapper
   m_EditorClassIdentifier: 
-  wrapperName: 
+  wrapperName: Talisman
   activeAbility: {fileID: 11400000, guid: 8dc081512c0c83843b93da90a5503474, type: 2}
   passiveAbility: {fileID: 11400000, guid: 2a540799a473f014482b90369dac1569, type: 2}
-  description: 
+  description: "Oft carried by undertakers as a protective charm, these talismans
+    are meticulously manufactured by some of the best local craftsmen. Who first
+    started making these, no one knows \u2013 but their effectiveness is quite certain,
+    if rumors are to be believed."

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: 
   activeAbility: {fileID: 11400000, guid: d5e0e98685ce35c47b701953bc09a7d7, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
-  description: 
+  passiveAbility: {fileID: 11400000, guid: 2a540799a473f014482b90369dac1569, type: 2}
+  description: 'A shield of thorns is an excellent deterrent for any prospective
+    attackers. '

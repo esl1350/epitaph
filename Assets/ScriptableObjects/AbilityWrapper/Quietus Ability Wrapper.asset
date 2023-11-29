@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: Quietus
   activeAbility: {fileID: 11400000, guid: f9f1462d87ded56478b4d144e3e9979f, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
+  passiveAbility: {fileID: 11400000, guid: cdbf2175eeacbfd4ba3c3f9d69ea6825, type: 2}
   description: Conjure a sword of flame

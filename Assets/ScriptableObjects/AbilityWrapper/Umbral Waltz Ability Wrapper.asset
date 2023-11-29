@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: Umbral Waltz Wrapper
   activeAbility: {fileID: 11400000, guid: 81dda06898d51214cbe8934494412fca, type: 2}
-  passiveAbility: {fileID: 0}
-  description: Wrapper for Umbral Waltz
+  passiveAbility: {fileID: 11400000, guid: db6088bf87081084bba2fdbaed8008fc, type: 2}
+  description: 'Diffraction magic can grant temporary invisibility; more than enough
+    time for an assassin to strike. '

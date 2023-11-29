@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wrapperName: Spectral Censer
   activeAbility: {fileID: 11400000, guid: 5039a75e5878d8d4fb32d806112e0723, type: 2}
-  passiveAbility: {fileID: 11400000, guid: 540be4dfef9f565459ac02aaecb15613, type: 2}
-  description: Exorcise the dead
+  passiveAbility: {fileID: 11400000, guid: 3355d942dd4207b4895defebd4f57d9e, type: 2}
+  description: "Though its weakening magical properties make it unsuitable for holy
+    rituals, it can still put the dead to rest \u2013 as an oversized flail"

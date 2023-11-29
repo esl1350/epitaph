@@ -23,9 +23,6 @@ public class Enemy : Entity
         }
         hasDied = true;
         Destroy(gameObject);
-        if (gameObject.name == "Lich") {
-            SceneManager.LoadScene(11);
-        }
     }
 
     public override void TakeDamage(float amount) {

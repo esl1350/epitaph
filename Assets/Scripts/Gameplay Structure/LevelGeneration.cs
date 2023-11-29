@@ -41,19 +41,20 @@ public class LevelGeneration : MonoBehaviour
     }
 
     void RenderMap() {
-        topMap.ClearAllTiles();
         foliageMap.ClearAllTiles();
         if (setSpawn) {
             baseMap.gameObject.GetComponent<RenderBaseMap>().RenderScreenOnly(baseMap.origin);
             foliageMap.gameObject.GetComponent<RenderFoliageMap>().RenderScreenOnly(baseMap.size, baseMap.origin);
         } else {
+            topMap.ClearAllTiles();
             topMap.gameObject.GetComponent<RenderObstacleMap>().Render(terrain, baseMap.origin);
             baseMap.gameObject.GetComponent<RenderBaseMap>().Render(terrain, baseMap.origin);
             foliageMap.gameObject.GetComponent<RenderFoliageMap>().Render(baseMap.size, baseMap.origin);
+            topMap.GetComponent<Collider2D>().enabled = false;
+            topMap.GetComponent<Collider2D>().enabled = true;
+
         }
 
-        topMap.GetComponent<Collider2D>().enabled = false;
-        topMap.GetComponent<Collider2D>().enabled = true;
 
     }
 }

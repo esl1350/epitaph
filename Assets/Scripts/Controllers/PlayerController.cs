@@ -153,11 +153,16 @@ public class PlayerController : Controller
         canChainAttack = false;
     }
 
-    private void UpdateSound()
+    public void UpdateSound(bool death=false)
     {
         // start footsteps event if the player has an x or y velocity
         // if ((rb.velocity.x != 0 || rb.velocity.y != 0) && !isAttacking && rb.velocity.x <= 10 && rb.velocity.y <= 10 && rb.velocity.x >= -10 && rb.velocity.y >= -10)
-        if ((rb.velocity.x != 0 || rb.velocity.y != 0) && !isAttacking && canMove)
+        
+        if (death)
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+        else if ((rb.velocity.x != 0 || rb.velocity.y != 0) && !isAttacking && canMove)
         {
             // get the playback state
             PLAYBACK_STATE playbackState;

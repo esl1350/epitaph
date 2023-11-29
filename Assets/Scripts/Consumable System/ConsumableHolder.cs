@@ -17,13 +17,11 @@ public class ConsumableHolder : MonoBehaviour
 
     // add text for number of charges
     GameObject parent;
-
     // Start is called before the first frame update
     void Start()
     {
         parent = this.gameObject;
         rosaryBeadsConsumable.Init();
-
         consumableSlot.GetComponent<ConsumableFormatter>().Consumable = rosaryBeadsConsumable;
     }
 

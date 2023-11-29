@@ -192,3 +192,10 @@ MonoBehaviour:
   _animator: {fileID: 972030477586842193}
   radius: 4
   splashDamage: 1
+  audioEffect:
+    Guid:
+      Data1: -1972155063
+      Data2: 1080596122
+      Data3: -974670191
+      Data4: -2100942646
+    Path: event:/Light Boom

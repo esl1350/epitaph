@@ -24,6 +24,7 @@ public class BriarBarrierAbility : Ability
     {
         Debug.Log("Dead Spark Activated");
         firing = true;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.barrier, parent.transform.position);
         SetOnCooldown();
     }
 

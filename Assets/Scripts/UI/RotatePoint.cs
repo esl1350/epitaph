@@ -19,7 +19,7 @@ public class RotatePoint : MonoBehaviour
         mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 rotation = (mousePos - transform.parent.position).normalized;
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        float denom = (1.0f / 0.85f) * Mathf.Pow(Mathf.Cos(rotZ * Mathf.Deg2Rad), 2) + (1.0f / 1.1f) * Mathf.Pow(Mathf.Sin(rotZ * Mathf.Deg2Rad), 2); //hmm
+        float denom = (1.0f / 0.7225f) * Mathf.Pow(Mathf.Cos(rotZ * Mathf.Deg2Rad), 2) + (1.0f / 1.21f) * Mathf.Pow(Mathf.Sin(rotZ * Mathf.Deg2Rad), 2); //hmm
         float l = Mathf.Sqrt(1.0f / denom);
         transform.rotation = Quaternion.Euler(0, 0, rotZ - 90.0f);
         Vector2 r_norm = (new Vector2(rotation.x, rotation.y)).normalized;

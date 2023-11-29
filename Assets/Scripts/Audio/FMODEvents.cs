@@ -16,6 +16,37 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Knife Swing")]
     [field: SerializeField] public EventReference knifeSwing { get; private set; }
+
+    [field: Header("Knife Flurry")]
+    [field: SerializeField] public EventReference knifeFlurry { get; private set; }
+
+    [field: Header("Quake First")]
+    [field: SerializeField] public EventReference quakeFirst { get; private set; }
+
+    [field: Header("Quake Finish")]
+    [field: SerializeField] public EventReference quakeFinish { get; private set; }
+
+    [field: Header("Laser")]
+    [field: SerializeField] public EventReference laser { get; private set; }
+
+    [field: Header("Yoyo")]
+    [field: SerializeField] public EventReference yoyo { get; private set; }
+
+    [field: Header("Light Grenade")]
+    [field: SerializeField] public EventReference lightGrenade { get; private set; }
+
+    [field: Header("Barrier")]
+    [field: SerializeField] public EventReference barrier { get; private set; }
+
+    [field: Header("Dead Spark")]
+    [field: SerializeField] public EventReference deadSpark { get; private set; }
+
+    [field: Header("Fire Sword")]
+    [field: SerializeField] public EventReference fireSword { get; private set; }
+
+    [field: Header("Samsara")]
+    [field: SerializeField] public EventReference samsara { get; private set; }
+
     public static FMODEvents instance {get; private set; }
 
     private void Awake()

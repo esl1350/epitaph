@@ -16,6 +16,7 @@ class RingsOfLightAbility : ProjectileAbility {
     public override void Activate(GameObject parent)
     {
         base.Activate(parent);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.samsara, parent.transform.position);
         SetOnCooldown();
         Debug.Log("Samsara Activated");
     }

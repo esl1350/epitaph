@@ -14,10 +14,23 @@ public class RenderBaseMap : MonoBehaviour
     public Tile bottomLeftCornerTile;
     public Tile bottomCenterTile;
     public Tile bottomRightCornerTile;
+    public Tile topLeftCornerOutTile; // tiles for when the given spot is surrounded by obstacle
+    public Tile topRightCornerOutTile; // tiles for when the given spot is surrounded by obstacle
+
     private int prevIdx;
     private int[,] terrainMap;
     private Tilemap tilemap;
     private Vector3Int origin;
+    public void RenderScreenOnly(Vector3Int o) {
+        tilemap = gameObject.GetComponent<Tilemap>();
+        origin = o;
+        
+        for (int i = 0; i <tilemap.size.x; i++) {
+            for (int j = 0; j < 17; j ++) {
+                PlaceBaseTile(i, j);
+            }
+        }
+    }
     public void Render(int[,] map, Vector3Int o) {
         terrainMap = map;
 
@@ -52,6 +65,11 @@ public class RenderBaseMap : MonoBehaviour
             return topCenterTile;
         }
         if (slice[1, 2] == 1) {
+            if (slice[2, 1] == 1) {
+                return topLeftCornerOutTile;
+            } else if (slice[0, 1] == 1) {
+                return topRightCornerOutTile;
+            }
             return bottomCenterTile;
         }
         if (slice[0, 1] == 1) {

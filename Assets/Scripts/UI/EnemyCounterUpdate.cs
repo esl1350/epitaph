@@ -19,7 +19,9 @@ public class EnemyCounterUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       if(enemyManager == null) {
+         enemyManager = GameObject.FindWithTag("EnemyManager");
+       }
        tmp.SetText(enemyManager.transform.childCount.ToString());
     }
 }

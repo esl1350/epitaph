@@ -12,6 +12,7 @@ public class CircleSlashHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Enemy") {
+            GameObject.FindWithTag("CMCam").GetComponent<CameraShake>().Shake(1.5f, 0.3f);
             Enemy enemy = other.GetComponent<Enemy>();
             parent.GetComponent<Entity>().DealDamage(enemy, damage);
             var statusEffectManager = enemy.GetComponent<StatusEffectManager>();

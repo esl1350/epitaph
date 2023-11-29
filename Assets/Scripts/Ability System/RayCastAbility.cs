@@ -26,12 +26,13 @@ public class RayCastAbility : Ability
 
     public override void Activate(GameObject parent)
     {
-        mandalaMan.StartCoroutine(ActivateRoutine());
+        mandalaMan.StartCoroutine(ActivateRoutine(parent));
     }
 
-    IEnumerator ActivateRoutine() {
+    IEnumerator ActivateRoutine(GameObject parent) {
         mandalaMan.Activate();
         yield return new WaitForSeconds(0.5f);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.laser, parent.transform.position);
         firing = true;
     }
 

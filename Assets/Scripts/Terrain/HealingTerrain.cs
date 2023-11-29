@@ -61,12 +61,12 @@ public class HealingTerrain : MonoBehaviour
         //iterate through each entity in the pool
         foreach(GameObject entity in entitiesBeingHealed)
         {
+            Debug.Log(entity.gameObject.GetComponent<Entity>().HealthVal);
             //call the Health.Heal method on that entity
             if (entity.gameObject.GetComponent<Entity>().Health.GetStatValue() + healAmount > entity.gameObject.GetComponent<Entity>().Health.intialValue) {
-                entity.gameObject.GetComponent<Entity>().Health.Heal(entity.gameObject.GetComponent<Entity>().Health.intialValue - healAmount > 0f ? entity.gameObject.GetComponent<Entity>().Health.intialValue - healAmount : 0f);
+                entity.gameObject.GetComponent<Entity>().Health.Heal(entity.gameObject.GetComponent<Entity>().Health.intialValue - entity.gameObject.GetComponent<Entity>().HealthVal > 0f ? entity.gameObject.GetComponent<Entity>().Health.intialValue - entity.gameObject.GetComponent<Entity>().HealthVal : 0f);
             } else {
                 entity.gameObject.GetComponent<Entity>().Health.Heal(healAmount);
-
             }
         }
 

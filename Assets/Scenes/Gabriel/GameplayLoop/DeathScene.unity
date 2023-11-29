@@ -293,11 +293,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityChoices:
-  - {fileID: 11400000, guid: 7cdb47186fde68a4ca7fdd31933c5a81, type: 2}
-  - {fileID: 11400000, guid: 98e89ea2ca0aebf4ea3bca8cc495b5c2, type: 2}
-  - {fileID: 11400000, guid: 8f95c090da30fc34cb3b55737e8254fc, type: 2}
-  - {fileID: 11400000, guid: 68ca8abe57bdf9046aa4ead7eb505518, type: 2}
   - {fileID: 11400000, guid: 8abaeafadcb366d4582f63b2865c2f1d, type: 2}
+  - {fileID: 11400000, guid: 50f0325b0fa597142b2a68913ce8e1dd, type: 2}
+  - {fileID: 11400000, guid: fa74d850e0551784aa8685a81e2dba64, type: 2}
+  - {fileID: 11400000, guid: 68ca8abe57bdf9046aa4ead7eb505518, type: 2}
+  - {fileID: 11400000, guid: 143c9360a97adb242bd265eb9d3dcb3a, type: 2}
+  - {fileID: 11400000, guid: 4064bfe77b3e11f4bbc0d3884a1f56b4, type: 2}
+  - {fileID: 11400000, guid: 21280b331153e1745b3005eb1e66cd43, type: 2}
 --- !u!114 &551695696
 MonoBehaviour:
   m_ObjectHideFlags: 0

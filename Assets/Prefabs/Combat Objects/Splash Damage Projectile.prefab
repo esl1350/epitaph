@@ -102,12 +102,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   damage: 15
-  _statusEffects: []
+  _statusEffects:
+  - {fileID: 11400000, guid: aa477a29df9ccaa40be7e3603068e36c, type: 2}
   projectileTimer: 5
   parent: {fileID: 0}
   _animator: {fileID: 4022587868259910675}
   radius: 3
   splashDamage: 10
+  audioEffect:
+    Guid:
+      Data1: 220972900
+      Data2: 1191790645
+      Data3: 108530578
+      Data4: -2015953805
+    Path: event:/Fire Ball
 --- !u!58 &1162483817475055334
 CircleCollider2D:
   m_ObjectHideFlags: 0

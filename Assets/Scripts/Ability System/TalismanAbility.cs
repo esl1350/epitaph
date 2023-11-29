@@ -20,7 +20,7 @@ public class TalismanAbility : Ability
 
     public override void Activate(GameObject parent) {
         if (!reactivate) {
-            talisman = Instantiate(talismanTemplate, parent.transform.GetChild(0).GetChild(0).transform.position, Quaternion.identity).GetComponent<TalismanSigil>();
+            talisman = Instantiate(talismanTemplate, parent.transform.GetChild(0).transform.position, Quaternion.identity).GetComponent<TalismanSigil>();
             reactivate = true;
             objectTimeActive = 0f;
 

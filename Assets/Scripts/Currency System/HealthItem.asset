@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06b3848d309cf470894a6f59ad139b2f, type: 3}
-  m_Name: HealthItem 1
+  m_Name: HealthItem
   m_EditorClassIdentifier: 
-  cost: 600
-  itemName: Buff Health 1
-  abilitySprite: {fileID: 245867105, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}
-  ability: {fileID: 0}
+  cost: 30
+  itemName: Buff Health
   enabled: 1
   healthBuff: 15
-  abilitySprite: {fileID: 245867105, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

@@ -22,13 +22,8 @@ public class PlayerTransitionController : MonoBehaviour
             sceneTransitionManager = GameObject.FindGameObjectWithTag("LevelController").GetComponent<SceneTransitionManager>();
         }
         if (this.transform.position.y > playerBoundaries.yBounds.y - playerBoundaries.widthHeight.y/2) {
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            if (enemies.Length == 0) {
-                // No enemies left
-                sceneTransitionManager.OnRunEnd();
-                Debug.Log("Run End");
-            }
-
+            sceneTransitionManager.OnRunEnd();
+            Debug.Log("Run End");
         }
     }
 }

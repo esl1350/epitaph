@@ -154,20 +154,6 @@ public class AbilityInventoryManager : MonoBehaviour
         return true;
     }
 
-    public bool Remove(AbilityWrapper ability)
-    {
-        Slot<AbilityWrapper> slotToRemove = null;
-
-        foreach (Slot<AbilityWrapper> slot in slots) {
-            if (slot.Item == ability) {
-                slotToRemove = slot;
-                slotToRemove.Item = null;
-                return true;
-            }
-        }
-        return false;
-    }
-
     public void UpdateTooltip(Slot<AbilityWrapper> slot) {
         slot.formatter.Ability = slot.Item;
     }
@@ -273,9 +259,5 @@ public class AbilityInventoryManager : MonoBehaviour
     #endregion Drag And Drop
     public void SetManagerActive(bool active) {
         managerActive = active;
-    }
-
-    public int getAbilitiesLength(){
-        return (startingAbilities).Length;
     }
 }

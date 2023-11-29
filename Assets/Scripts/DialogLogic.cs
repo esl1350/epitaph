@@ -53,7 +53,7 @@ public class DialogLogic : MonoBehaviour
             PlayerController playerController = target.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                playerController.enabled = false;
+                playerController.enabled = true;
             }
         }
         if(Input.GetMouseButtonDown(0))

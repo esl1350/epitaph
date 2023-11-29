@@ -19,23 +19,25 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Play() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(12);
         //SceneManager.LoadScene(1);
         //ReinstateAbilityChoices();
     }
 
     public void Restart() {
         //ReinstateAbilityChoices();
-        //Destroy(GameObject.Find("UI"));
+        Destroy(GameObject.Find("UI"));
+        Destroy(GameObject.Find("Player"));
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(13);
     }
 
     public void Menu() {
         //ReinstateAbilityChoices();
 
         //Destroy(GameObject.Find("UI"));
-
+        Destroy(GameObject.Find("UI"));
+        Destroy(GameObject.Find("Player"));
         SceneManager.LoadScene(0);
     }
 

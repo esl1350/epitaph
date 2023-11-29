@@ -65,4 +65,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Gabriel/GameplayLoop/BossRoom.unity
     guid: e4078c3cfbc5a334998e3bdabeaf7fcc
+  - enabled: 1
+    path: Assets/Scenes/Gabriel/GameplayLoop/Tutorial Room.unity
+    guid: 3003bcfad640a4449ab98d6103ed22f2
+  - enabled: 1
+    path: Assets/Scenes/Elizabeth/Credits.unity
+    guid: 8bd33198ca8645d459f6c2c9fb4ffb54
   m_configObjects: {}

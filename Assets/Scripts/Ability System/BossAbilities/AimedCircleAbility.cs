@@ -39,6 +39,7 @@ public class AimedCircleAbility : BossAbility
             Vector3 direction = (aimedLocation - parent.transform.position).normalized;
             Quaternion rotation = Quaternion.LookRotation(Vector3.forward, -direction);
             BossProjectile proj = Instantiate(projectile, parent.transform.position + (direction * 2), rotation);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.bossAim, parent.transform.position);
 
             yield return new WaitForSeconds(delay);
             Rigidbody2D rb = proj.GetRB();

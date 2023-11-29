@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnAmount
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7357457874771326544, guid: 1e62417cd2add474bbfaef2507bc3fcb, type: 3}
       propertyPath: spawnRadius

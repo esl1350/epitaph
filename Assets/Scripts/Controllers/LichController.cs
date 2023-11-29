@@ -25,6 +25,7 @@ public class LichController : Controller
     bool first = false;
     public bool start = false;
     float lastTP = 0;
+    float lastSpawned = 0;
 
     void Start()
     {
@@ -63,6 +64,7 @@ public class LichController : Controller
             if (!first)
             {
                 BossAbility choice = Instantiate(abilities[2]);
+                lastSpawned = Time.time;
                 choice.AbilityBehavior(this.gameObject);
                 first = true;
             }
@@ -70,17 +72,13 @@ public class LichController : Controller
             {
                 float distance = vectordist.magnitude;
 
-                if (distance < 5 && !hasShield)
-                {
-                    if (Time.time - lastTP > 12)
-                    {
-                        StartCoroutine(TeleportFromPlayer());
+                if (Time.time - lastTP > 12 && !hasShield) {
+                     StartCoroutine(TeleportFromPlayer());
                         lastTP = Time.time;
-                    }
-                    else
-                    {
-                        StartCoroutine(CastingAnimation(false));
-                    }
+                }
+                else if (distance < 5 && !hasShield)
+                {
+                    StartCoroutine(CastingAnimation(false));
                 }
                 else
                 {
@@ -146,17 +144,18 @@ public class LichController : Controller
         {
             // Phase 1 stuff
             int i = Random.Range(0, 100);
-            if (i <= 10)
-            {
+            if (Time.time - lastSpawned > 12 + activeCrystals) {
                 i = 2;
-            }
-            else if (i <= 65)
-            {
-                i = 0;
-            }
-            else
-            {
-                i = 1;
+                lastSpawned = Time.time;
+            } else {
+                if (i <= 60)
+                {
+                    i = 0;
+                }
+                else
+                {
+                    i = 1;
+                }
             }
             BossAbility choice = Instantiate(abilities[i]);
             choice.AbilityBehavior(this.gameObject);
@@ -183,7 +182,7 @@ public class LichController : Controller
         int i = Random.Range(0, 100);
         if (i <= 35)
         {
-                i = 0;
+            i = 0;
         }
         else
         {
@@ -198,8 +197,11 @@ public class LichController : Controller
     private IEnumerator TeleportFromPlayer()
     {
         animator.SetBool("tp", true);
-        yield return new WaitForSeconds(0.9f);
+
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.teleport, this.transform.position);
+        yield return new WaitForSeconds(0.85f);
         currentPoint = (currentPoint + 1) % tppoints.Count;
+
         this.transform.position = tppoints[currentPoint];
         animator.SetBool("tp", false);
     }

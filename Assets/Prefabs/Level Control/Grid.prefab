@@ -23546,7 +23546,7 @@ GameObject:
   - component: {fileID: 6901397031259227294}
   - component: {fileID: 1906332450435219870}
   - component: {fileID: 1218847612419491430}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Tilemap_Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24481,11 +24481,11 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 0.9767043, g: 0.6335788, b: 0.6816207, a: 1}
+    m_Data: {r: 9.9868e-41, g: 9.9868e-41, b: 9.9868e-41, a: 9.9868e-41}
   - m_RefCount: 6
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 81
-    m_Data: {r: 0.85169536, g: 0.4178088, b: 0.55113596, a: 1}
+    m_Data: {r: 0.7944232, g: 0.55568916, b: 0.63373595, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24571,7 +24571,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 7671
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

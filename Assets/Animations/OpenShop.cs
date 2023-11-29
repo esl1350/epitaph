@@ -40,6 +40,9 @@ public class OpenShop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ShopUI == null) {
+            ShopUI = GameObject.Find("ShopUI").transform.gameObject;
+        }
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (useHitboxToInteract != true){
             if (dist < distanceAway)

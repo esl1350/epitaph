@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Gabriel/GameplayLoop/ShopRoom.unity
     guid: b516ebe52dd386349b3267bdb7b52eeb
+  - enabled: 1
+    path: Assets/Scenes/Gabriel/GameplayLoop/Shop.unity
+    guid: 0f21c077229c54288aa510df31565cf1
   m_configObjects: {}

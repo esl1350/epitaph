@@ -196,7 +196,7 @@ public class LichController : Controller
         animator.SetBool("tp", true);
 
         AudioManager.instance.PlayOneShot(FMODEvents.instance.teleport, this.transform.position);
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.85f);
         currentPoint = (currentPoint + 1) % tppoints.Count;
 
         this.transform.position = tppoints[currentPoint];

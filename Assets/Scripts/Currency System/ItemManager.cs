@@ -23,14 +23,14 @@ public class ItemManager : MonoBehaviour
 
 void Update()
     {
-        if (inventoryFullTag.activeSelf){
-            timer += Time.unscaledDeltaTime;
-            if (timer > 2f)
-            {
-                timer = 0f;
-                inventoryFullTag.SetActive(false);
-            }
-        }
+        // if (inventoryFullTag.activeSelf){
+        //     timer += Time.unscaledDeltaTime;
+        //     if (timer > 2f)
+        //     {
+        //         timer = 0f;
+        //         inventoryFullTag.SetActive(false);
+        //     }
+        // }
     }
 
     public void PurchaseItem(Item itemToBuy)

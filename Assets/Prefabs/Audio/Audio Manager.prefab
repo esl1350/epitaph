@@ -44,6 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f461e722b9f2a43bb028b02b98e93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <music>k__BackingField:
+    Guid:
+      Data1: 1577414428
+      Data2: 1253498608
+      Data3: 1259307690
+      Data4: -1438160105
+    Path: event:/Music/Music
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -1635882245
@@ -149,6 +156,27 @@ MonoBehaviour:
       Data3: 1808260501
       Data4: -1141603420
     Path: event:/SFX/Teleport
+  <bossCircles>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <bossAim>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <fireCone>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &6458670570538676222
 GameObject:
   m_ObjectHideFlags: 0

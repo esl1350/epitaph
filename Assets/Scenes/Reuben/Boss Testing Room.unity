@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
+      propertyPath: <music>k__BackingField.Path
+      value: event:/Music/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
       propertyPath: <bossAim>k__BackingField.Path
       value: event:/SFX/Boss Aim
       objectReference: {fileID: 0}
@@ -142,6 +146,22 @@ PrefabInstance:
     - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
       propertyPath: <bossCircles>k__BackingField.Path
       value: event:/SFX/Boss Circles
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data1
+      value: 1577414428
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data2
+      value: 1253498608
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data3
+      value: 1259307690
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data4
+      value: -1438160105
       objectReference: {fileID: 0}
     - target: {fileID: 4619622516112085643, guid: 502c329b209bf1e449f45ae08bc15bd5, type: 3}
       propertyPath: <bossAim>k__BackingField.Guid.Data1
@@ -1931,7 +1951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6332539973567506672, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: orthographic size
-      value: 8.4375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8230270512330466987, guid: 99b87bacd72da334e8fb815f89150211, type: 3}
       propertyPath: m_GridSnapping

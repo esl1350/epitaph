@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HealthItem 2
   m_EditorClassIdentifier: 
   cost: 800
-  itemName: Buff Health 2
-  abilitySprite: {fileID: 245867105, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}
+  itemName: Health Boost II
+  abilitySprite: {fileID: -7381733995670896841, guid: 0be8a2e37142cee4c805f97fcfe7eceb, type: 3}
   ability: {fileID: 0}
   enabled: 1
   healthBuff: 30

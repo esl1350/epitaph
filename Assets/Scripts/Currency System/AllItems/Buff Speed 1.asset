@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Buff Speed 1
   m_EditorClassIdentifier: 
   cost: 600
-  itemName: Buff Speed 1
-  abilitySprite: {fileID: -1482585954, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}
+  itemName: Speed Boost I
+  abilitySprite: {fileID: -3924306081326907862, guid: c48495691e9ae9a4a992e432b981ec78, type: 3}
   ability: {fileID: 0}
   enabled: 1
-  extraSpeed: 1.1
+  extraSpeed: 1.05
   abilitySprite: {fileID: -1482585954, guid: 338a6a03b5ec4ed46a8f699069555a5a, type: 3}

@@ -38,8 +38,10 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
-    public void SetMusic(MusicArea area)
+    public void SetMusic(MusicArea area, string where="None")
     {
+        Debug.Log(where);
+        Debug.Log(area);
         musicEventInstance.setParameterByName("area", (float) area);
     }
 

@@ -158,25 +158,25 @@ MonoBehaviour:
     Path: event:/SFX/Teleport
   <bossCircles>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1379853915
+      Data2: 1325550088
+      Data3: -604348795
+      Data4: -33845563
+    Path: event:/SFX/Boss Circles
   <bossAim>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1471250483
+      Data2: 1098344265
+      Data3: -174829662
+      Data4: -1492262529
+    Path: event:/SFX/Boss Aim
   <fireCone>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1601237433
+      Data2: 1090959673
+      Data3: 472630916
+      Data4: -265497073
+    Path: event:/SFX/Fire Cone
 --- !u!1 &6458670570538676222
 GameObject:
   m_ObjectHideFlags: 0

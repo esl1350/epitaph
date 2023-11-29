@@ -508,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 259067208}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: useHitboxToInteract
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: allSprites.Array.size

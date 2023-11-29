@@ -508,11 +508,11 @@ PrefabInstance:
       objectReference: {fileID: 259067208}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: useHitboxToInteract
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: allSprites.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: convoLines.Array.size
@@ -536,6 +536,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e8281323d43a6494c810793f407e76d1, type: 3}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: allSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e8281323d43a6494c810793f407e76d1, type: 3}
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: allSprites.Array.data[5]
       value: 
       objectReference: {fileID: 21300000, guid: e8281323d43a6494c810793f407e76d1, type: 3}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
@@ -566,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: convoLinesNames.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: convoLinesNames.Array.data[0]
@@ -586,6 +590,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
       propertyPath: convoLinesNames.Array.data[4]
+      value: Mort
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786913460335701165, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}
+      propertyPath: convoLinesNames.Array.data[5]
       value: Mort
       objectReference: {fileID: 0}
     - target: {fileID: 5794583486991221603, guid: c06de7f1728e06a48a662bc4e95dd69f, type: 3}

@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 1936367508}
     - target: {fileID: 4451322402477620099, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
       propertyPath: startingAbilities.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4451322402477620099, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
       propertyPath: startingAbilities.Array.data[0]
@@ -469,6 +469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6615919859577196368, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
+    - {fileID: 2537910491221231328, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -478,6 +479,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
       insertIndex: -1
       addedObject: {fileID: 712963402}
+    - targetCorrespondingSourceObject: {fileID: 8263862798321204670, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 712963403}
   m_SourcePrefab: {fileID: 100100000, guid: 0c830a5c172407e4a8223753fb3fd619, type: 3}
 --- !u!114 &115705338 stripped
 MonoBehaviour:
@@ -813,19 +817,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   registeredEnemyTypes:
   - enemy: {fileID: 5678772690974721006, guid: 459b5ddf25cbaa54e9901fc43c961a6b, type: 3}
-    spawnRate: 0
+    spawnRate: 0.1
     width: 2
     height: 2
   - enemy: {fileID: 7869210425373712410, guid: e13f1331564d0ba4fb721a92bf9e874e, type: 3}
-    spawnRate: 0
+    spawnRate: 0.3
     width: 1
     height: 1
   - enemy: {fileID: 7869210425373712410, guid: aef73c50bd7e8ec4da7e5aad712f3f0a, type: 3}
-    spawnRate: 0
+    spawnRate: 0.1
     width: 1
     height: 1
   - enemy: {fileID: 5678772690974721006, guid: 63b29d38e477a8e4f86eaf0cf5cf3bc8, type: 3}
-    spawnRate: 0
+    spawnRate: 0.1
     width: 2
     height: 2
   enemyManager: {fileID: 248336238}
@@ -900,6 +904,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   augmentManager: {fileID: 0}
+--- !u!114 &712963403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712963380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13016b50a09b748d09ff70cf8453503b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  current: {fileID: 0}
 --- !u!114 &791286939
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerTransitionController : MonoBehaviour
 {
@@ -14,10 +15,22 @@ public class PlayerTransitionController : MonoBehaviour
         playerBoundaries = this.transform.GetComponent<Boundaries>();
         sceneTransitionManager = GameObject.FindGameObjectWithTag("LevelController").GetComponent<SceneTransitionManager>();
     }
+    void OnEnable() {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
+    void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        playerBoundaries = this.transform.GetComponent<Boundaries>();
+    }
     // Update is called once per frame
     void Update()
     {
+        playerBoundaries = this.transform.GetComponent<Boundaries>();
+
         if(sceneTransitionManager == null) {
             sceneTransitionManager = GameObject.FindGameObjectWithTag("LevelController").GetComponent<SceneTransitionManager>();
         }

@@ -8,7 +8,8 @@ public class GoButton : MonoBehaviour
 
     public void callOnRunStart()
     {
-        AudioManager.instance.SetMusic(area);
+        //Debug.Log("go pressed");
+        
         GameObject levelController = GameObject.FindWithTag("LevelController");
         levelController.GetComponent<SceneTransitionManager>().OnRunStart();
         GameObject spawnLocation = GameObject.Find("PlayerSpawnLocation").gameObject;

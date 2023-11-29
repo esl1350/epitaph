@@ -83,6 +83,14 @@ public class SceneTransitionManager : MonoBehaviour
     }
 
     public void OnRunStart() {
+        if (nextLevel >= 8)
+        {
+            AudioManager.instance.SetMusic(MusicArea.BATTLE);
+        }
+        else
+        {
+            AudioManager.instance.SetMusic(MusicArea.SHOP_MUSIC);
+        }
         Debug.Log("Run Start");
         playerInput.ActivateInput();
         transition.SetTrigger("RunStart");

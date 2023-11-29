@@ -9,6 +9,10 @@ public class Mandala : MonoBehaviour {
     
     public void Activate() {
         gameObject.SetActive(true);
+        if (animator == null) {
+            animator = gameObject.GetComponent<Animator>();
+            Debug.Log("Animator Null");
+        }
         animator.Play("Start");
     }
 

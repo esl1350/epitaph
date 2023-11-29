@@ -444,8 +444,8 @@ GameObject:
   - component: {fileID: 9210729853021522085}
   - component: {fileID: 8753478991086693957}
   - component: {fileID: 8943375078455983510}
-  - component: {fileID: 2537910491221231328}
   - component: {fileID: 2343750334080364483}
+  - component: {fileID: 2537910491221231328}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -546,7 +546,7 @@ MonoBehaviour:
   - {fileID: 6925524437547162389}
   - {fileID: 2020586579564352269}
   attackDelay: 0.2
-  attackShiftMultiplier: 4
+  attackShiftMultiplier: 0
 --- !u!114 &6421672317329216225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,20 +1096,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.1, y: 1.7}
   m_Direction: 0
---- !u!114 &2537910491221231328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263862798321204670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097a59c54874e65438a5ffa30d28a907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DEBUG: 0
-  current: {fileID: 0}
 --- !u!114 &2343750334080364483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,6 +1110,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityInventory: {fileID: 4451322402477620099}
   ability: {fileID: 11400000, guid: 143c9360a97adb242bd265eb9d3dcb3a, type: 2}
+--- !u!114 &2537910491221231328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263862798321204670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13016b50a09b748d09ff70cf8453503b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG: 0
+  current: {fileID: 0}
 --- !u!1 &8356434180221140268
 GameObject:
   m_ObjectHideFlags: 0

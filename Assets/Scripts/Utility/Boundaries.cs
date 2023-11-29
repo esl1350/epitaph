@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boundaries : MonoBehaviour
 {
@@ -22,8 +23,30 @@ public class Boundaries : MonoBehaviour
         float xRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z)).x;
         xBounds = new Vector2(xLeft, xRight);
 
-        float walkableHeight = walkable.GetComponent<Collider2D>().bounds.size.y;
-        Vector3 colliderCenter = walkable.GetComponent<Collider2D>().bounds.center;
+        float walkableHeight = walkable.GetComponent<BoxCollider2D>().bounds.size.y;
+        Vector3 colliderCenter = walkable.GetComponent<BoxCollider2D>().bounds.center;
+        yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
+
+        widthHeight = this.gameObject.GetComponent<CapsuleCollider2D>().size;
+    }
+
+    void OnEnable() {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable() {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        GameObject walkable = GameObject.FindWithTag("Walkable");
+
+        float xLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z)).x;
+        float xRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z)).x;
+        xBounds = new Vector2(xLeft, xRight);
+
+        float walkableHeight = walkable.GetComponent<BoxCollider2D>().bounds.size.y;
+        Vector3 colliderCenter = walkable.GetComponent<BoxCollider2D>().bounds.center;
         yBounds = new Vector2(colliderCenter.y - walkableHeight/2, colliderCenter.y + walkableHeight/2);
 
         widthHeight = this.gameObject.GetComponent<CapsuleCollider2D>().size;

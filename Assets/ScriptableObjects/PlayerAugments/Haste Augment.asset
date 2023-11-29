@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Haste Augment
   m_EditorClassIdentifier: 
   aName: Haste
-  aDescription: Quadruples speed for a short time
+  aDescription: Be swift like the wind
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
   expires: 0

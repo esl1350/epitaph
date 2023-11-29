@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Life Steal Augment
   m_EditorClassIdentifier: 
   aName: Life Steal
-  aDescription: Steal Life
+  aDescription: Steal what little life that remains
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
   expires: 0

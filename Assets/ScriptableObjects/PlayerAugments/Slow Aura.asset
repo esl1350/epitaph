@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Slow Aura
   m_EditorClassIdentifier: 
   aName: Slow Aura
-  aDescription: hihihi
+  aDescription: A chilling aura around you
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
   expires: 0

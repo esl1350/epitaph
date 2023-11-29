@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Berserk Augment
   m_EditorClassIdentifier: 
   aName: Berserk
-  aDescription: big sword
+  aDescription: Injuries done upon you will be returned two fold by your blade
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
   expires: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Damage Aura Augment
   m_EditorClassIdentifier: 
   aName: Damage Aura
-  aDescription: kaboom
+  aDescription: Send pulses of pain around you
   aSprite: {fileID: 0}
   aSound: {fileID: 0}
   expires: 0

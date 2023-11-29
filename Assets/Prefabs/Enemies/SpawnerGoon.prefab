@@ -525,8 +525,8 @@ MonoBehaviour:
   fleeDist: 0
   spawningEnemy: {fileID: 7869210425373712410, guid: e13f1331564d0ba4fb721a92bf9e874e, type: 3}
   spawnPos: {fileID: 6142660500821680078}
-  shortestSpawnTime: 8
-  longestSpawnTime: 10
+  shortestSpawnTime: 15
+  longestSpawnTime: 18
   spawnRadius: 4
   spawnAmount: 2
 --- !u!114 &90021263590254876

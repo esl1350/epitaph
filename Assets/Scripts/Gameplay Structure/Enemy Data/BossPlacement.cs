@@ -12,14 +12,14 @@ public class BossPlacement : EnemyPlacement
     public override void PlaceEnemies(int[,] occupiedMap, int buffer)
     { 
         mapWidth = occupiedMap.GetLength(0);
-        mapHeight = occupiedMap.GetLength(1);
+        mapHeight = 17;
         origin = baseMap.origin;
 
         EnemyPlacementType enemy = registeredEnemyTypes[0];
 
-        Vector3Int tileLoc = new Vector3Int(origin.x + (mapWidth/2), origin.y + (mapWidth / 2), 0);
+        Vector3Int tileLoc = new Vector3Int(origin.x + 2 + enemy.width / 2, origin.y + (mapHeight / 2), 0);
         Vector3 spawnTilePos = baseMap.CellToWorld(tileLoc);
 
-        Instantiate(enemy.enemy, new Vector3(spawnTilePos.x, spawnTilePos.y + 0.5f * enemy.height, 0), Quaternion.identity);
+        Instantiate(enemy.enemy, new Vector3(spawnTilePos.x + enemy.width, spawnTilePos.y, 0), Quaternion.identity);
     }
 }

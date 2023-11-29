@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5545913899645882632}
   - component: {fileID: 1083575490125993543}
   - component: {fileID: 999071284101459048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BigBossProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,11 +11,39 @@ public class Item : ScriptableObject
     protected string itemName; // name of the item
 
     [SerializeField]
+    protected Sprite abilitySprite; // sprite of the item
+
+    [SerializeField]
+    protected AbilityWrapper ability = null; // sprite of the item
+
+    [SerializeField]
     protected bool enabled;
 
     public int getCost()
     {
         return this.cost;
+    }
+
+    public string getName()
+    {
+        return this.itemName;
+    }
+
+    public Sprite getSprite()
+    {
+        return this.abilitySprite;
+    }
+
+
+    public bool isAbility()
+    {
+        //Abilities should cost over 120 coins, other items should be under this amount
+        if(this.ability != null){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public void disable()

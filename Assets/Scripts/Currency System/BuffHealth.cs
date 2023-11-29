@@ -8,6 +8,8 @@ public class BuffHealth : Item
     [SerializeField]
     private int healthBuff = 15;
 
+    public Sprite abilitySprite;
+
     public override void firstActivation(Player player)
     {
         Debug.Log("Increasing health by: " + healthBuff);

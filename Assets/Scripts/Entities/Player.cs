@@ -7,7 +7,7 @@ public class Player : Entity
 {
     [SerializeField] private bool killable;
     [SerializeField] private GameObject particles;
-    private int _currencyTotal;
+    private int _currencyTotal = 2000;
     public int CurrencyTotal => _currencyTotal;
     [SerializeField] private float pickupRadius;
     protected override void Start() {
